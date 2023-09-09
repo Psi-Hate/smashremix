@@ -439,6 +439,7 @@ scope MIDI {
     insert_midi(BATTLEFIELDV2, OS.TRUE, OS.TRUE, "Battlefield Ver. 2", brawl)
     insert_midi(BOB, OS.TRUE, OS.TRUE, "Bob-omb Battlefield", sm64)
     insert_midi(AREA6, OS.TRUE, OS.TRUE, "Area 6", starfox64)
+    insert_victory_midi(SNAKE_VICTORY)
     pushvar origin, base
 
     // Extend Sound Test Music numbers so we can test in game easier

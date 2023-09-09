@@ -48,7 +48,7 @@ scope TwelveCharBattle {
             scope match: {
                 define_match_struct()
             }
-            character_set:; dw 0x0               // character set index
+            character_set:; dw 0x0               // character set indexpointer
             character_set_pointer:; dw string_character_set_default // character set string pointer
             best_character:; dw 0x001C00FF       // character_id and portrait_id of best character
             best_character_pointer:; dw 0x0      // best character string pointer
@@ -3059,6 +3059,7 @@ scope TwelveCharBattle {
     add_defeat_parameters(0x222,                        defeated_moveset_mario,     0)          // 0x41 - GOEMON
     add_defeat_parameters(0x2B1,                        defeated_moveset_fox_link,  0)          // 0x42 - PEPPY
     add_defeat_parameters(0x2B1,                        defeated_moveset_fox_link,  0)          // 0x43 - SLIPPY
+    add_defeat_parameters(0x617,                        defeated_moveset_captain,   0)          // 0x44 - SNAKE
     // ADD NEW CHARACTERS HERE
 
     // REMIX POLYGONS

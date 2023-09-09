@@ -923,13 +923,13 @@ scope Costumes {
         db 0x05                             // Sonic
         db 0x05                             // Sandbag
         db 0x05                             // Super Sonic
-        db 0x05                             // Classic Sonic
         db 0x05                             // Sheik
         db 0x05                             // Marina
         db 0x05                             // Dedede
         db 0x05                             // Goemon
         db 0x05                             // Peppy
         db 0x05                             // Slippy
+        db 0x05                             // Snake
 
         // Polygons
         db 0x05                             // Polygon Wario

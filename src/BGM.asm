@@ -468,7 +468,10 @@ scope BGM {
         lli     t1, 0x0005                  // t1 = 5 (GOLDENEYE)
         beql    t1, t0, _check_current_track// if GOLDENEYE, then use GOLDENEYE BGM
         addiu   a1, r0, menu.MAIN_GOLDENEYE
-        lli     t1, 0x0006                  // t1 = 6 (OFF)
+        lli     t1, 0x0006                  // t1 = 6 (OPENYOURHEART)
+        beql    t1, t0, _check_current_track// if OPENYOURHEART, then use OPENYOURHEART BGM
+        addiu   a1, r0, menu.MAIN_OPENYOURHEART
+        lli     t1, 0x0007                  // t1 = 7 (OFF)
         beq     t1, t0, _menu_music_off     // if OFF, then stop music
         nop
 
@@ -487,6 +490,9 @@ scope BGM {
         nop
         lli     t1, menu.MAIN_GOLDENEYE         // t1 = menu.MAIN_GOLDENEYE
         beq     t0, t1, _check_music_toggle // if playing GOLDENEYE, then don't restart it
+        nop
+        lli     t1, menu.MAIN_OPENYOURHEART         // t1 = menu.MAIN_OPENYOURHEART
+        beq     t0, t1, _check_music_toggle // if playing OPENYOURHEART, then don't restart it
         nop
 
         // alt menu music will play by chance if we are coming from Title screen
@@ -565,6 +571,9 @@ scope BGM {
         nop
         lli     t1, menu.MAIN_GOLDENEYE     // t1 = menu.MAIN_GOLDENEYE
         beq     t0, t1, _done               // if playing GOLDENEYE, then don't stop it
+        nop
+        lli     t1, menu.MAIN_OPENYOURHEART     // t1 = menu.MAIN_OPENYOURHEART
+        beq     t0, t1, _done               // if playing OPENYOURHEART, then don't stop it
         nop
 
         jal     BGM.stop_                   // original line 1
@@ -906,6 +915,7 @@ scope BGM {
         constant MAIN_BRAWL(108)
         constant MAIN_MENU2(224)
         constant MAIN_GOLDENEYE(231)
+        constant MAIN_OPENYOURHEART(183)
         }
 
     scope special {

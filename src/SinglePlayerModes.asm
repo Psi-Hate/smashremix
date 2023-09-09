@@ -6182,6 +6182,7 @@ scope SinglePlayerModes: {
         constant MARINA(0x00001BA8 + 0x10)
         constant DEDEDE(0x00001C88 + 0x10)
         constant GOEMON(0x00001D68 + 0x10)
+        constant SNAKE(0x00001D68 + 0x10)
 
     }
 
@@ -6256,6 +6257,7 @@ scope SinglePlayerModes: {
     dw icon_offsets.GOEMON                   // Goemon
     dw icon_offsets.PEPPY                    // Peppy Hare
     dw icon_offsets.SLIPPY                   // Slippy Toad
+    dw icon_offsets.SNAKE                    // Snake
     // ADD NEW CHARACTERS HERE
 
     // REMIX POLYGONS

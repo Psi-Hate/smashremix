@@ -1108,6 +1108,7 @@ scope Toggles {
     menu_music_menu2:; db "MELEE MENU 2", 0x00
     menu_music_brawl:; db "BRAWL", 0x00
     menu_music_goldeneye:; db "Q WATCH", 0x00
+    menu_music_OPENYOURHEART:; db "OPEN YOUR HEART", 0x00
     menu_music_off:; db "OFF", 0x00
     OS.align(4)
 
@@ -1118,6 +1119,7 @@ scope Toggles {
     dw menu_music_menu2
     dw menu_music_brawl
     dw menu_music_goldeneye
+    dw menu_music_OPENYOURHEART
     dw menu_music_off
 
     // @ Description
@@ -1263,7 +1265,10 @@ scope Toggles {
         lli     t1, 0x0005                  // t1 = 4 (GOLDENEYE)
         beql    t1, t0, _play               // if GOLDENEYE, then use GOLDENEYE BGM
         addiu   a1, r0, BGM.menu.MAIN_GOLDENEYE
-        lli     t1, 0x0006                  // t1 = 5 (OFF)
+        lli     t1, 0x0006                  // t1 = 5 (OPENYOURHEART)
+        beql    t1, t0, _play               // if OPENYOURHEART, then use OPENYOURHEART BGM
+        addiu   a1, r0, BGM.menu.MAIN_OPENYOURHEART
+        lli     t1, 0x0007                  // t1 = 6 (OFF)
         beq     t0, t1, _stop               // if OFF, then stop music
         nop
 

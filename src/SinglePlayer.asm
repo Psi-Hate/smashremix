@@ -1548,6 +1548,7 @@ scope SinglePlayer {
         constant GOEMON(0x000096B8)
         constant PEPPY(0x000099A8)
         constant SLIPPY(0x00009830)
+        constant SNAKE(0x00000A28)
 
         // Duo Teams
         constant STARFOX(0x00006238)
@@ -1770,6 +1771,7 @@ scope SinglePlayer {
         constant GOEMON(0x00000032)
         constant PEPPY(0x00000032)
         constant SLIPPY(0x00000032)
+        constant SNAKE(0x00000032)
         // TODO: make sure these are good
         constant JSAMUS(0x00000032)
         constant JNESS(0x00000032)
@@ -2180,6 +2182,7 @@ scope SinglePlayer {
     dh File.GOEMON_VICTORY_IMAGE_BOTTOM                     // GOEMON
     dh File.PEPPY_SLIPPY_VICTORY_IMAGE_BOTTOM               // PEPPY
     dh File.PEPPY_SLIPPY_VICTORY_IMAGE_BOTTOM               // SLIPPY
+    dh File.SINGLEPLAYER_VICTORY_IMAGE_BOTTOM               // SNAKE
     // ADD NEW CHARACTERS HERE
 
     // ADD FOR REMIX POLYGONS HERE
@@ -2550,6 +2553,7 @@ scope SinglePlayer {
     add_to_single_player(Character.id.GOEMON,  name_texture.GOEMON,  name_delay.GOEMON)
     add_to_single_player(Character.id.PEPPY,   name_texture.PEPPY,   name_delay.PEPPY)
     add_to_single_player(Character.id.SLIPPY,  name_texture.SLIPPY,  name_delay.SLIPPY)
+    add_to_single_player(Character.id.SNAKE,   name_texture.WARIO,   name_delay.SNAKE)
 
 	// REMIX POLYGONS    character id          name texture          name delay
     add_to_single_player(Character.id.NWARIO,  name_texture.NWARIO,  name_delay.NWARIO)

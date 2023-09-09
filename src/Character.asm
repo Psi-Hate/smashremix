@@ -12,7 +12,7 @@ include "OS.asm"
 
 scope Character {
     // number of character slots to add
-    constant ADD_CHARACTERS(49)
+    constant ADD_CHARACTERS(50)
     // start and end offset for the main character struct table (RAM 0x80116E10)
     constant STRUCT_TABLE(0x92610)
     variable STRUCT_TABLE_END(STRUCT_TABLE + 0x6C)
@@ -3269,7 +3269,9 @@ scope Character {
     define_character(PEPPY, FOX, File.PEPPY_MAIN, 0x0D0, 0, File.PEPPY_CHARACTER, 0x13A, File.PEPPY_LASER_HITBOX, 0x15A, 0x0A1, File.PEPPY_LASER_GFX, 0x474, 0x0, OS.TRUE, OS.TRUE, Stages.id.BTT_FOX, Stages.id.BTP_FOX, Stages.id.BTT_FOX, Stages.id.BTP_FOX, sound_type.U, variant_type.SPECIAL)
     // 0x43 - SLIPPY
     define_character(SLIPPY, FOX, File.SLIPPY_MAIN, 0x0D0, 0, File.SLIPPY_CHARACTER, 0x13A, File.SLIPPY_LASER_HITBOX, File.SLIPPY_REFLECT_GFX, 0x0A1, File.SLIPPY_LASER_GRAPHIC, 0x4AC, 0x0, OS.TRUE, OS.TRUE, Stages.id.BTT_FALCO, Stages.id.BTP_FALCO, Stages.id.BTT_FALCO, Stages.id.BTP_FALCO, sound_type.U, variant_type.SPECIAL)
-
+    // 0x44 - SNAKE
+    define_character(SNAKE, CAPTAIN, File.SNAKE_MAIN, 0x0EB, 0, File.SNAKE_CHARACTER, 0x14E, 0, 0x15E, 0x14D, 0, 0x4D8, 0x0, OS.TRUE, OS.FALSE, Stages.id.BTT_FALCON, Stages.id.BTP_FALCON, Stages.id.BTT_GND, Stages.id.BTP_GND, sound_type.U, variant_type.NA)
+    
     // ADD NEW CHARACTERS HERE
 
     // REMIX POLYGONS

@@ -646,9 +646,10 @@ scope ResultsScreen {
     add_to_results_screen(Character.id.SHEIK,    FGM.announcer.names.SHEIK,                  ZELDA,           Character.id.CAPTAIN, 165,     SHEIK,        30,     1,         {MIDI.id.SHEIK_VICTORY})
     add_to_results_screen(Character.id.MARINA,   FGM.announcer.names.MARINA,                 MISCHIEF_MAKERS, Character.id.CAPTAIN, 180,     MARINA,       20,     0.8,       {MIDI.id.MARINA_VICTORY})
     add_to_results_screen(Character.id.DEDEDE,   FGM.announcer.names.DEDEDE,                 KIRBY,           Character.id.CAPTAIN, 170,     DEDEDE,       25,     0.8,       {MIDI.id.DEDEDE_VICTORY})
-    add_to_results_screen(Character.id.GOEMON,   FGM.announcer.names.GOEMON,                 GOEMON,          Character.id.CAPTAIN, 170,     GOEMON,       25,     0.75,       {MIDI.id.GOEMON_VICTORY})
+    add_to_results_screen(Character.id.GOEMON,   FGM.announcer.names.GOEMON,                 GOEMON,          Character.id.CAPTAIN, 170,     GOEMON,       25,     0.75,      {MIDI.id.GOEMON_VICTORY})
     add_to_results_screen(Character.id.PEPPY,    FGM.announcer.names.PEPPY,                  STARFOX,         Character.id.FOX,     170,     PEPPY,        30,     1,          0x10)
     add_to_results_screen(Character.id.SLIPPY,   FGM.announcer.names.SLIPPY,                 STARFOX,         Character.id.FOX,     180,     SLIPPY,       25,     1,          0x10)
+    add_to_results_screen(Character.id.SNAKE,    FGM.announcer.names.GDK,                    SMASH,           Character.id.CAPTAIN, 175,     SNAKE,        25,     1,         {MIDI.id.SNAKE_VICTORY})
     // ADD NEW CHARACTERS HERE
 
     // REMIX POLYGONS

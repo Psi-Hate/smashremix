@@ -2370,6 +2370,169 @@
 1183 Kirby Peppy NSP Shoot Air
 1184 Kirby Peppy NSP Charge Start Air
 1185 Kirby Peppy NSP Charge Loop Air
+1186 Snake Main
+1187 Snake Character
+1188 Snake Idle
+1189 Snake Walk1
+118A Snake Walk2
+118B Snake Walk3
+118C Snake WalkEnd
+118D Snake Dash
+118E Snake Run
+118F Snake RunBrake
+1190 Snake Turn
+1191 Snake TurnRun
+1192 Snake JumpF
+1193 Snake JumpB
+1194 Snake JumpAerialF
+1195 Snake JumpAerialB
+1196 Snake Fall
+1197 Snake FallAerial
+1198 Snake Crouch
+1199 Snake CrouchIdle
+119A Snake CrouchEnd
+119B Snake Landing
+119C Snake PlatDrop
+119D Snake Teeter
+119E Snake Teeterstart
+119F Snake DamageHigh1
+11A0 Snake DamageHigh2
+11A1 Snake DamageHigh3
+11A2 Snake DamageMid1
+11A3 Snake DamageMid2
+11A4 Snake DamageMid3
+11A5 Snake DamageLow1
+11A6 Snake DamageLow2
+11A7 Snake DamageLow3
+11A8 Snake DamageAir1
+11A9 Snake DamageAir2
+11AA Snake DamageAir3
+11AB Snake DamageElec
+11AC Snake DamageFlyHigh
+11AD Snake DamageFlyMid
+11AE Snake DamageFlyLow
+11AF Snake DamageFlyTop
+11B0 Snake DamageFlyRoll
+11B1 Snake Tumble
+11B2 Snake FallSpecial
+11B3 Snake EnterPipe
+11B4 Snake ExitPipe
+11B5 Snake ExitPipeWalk
+11B6 Snake CeilingBonk
+11B7 Snake DownBounceD
+11B8 Snake DownBounceU
+11B9 Snake DownStandD
+11BA Snake DownStandU
+11BB Snake TechF
+11BC Snake TechB
+11BD Snake DownForwardD
+11BE Snake DownForwardU
+11BF Snake DownBackD
+11C0 Snake DownBackU
+11C1 Snake DownAttackD
+11C2 Snake DownAttackU
+11C3 Snake Tech
+11C4 Snake ClangRecoil
+11C5 Snake CliffCatch
+11C6 Snake CliffWait
+11C7 Snake CliffQuick
+11C8 Snake CliffClimbQuick1
+11C9 Snake CliffClimbQuick2
+11CA Snake CliffSlow
+11CB Snake CliffClimbSlow1
+11CC Snake CliffClimbSlow2
+11CD Snake CliffAttackQuick1
+11CE Snake CliffAttackQuick2
+11CF Snake CliffAttackSlow1
+11D0 Snake CliffAttackSlow2
+11D1 Snake CliffEscapeQuick1
+11D2 Snake CliffEscapeQuick2
+11D3 Snake CliffEscapeSlow1
+11D4 Snake CliffEscapeSlow2
+11D5 Snake LightItemPickup
+11D6 Snake HeavyItemPickup
+11D7 Snake ItemDrop
+11D8 Snake ItemThrowDash
+11D9 Snake ItemThrowF
+11DA Snake ItemThrowU
+11DB Snake ItemThrowD
+11DC Snake ItemThrowAirF
+11DD Snake ItemThrowAirU
+11DE Snake ItemThrowAirD
+11DF Snake HeavyItemThrow
+11E0 Snake ItemNeutral
+11E1 Snake ItemTilt
+11E2 Snake ItemSmash
+11E3 Snake ItemDash
+11E4 Snake ItemShoot
+11E5 Snake ItemShootAir
+11E6 Snake HammerIdle
+11E7 Snake HammerMove
+11E8 Snake ShieldOn
+11E9 Snake ShieldOff
+11EA Snake RollF
+11EB Snake RollB
+11EC Snake Stun
+11ED Snake Grab
+11EE Snake GrabPull
+11EF Snake ThrowF
+11F0 Snake ThrowB
+11F1 Snake CapturePulled
+11F2 Snake ThrownDKPulled
+11F3 Snake ThrownMarioBros
+11F4 Snake ThrownDK
+11F5 Snake Thrown1
+11F6 Snake Thrown2
+11F7 Snake Taunt
+11F8 Snake Jab1
+11F9 Snake Jab2
+11FA Snake DashAttack
+11FB Snake USPCancel
+11FC Snake FTiltMidHigh
+11FD Snake FTilt
+11FE Snake FTiltMidLow
+11FF Snake FTiltLow
+1200 Snake UTilt
+1201 Snake DTilt
+1202 Snake FSmashHigh
+1203 Snake FSmash
+1204 Snake FSmashLow
+1205 Snake USmash
+1206 Snake DSmash
+1207 Snake AttackAirN
+1208 Snake AttackAirF
+1209 Snake AttackAirB
+120A Snake AttackAirU
+120B Snake AttackAirD
+120C Snake LandingAirF
+120D Snake LandingAirB
+120E Snake Action 0DC
+120F Snake Action 0DD
+1210 Snake Action 0DE
+1211 Snake Action 0DF
+1212 Snake Action 0E0
+1213 Snake Action 0E1
+1214 Snake Action 0E2
+1215 Snake Action 0E3
+1216 Snake Action 0E4
+1217 Snake Action 0E5
+1218 Snake Action 0E6
+1219 Snake Action 0E7
+121A Snake Action 0E8
+121B Snake Action 0E9
+121C Snake Action 0EAED
+121D Snake Action 0EB
+121E Snake Action 0EC
+121F Snake Action 0EE
+1220 Snake Victory 1
+1221 Snake Victory 2
+1222 Snake Victory 3
+1223 Snake Clap
+1224 Snake ContinueFall
+1225 Snake ContinueUp
+1226 Snake 1P Pose
+1227 Snake Box
+1228 Snake JumpSquat
 
 0611 CAPTAIN DeadU
 0611 CAPTAIN ScreenKO
