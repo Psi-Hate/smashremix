@@ -3,8 +3,31 @@
 // This file contains subroutines used by Snake's special moves.
 
 scope SnakeUSP {
-    constant MAX_TIME(250)
+    constant MAX_TIME(240)
     constant CANCEL_TIME(100)
+
+    // @ Description
+    // Initial subroutine for USP.
+    scope begin_initial_: {
+        addiu   sp, sp,-0x0028              // allocate stack space
+        sw      ra, 0x0014(sp)              // ~
+        sw      a0, 0x0018(sp)              // store ra, a0
+        
+        lw      a1, 0x0084(a0)              // a1 = player struct
+        lw      at, 0x0ADC(a1)              // at = down b flag
+        bnez    at, _end                    // skip if down b flag != 0
+        lli     at, OS.TRUE                 // ~
+        sw      at, 0x0ADC(a1)              // down b flag = TRUE
+        
+        lli     a1, 0xEB                    // a1(action id) = DSPAir
+
+        _end:
+        lw      ra, 0x0014(sp)              // load ra
+        addiu   sp, sp, 0x0028              // deallocate stack space
+        jr      ra                          // return
+        nop
+
+    }
 
     // @ Description
     // Main function for USP

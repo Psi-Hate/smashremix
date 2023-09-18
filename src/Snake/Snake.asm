@@ -179,7 +179,7 @@ scope Snake {
     Character.edit_action_parameters(SNAKE, 0xE4,                          -1,                               JAB1,                     -1)
     Character.edit_action_parameters(SNAKE, 0xE5,                          -1,                               JAB1,                     -1)
     Character.edit_action_parameters(SNAKE, 0xEB,                          File.SNAKE_ACTION_0EB,            SPU,                     -1)
-    Character.edit_action_parameters(SNAKE, 0xEE,                          File.SNAKE_ACTION_0EB,            SPU,                     -1)
+    Character.edit_action_parameters(SNAKE, 0xEE,                          File.SNAKE_ACTION_0EE,            SPU,                     -1)
     Character.edit_action_parameters(SNAKE, 0xEC,                          File.SNAKE_ACTION_0EC,             -1,                      -1)
 
     // Modify Actions            // Action          // Staling ID   // Main ASM                 // Interrupt/Other ASM          // Movement/Physics ASM         // Collision ASM
@@ -203,6 +203,13 @@ scope Snake {
 
     // Shield colors for costume matching
     Character.set_costume_shield_colors(SNAKE, PURPLE, RED, GREEN, WHITE, BLACK, BLUE, NA, NA)
+
+    Character.table_patch_start(ground_usp, Character.id.SNAKE, 0x4)
+    dw      SnakeUSP.begin_initial_
+    OS.patch_end()
+    Character.table_patch_start(air_usp, Character.id.SNAKE, 0x4)
+    dw      SnakeUSP.begin_initial_
+    OS.patch_end()
 
         // Remove entry script (no Blue Falcon).
     Character.table_patch_start(entry_script, Character.id.SNAKE, 0x4)
