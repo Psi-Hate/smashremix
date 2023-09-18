@@ -19,7 +19,38 @@ scope SnakeUSP {
         lli     at, OS.TRUE                 // ~
         sw      at, 0x0ADC(a1)              // down b flag = TRUE
         
-        lli     a1, 0xEB                    // a1(action id) = DSPAir
+        lli     a1, 0xEB                    // a1(action id) = USPAir
+        or      a2, r0, r0                  // a2(starting frame) = 0
+        lui     a3, 0x3F80                  // a3(frame speed multiplier) = 1.0
+        jal     0x800E6F24                  // change action
+        sw      r0, 0x0010(sp)              // argument 4 = 0
+
+        _end:
+        lw      ra, 0x0014(sp)              // load ra
+        addiu   sp, sp, 0x0028              // deallocate stack space
+        jr      ra                          // return
+        nop
+
+    }
+
+    // @ Description
+    // Initial subroutine for USP.
+    scope air_initial_: {
+        addiu   sp, sp,-0x0028              // allocate stack space
+        sw      ra, 0x0014(sp)              // ~
+        sw      a0, 0x0018(sp)              // store ra, a0
+        
+        lw      a1, 0x0084(a0)              // a1 = player struct
+        lw      at, 0x0ADC(a1)              // at = down b flag
+        bnez    at, _end                    // skip if down b flag != 0
+        lli     at, OS.TRUE                 // ~
+        sw      at, 0x0ADC(a1)              // down b flag = TRUE
+        
+        lli     a1, 0xEE                    // a1(action id) = USPAir
+        or      a2, r0, r0                  // a2(starting frame) = 0
+        lui     a3, 0x3F80                  // a3(frame speed multiplier) = 1.0
+        jal     0x800E6F24                  // change action
+        sw      r0, 0x0010(sp)              // argument 4 = 0
 
         _end:
         lw      ra, 0x0014(sp)              // load ra

@@ -208,7 +208,7 @@ scope Snake {
     dw      SnakeUSP.begin_initial_
     OS.patch_end()
     Character.table_patch_start(air_usp, Character.id.SNAKE, 0x4)
-    dw      SnakeUSP.begin_initial_
+    dw      SnakeUSP.air_initial_
     OS.patch_end()
 
         // Remove entry script (no Blue Falcon).
@@ -349,6 +349,14 @@ scope Snake {
     // Set action strings
     Character.table_patch_start(action_string, Character.id.SNAKE, 0x4)
     dw  Action.CAPTAIN.action_string_table
+    OS.patch_end()
+
+    // Use Mario's initial/grounded script.
+    Character.table_patch_start(initial_script, Character.id.SNAKE, 0x4)
+    dw 0x800D7DCC
+    OS.patch_end()
+    Character.table_patch_start(grounded_script, Character.id.SNAKE, 0x4)
+    dw 0x800DE428
     OS.patch_end()
 
     Character.table_patch_start(rapid_jab, Character.id.SNAKE, 0x4)
