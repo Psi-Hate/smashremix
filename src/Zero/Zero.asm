@@ -4,13 +4,15 @@
 
 scope Zero {
     // Insert Moveset files
+    insert IDLE,"moveset/IDLE.bin"
+    insert WIN1,"moveset/WIN1.bin"
 
     // Modify Action Parameters             // Action               // Animation                // Moveset Data             // Flags
     Character.edit_action_parameters(ZERO, Action.Entry,                  File.ZERO_IDLE,                  -1,                       -1)
-    Character.edit_action_parameters(ZERO, 0x006,                         File.ZERO_IDLE,                  -1,                       -1)
+    Character.edit_action_parameters(ZERO, 0x006,                         File.ZERO_IDLE,                  IDLE,                       -1)
     Character.edit_action_parameters(ZERO, Action.Revive2,                File.ZERO_DOWNSTANDD,            -1,                       -1)
-    Character.edit_action_parameters(ZERO, Action.ReviveWait,             File.ZERO_IDLE,                  -1,                       -1)
-    Character.edit_action_parameters(ZERO, Action.Idle,                   File.ZERO_IDLE,                  -1,                       -1)
+    Character.edit_action_parameters(ZERO, Action.ReviveWait,             File.ZERO_IDLE,                  IDLE,                       -1)
+    Character.edit_action_parameters(ZERO, Action.Idle,                   File.ZERO_IDLE,                  IDLE,                       -1)
     Character.edit_action_parameters(ZERO, Action.Walk1,                  File.ZERO_WALK1,                 -1,                       -1)
     Character.edit_action_parameters(ZERO, Action.Walk2,                  File.ZERO_WALK2,                 -1,                       -1)
     Character.edit_action_parameters(ZERO, Action.Walk3,                  File.ZERO_WALK3,                 -1,                       -1)
@@ -154,18 +156,18 @@ scope Zero {
     Character.edit_action_parameters(ZERO, Action.LandingAirX,            File.ZERO_LANDING,               -1,                       -1)
 
     // Modify Menu Action Parameters             // Action          // Animation                // Moveset Data             // Flags
-    Character.edit_menu_action_parameters(ZERO,   0x0,               File.ZERO_IDLE,              -1,                         -1)          // CSS Idle
-    Character.edit_menu_action_parameters(ZERO,   0x1,               File.ZERO_VICTORY_1,         -1,                         -1)          // Victory1
+    Character.edit_menu_action_parameters(ZERO,   0x0,               File.ZERO_IDLE,              IDLE,                       -1)          // CSS Idle
+    Character.edit_menu_action_parameters(ZERO,   0x1,               File.ZERO_VICTORY_1,         WIN1,                       -1)          // Victory1
     Character.edit_menu_action_parameters(ZERO,   0x2,               File.ZERO_VICTORY_2,         -1,                         -1)          // Victory2
     Character.edit_menu_action_parameters(ZERO,   0x3,               File.ZERO_VICTORY_3,         -1,                         -1)          // Victory3
-    Character.edit_menu_action_parameters(ZERO,   0x4,               File.ZERO_VICTORY_1,         -1,                         -1)          // CSS Select
+    Character.edit_menu_action_parameters(ZERO,   0x4,               File.ZERO_VICTORY_1,         WIN1,                         -1)          // CSS Select
     Character.edit_menu_action_parameters(ZERO,   0xD,               File.ZERO_1P_POSE,           -1,                         -1)          // Classic Mode Pose
     Character.edit_menu_action_parameters(ZERO,   0x5,               File.ZERO_CLAP,              -1,                         -1)
     Character.edit_menu_action_parameters(ZERO,   0x9,               File.ZERO_CONTINUEFALL,      -1,                         -1)
     Character.edit_menu_action_parameters(ZERO,   0xA,               File.ZERO_CONTINUEUP,        -1,                         -1)
 
     // Set default costumes
-    //Character.set_default_costumes(Character.id.ZERO, 0, 1, 2, 3, 4, 5, 6)
+    Character.set_default_costumes(Character.id.ZERO, 0, 1, 5, 7, 0, 2, 3)
 
     // Shield colors for costume matching
     Character.set_costume_shield_colors(ZERO, RED, BLACK, BLUE, GREEN, PURPLE, ORANGE, YELLOW, PINK)
