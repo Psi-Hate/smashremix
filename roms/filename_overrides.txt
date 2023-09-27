@@ -2370,169 +2370,167 @@
 1183 Kirby Peppy NSP Shoot Air
 1184 Kirby Peppy NSP Charge Start Air
 1185 Kirby Peppy NSP Charge Loop Air
-1186 Snake Main
-1187 Snake Character
-1188 Snake Idle
-1189 Snake Walk1
-118A Snake Walk2
-118B Snake Walk3
-118C Snake WalkEnd
-118D Snake Dash
-118E Snake Run
-118F Snake RunBrake
-1190 Snake Turn
-1191 Snake TurnRun
-1192 Snake JumpF
-1193 Snake JumpB
-1194 Snake JumpAerialF
-1195 Snake JumpAerialB
-1196 Snake Fall
-1197 Snake FallAerial
-1198 Snake Crouch
-1199 Snake CrouchIdle
-119A Snake CrouchEnd
-119B Snake Landing
-119C Snake PlatDrop
-119D Snake Teeter
-119E Snake Teeterstart
-119F Snake DamageHigh1
-11A0 Snake DamageHigh2
-11A1 Snake DamageHigh3
-11A2 Snake DamageMid1
-11A3 Snake DamageMid2
-11A4 Snake DamageMid3
-11A5 Snake DamageLow1
-11A6 Snake DamageLow2
-11A7 Snake DamageLow3
-11A8 Snake DamageAir1
-11A9 Snake DamageAir2
-11AA Snake DamageAir3
-11AB Snake DamageElec
-11AC Snake DamageFlyHigh
-11AD Snake DamageFlyMid
-11AE Snake DamageFlyLow
-11AF Snake DamageFlyTop
-11B0 Snake DamageFlyRoll
-11B1 Snake Tumble
-11B2 Snake FallSpecial
-11B3 Snake EnterPipe
-11B4 Snake ExitPipe
-11B5 Snake ExitPipeWalk
-11B6 Snake CeilingBonk
-11B7 Snake DownBounceD
-11B8 Snake DownBounceU
-11B9 Snake DownStandD
-11BA Snake DownStandU
-11BB Snake TechF
-11BC Snake TechB
-11BD Snake DownForwardD
-11BE Snake DownForwardU
-11BF Snake DownBackD
-11C0 Snake DownBackU
-11C1 Snake DownAttackD
-11C2 Snake DownAttackU
-11C3 Snake Tech
-11C4 Snake ClangRecoil
-11C5 Snake CliffCatch
-11C6 Snake CliffWait
-11C7 Snake CliffQuick
-11C8 Snake CliffClimbQuick1
-11C9 Snake CliffClimbQuick2
-11CA Snake CliffSlow
-11CB Snake CliffClimbSlow1
-11CC Snake CliffClimbSlow2
-11CD Snake CliffAttackQuick1
-11CE Snake CliffAttackQuick2
-11CF Snake CliffAttackSlow1
-11D0 Snake CliffAttackSlow2
-11D1 Snake CliffEscapeQuick1
-11D2 Snake CliffEscapeQuick2
-11D3 Snake CliffEscapeSlow1
-11D4 Snake CliffEscapeSlow2
-11D5 Snake LightItemPickup
-11D6 Snake HeavyItemPickup
-11D7 Snake ItemDrop
-11D8 Snake ItemThrowDash
-11D9 Snake ItemThrowF
-11DA Snake ItemThrowU
-11DB Snake ItemThrowD
-11DC Snake ItemThrowAirF
-11DD Snake ItemThrowAirU
-11DE Snake ItemThrowAirD
-11DF Snake HeavyItemThrow
-11E0 Snake ItemNeutral
-11E1 Snake ItemTilt
-11E2 Snake ItemSmash
-11E3 Snake ItemDash
-11E4 Snake ItemShoot
-11E5 Snake ItemShootAir
-11E6 Snake HammerIdle
-11E7 Snake HammerMove
-11E8 Snake ShieldOn
-11E9 Snake ShieldOff
-11EA Snake RollF
-11EB Snake RollB
-11EC Snake Stun
-11ED Snake Grab
-11EE Snake GrabPull
-11EF Snake ThrowF
-11F0 Snake ThrowB
-11F1 Snake CapturePulled
-11F2 Snake ThrownDKPulled
-11F3 Snake ThrownMarioBros
-11F4 Snake ThrownDK
-11F5 Snake Thrown1
-11F6 Snake Thrown2
-11F7 Snake Taunt
-11F8 Snake Jab1
-11F9 Snake Jab2
-11FA Snake DashAttack
-11FB Snake USPCancel
-11FC Snake FTiltMidHigh
-11FD Snake FTilt
-11FE Snake FTiltMidLow
-11FF Snake FTiltLow
-1200 Snake UTilt
-1201 Snake DTilt
-1202 Snake FSmashHigh
-1203 Snake FSmash
-1204 Snake FSmashLow
-1205 Snake USmash
-1206 Snake DSmash
-1207 Snake AttackAirN
-1208 Snake AttackAirF
-1209 Snake AttackAirB
-120A Snake AttackAirU
-120B Snake AttackAirD
-120C Snake LandingAirF
-120D Snake LandingAirB
-120E Snake Action 0DC
-120F Snake Action 0DD
-1210 Snake Action 0DE
-1211 Snake Action 0DF
-1212 Snake Action 0E0
-1213 Snake Action 0E1
-1214 Snake Action 0E2
-1215 Snake Action 0E3
-1216 Snake Action 0E4
-1217 Snake Action 0E5
-1218 Snake Action 0E6
-1219 Snake Action 0E7
-121A Snake Action 0E8
-121B Snake Action 0E9
-121C Snake Action 0EAED
-121D Snake Action 0EB
-121E Snake Action 0EC
-121F Snake Action 0EE
-1220 Snake Victory 1
-1221 Snake Victory 2
-1222 Snake Victory 3
-1223 Snake Clap
-1224 Snake ContinueFall
-1225 Snake ContinueUp
-1226 Snake 1P Pose
-1227 Snake Box
-1228 Snake JumpSquat
+1186 Zero Main
+1187 Zero Character
+1188 Zero Idle
+1189 Zero Walk1
+118A Zero Walk2
+118B Zero Walk3
+118C Zero WalkEnd
+118D Zero Dash
+118E Zero Run
+118F Zero RunBrake
+1190 Zero Turn
+1191 Zero TurnRun
+1192 Zero JumpF
+1193 Zero JumpB
+1194 Zero JumpAerialF
+1195 Zero JumpAerialB
+1196 Zero Fall
+1197 Zero FallAerial
+1198 Zero Crouch
+1199 Zero CrouchIdle
+119A Zero CrouchEnd
+119B Zero Landing
+119C Zero PlatDrop
+119D Zero Teeter
+119E Zero Teeterstart
+119F Zero DamageHigh1
+11A0 Zero DamageHigh2
+11A1 Zero DamageHigh3
+11A2 Zero DamageMid1
+11A3 Zero DamageMid2
+11A4 Zero DamageMid3
+11A5 Zero DamageLow1
+11A6 Zero DamageLow2
+11A7 Zero DamageLow3
+11A8 Zero DamageAir1
+11A9 Zero DamageAir2
+11AA Zero DamageAir3
+11AB Zero DamageElec
+11AC Zero DamageFlyHigh
+11AD Zero DamageFlyMid
+11AE Zero DamageFlyLow
+11AF Zero DamageFlyTop
+11B0 Zero DamageFlyRoll
+11B1 Zero Tumble
+11B2 Zero FallSpecial
+11B3 Zero EnterPipe
+11B4 Zero ExitPipe
+11B5 Zero ExitPipeWalk
+11B6 Zero CeilingBonk
+11B7 Zero DownBounceD
+11B8 Zero DownBounceU
+11B9 Zero DownStandD
+11BA Zero DownStandU
+11BB Zero TechF
+11BC Zero TechB
+11BD Zero DownForwardD
+11BE Zero DownForwardU
+11BF Zero DownBackD
+11C0 Zero DownBackU
+11C1 Zero DownAttackD
+11C2 Zero DownAttackU
+11C3 Zero Tech
+11C4 Zero ClangRecoil
+11C5 Zero CliffCatch
+11C6 Zero CliffWait
+11C7 Zero CliffQuick
+11C8 Zero CliffClimbQuick1
+11C9 Zero CliffClimbQuick2
+11CA Zero CliffSlow
+11CB Zero CliffClimbSlow1
+11CC Zero CliffClimbSlow2
+11CD Zero CliffAttackQuick1
+11CE Zero CliffAttackQuick2
+11CF Zero CliffAttackSlow1
+11D0 Zero CliffAttackSlow2
+11D1 Zero CliffEscapeQuick1
+11D2 Zero CliffEscapeQuick2
+11D3 Zero CliffEscapeSlow1
+11D4 Zero CliffEscapeSlow2
+11D5 Zero LightItemPickup
+11D6 Zero HeavyItemPickup
+11D7 Zero ItemDrop
+11D8 Zero ItemThrowDash
+11D9 Zero ItemThrowF
+11DA Zero ItemThrowU
+11DB Zero ItemThrowD
+11DC Zero ItemThrowAirF
+11DD Zero ItemThrowAirU
+11DE Zero ItemThrowAirD
+11DF Zero HeavyItemThrow
+11E0 Zero ItemNeutral
+11E1 Zero ItemTilt
+11E2 Zero ItemSmash
+11E3 Zero ItemDash
+11E4 Zero ItemShoot
+11E5 Zero ItemShootAir
+11E6 Zero HammerIdle
+11E7 Zero HammerMove
+11E8 Zero ShieldOn
+11E9 Zero ShieldOff
+11EA Zero RollF
+11EB Zero RollB
+11EC Zero Stun
+11ED Zero Grab
+11EE Zero GrabPull
+11EF Zero ThrowF
+11F0 Zero ThrowB
+11F1 Zero CapturePulled
+11F2 Zero ThrownDKPulled
+11F3 Zero ThrownMarioBros
+11F4 Zero ThrownDK
+11F5 Zero Thrown1
+11F6 Zero Thrown2
+11F7 Zero Taunt
+11F8 Zero Jab1
+11F9 Zero Jab2
+11FA Zero DashAttack
+11FB Zero USPCancel
+11FC Zero FTiltMidHigh
+11FD Zero FTilt
+11FE Zero FTiltMidLow
+11FF Zero FTiltLow
+1200 Zero UTilt
+1201 Zero DTilt
+1202 Zero FSmashHigh
+1203 Zero FSmash
+1204 Zero FSmashLow
+1205 Zero USmash
+1206 Zero DSmash
+1207 Zero AttackAirN
+1208 Zero AttackAirF
+1209 Zero AttackAirB
+120A Zero AttackAirU
+120B Zero AttackAirD
+120C Zero LandingAirF
+120D Zero LandingAirB
+120E Zero Action 0DC
+120F Zero Action 0DD
+1210 Zero Action 0DE
+1211 Zero Action 0DF
+1212 Zero Action 0E0
+1213 Zero Action 0E1
+1214 Zero Action 0E2
+1215 Zero Action 0E3
+1216 Zero Action 0E4
+1217 Zero Action 0E5
+1218 Zero Action 0E6
+1219 Zero Action 0E7
+121A Zero Action 0E8
+121B Zero Action 0E9
+121C Zero Action 0EAED
+121D Zero Action 0EB
+121E Zero Action 0EC
+121F Zero Action 0EE
+1220 Zero Victory 1
+1221 Zero Victory 2
+1222 Zero Victory 3
+1223 Zero Clap
+1224 Zero ContinueFall
+1225 Zero ContinueUp
+1226 Zero 1P Pose
 
 0611 CAPTAIN DeadU
 0611 CAPTAIN ScreenKO

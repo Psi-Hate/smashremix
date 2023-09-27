@@ -3059,7 +3059,7 @@ scope TwelveCharBattle {
     add_defeat_parameters(0x222,                        defeated_moveset_mario,     0)          // 0x41 - GOEMON
     add_defeat_parameters(0x2B1,                        defeated_moveset_fox_link,  0)          // 0x42 - PEPPY
     add_defeat_parameters(0x2B1,                        defeated_moveset_fox_link,  0)          // 0x43 - SLIPPY
-    add_defeat_parameters(0x617,                        defeated_moveset_captain,   0)          // 0x44 - SNAKE
+    add_defeat_parameters(0x617,                        defeated_moveset_captain,   0)          // 0x44 - ZERO
     // ADD NEW CHARACTERS HERE
 
     // REMIX POLYGONS

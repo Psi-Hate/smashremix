@@ -2403,7 +2403,7 @@ scope Training {
     string_goemon:; char_0x41:; db "Goemon", 0x00
     string_peppy:; char_0x42:; db "Peppy", 0x00
     string_slippy:; char_0x43:; db "Slippy", 0x00
-    string_snake:; char_0x44:; db "Snake", 0x00
+    string_zero:; char_0x44:; db "Zero", 0x00
     OS.align(4)
 
     string_table_char:
@@ -2437,7 +2437,7 @@ scope Training {
     dw char_0x3F            // MARINA
     dw char_0x40            // DEDEDE
     dw char_0x41            // GOEMON
-    dw char_0x44            // SNAKE
+    dw char_0x44            // ZERO
 
     dw char_0x2A            // J MARIO
     dw char_0x29            // J FOX
@@ -2524,7 +2524,7 @@ scope Training {
         constant MARINA(0x1A)
         constant DEDEDE(0x1B)
         constant GOEMON(0x1C)
-        constant SNAKE(0x1D)
+        constant ZERO(0x1D)
 
         // Increment JMARIO after adding more characters above
         // j characters
@@ -2610,7 +2610,7 @@ scope Training {
     db Character.id.MARINA
     db Character.id.DEDEDE
     db Character.id.GOEMON
-    db Character.id.SNAKE
+    db Character.id.ZERO
 
     db Character.id.JMARIO
     db Character.id.JFOX
@@ -2730,7 +2730,7 @@ scope Training {
     db id.GOEMON
     db id.PEPPY
     db id.SLIPPY
-    db id.SNAKE
+    db id.ZERO
 	// ADD NEW CHARACTERS Here
 
 	// REMIX POLYGONS

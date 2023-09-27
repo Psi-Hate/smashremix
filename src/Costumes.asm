@@ -929,7 +929,7 @@ scope Costumes {
         db 0x05                             // Goemon
         db 0x05                             // Peppy
         db 0x05                             // Slippy
-        db 0x05                             // Snake
+        db 0x07                             // Zero
 
         // Polygons
         db 0x05                             // Polygon Wario
