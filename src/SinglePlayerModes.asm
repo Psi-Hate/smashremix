@@ -2674,6 +2674,18 @@ scope SinglePlayerModes: {
     dw  0x00006F80                      // Model Scale
     dw  0x00015100                      // Progress Icon
 
+    // Zero match settings
+    zero_match_setting:
+    dw  0x00000000                      // flag
+    db  Character.id.ZERO               // Character ID
+    db  Stages.id.MMADNESS              // Stage Option 1
+    db  Stages.id.MMADNESS              // Stage Option 2
+    db  Stages.id.MMADNESS              // Stage Option 3
+    dw  SinglePlayer.name_texture.SONIC + 0x10    // name texture
+    dw  0x000003D4                      // Announcer Call
+    dw  0x00006F80                      // Model Scale
+    dw  0x00015EC0                      // Progress Icon
+
     // Add entry here if a new variant.type.NA character is added UPDATE
 
     // ALLSTAR ONLY
@@ -5226,6 +5238,7 @@ scope SinglePlayerModes: {
     add_team_parameters(File.GOEMON_TEAM_POSE,        team_moveset_ness,      0)          // 0x41 - GOEMON
     add_team_parameters(0x2B1,                        team_moveset_fox_link,  0)          // 0x42 - PEPPY
     add_team_parameters(0x2B1,                        team_moveset_fox_link,  0)          // 0x43 - SLIPPY
+    add_team_parameters(File.ZERO_1P_POSE,            0x80000000,             0)          // 0x44 - ZERO
     // ADD NEW CHARACTERS HERE
 
 	// REMIX POLYGONS

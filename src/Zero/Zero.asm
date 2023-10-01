@@ -9,6 +9,8 @@ scope Zero {
     insert JAB2,"moveset/JAB2.bin"
     insert JAB3,"moveset/JAB3.bin"
     insert WIN1,"moveset/WIN1.bin"
+    insert CSSP1,"moveset/CSSP1.bin"
+    insert CSSP2,"moveset/CSSP2.bin"
 
     // Modify Action Parameters             // Action               // Animation                // Moveset Data             // Flags
     Character.edit_action_parameters(ZERO, Action.Entry,                  File.ZERO_IDLE,                  -1,                       -1)
@@ -164,7 +166,8 @@ scope Zero {
     Character.edit_menu_action_parameters(ZERO,   0x2,               File.ZERO_VICTORY_2,         -1,                         -1)          // Victory2
     Character.edit_menu_action_parameters(ZERO,   0x3,               File.ZERO_VICTORY_3,         -1,                         -1)          // Victory3
     Character.edit_menu_action_parameters(ZERO,   0x4,               File.ZERO_VICTORY_1,         WIN1,                       -1)          // CSS Select
-    Character.edit_menu_action_parameters(ZERO,   0xD,               File.ZERO_1P_POSE,           -1,                         -1)          // Classic Mode Pose
+    Character.edit_menu_action_parameters(ZERO,   0xD,               File.ZERO_1P_POSE,           CSSP1,                      -1)          // Classic Mode Pose
+    Character.edit_menu_action_parameters(ZERO,   0xE,               File.ZERO_CPU_POSE,          CSSP1,                      -1)
     Character.edit_menu_action_parameters(ZERO,   0x5,               File.ZERO_CLAP,              -1,                         -1)
     Character.edit_menu_action_parameters(ZERO,   0x9,               File.ZERO_CONTINUEFALL,      -1,                         -1)
     Character.edit_menu_action_parameters(ZERO,   0xA,               File.ZERO_CONTINUEUP,        -1,                         -1)

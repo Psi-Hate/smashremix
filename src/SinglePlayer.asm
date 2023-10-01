@@ -1548,7 +1548,7 @@ scope SinglePlayer {
         constant GOEMON(0x000096B8)
         constant PEPPY(0x000099A8)
         constant SLIPPY(0x00009830)
-        constant ZERO(0x00000A28)
+        constant ZERO(0x00005A08)
 
         // Duo Teams
         constant STARFOX(0x00006238)
