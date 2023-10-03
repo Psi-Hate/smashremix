@@ -2233,7 +2233,7 @@ scope CharacterSelect {
         constant PEPPY(0x000249E8 + 0x10)
         constant SLIPPY(0x00025AA8 + 0x10)
         constant CLASSIC(0x00026B68 + 0x10)
-        constant ZERO(0x00027C28)
+        constant ZERO(0x00027C28 + 0x10)
         // j
         constant JMARIO(0x00001078)
         constant JFOX(0x00002138)

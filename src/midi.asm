@@ -236,6 +236,7 @@ scope MIDI {
     add_game(waverace, "Wave Race 64")
     add_game(quest64, "Quest 64")
     add_game(ogrebattle64, "Ogre Battle 64: Person of Lordly Caliber")
+    add_game(megamanx, "Mega Man X")
     OS.align(4)
 
     // insert custom midi files
@@ -439,7 +440,9 @@ scope MIDI {
     insert_midi(BATTLEFIELDV2, OS.TRUE, OS.TRUE, "Battlefield Ver. 2", brawl)
     insert_midi(BOB, OS.TRUE, OS.TRUE, "Bob-omb Battlefield", sm64)
     insert_midi(AREA6, OS.TRUE, OS.TRUE, "Area 6", starfox64)
-    insert_victory_midi(SNAKE_VICTORY)
+    insert_victory_midi(ZERO_VICTORY)
+    insert_midi(X1_STAGESELECT, OS.TRUE, OS.TRUE, "Stage Select 1", megamanx)
+    insert_midi(X1_BOSS, OS.TRUE, OS.TRUE, "Maverick Boss Battle", megamanx)
     pushvar origin, base
 
     // Extend Sound Test Music numbers so we can test in game easier

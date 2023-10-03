@@ -2532,6 +2532,7 @@
 1225 Zero ContinueUp
 1226 Zero 1P Pose
 1227 Zero CPU Pose
+1228 Zero Team Pose
 
 0611 CAPTAIN DeadU
 0611 CAPTAIN ScreenKO

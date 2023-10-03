@@ -5,6 +5,7 @@
 scope Zero {
     // Insert Moveset files
     insert IDLE,"moveset/IDLE.bin"
+    insert JUMP,"moveset/JUMP.bin"
     insert JAB1,"moveset/JAB1.bin"
     insert JAB2,"moveset/JAB2.bin"
     insert JAB3,"moveset/JAB3.bin"
@@ -29,8 +30,8 @@ scope Zero {
     Character.edit_action_parameters(ZERO, Action.TurnRun,                File.ZERO_TURNRUN,               -1,                       -1)
     Character.edit_action_parameters(ZERO, Action.JumpSquat,              File.ZERO_LANDING,               -1,                       -1)
     Character.edit_action_parameters(ZERO, Action.ShieldJumpSquat,        File.ZERO_LANDING,               -1,                       -1)
-    Character.edit_action_parameters(ZERO, Action.JumpF,                  File.ZERO_JUMPF,                 -1,                       -1)
-    Character.edit_action_parameters(ZERO, Action.JumpB,                  File.ZERO_JUMPB,                 -1,                       -1)
+    Character.edit_action_parameters(ZERO, Action.JumpF,                  File.ZERO_JUMPF,                 JUMP,                     -1)
+    Character.edit_action_parameters(ZERO, Action.JumpB,                  File.ZERO_JUMPB,                 JUMP,                     -1)
     Character.edit_action_parameters(ZERO, Action.JumpAerialF,            File.ZERO_JUMPAERIALF,           -1,                       -1)
     Character.edit_action_parameters(ZERO, Action.JumpAerialB,            File.ZERO_JUMPAERIALB,           -1,                       -1)
     Character.edit_action_parameters(ZERO, Action.Fall,                   File.ZERO_FALL,                  -1,                       -1)

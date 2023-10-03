@@ -5238,7 +5238,7 @@ scope SinglePlayerModes: {
     add_team_parameters(File.GOEMON_TEAM_POSE,        team_moveset_ness,      0)          // 0x41 - GOEMON
     add_team_parameters(0x2B1,                        team_moveset_fox_link,  0)          // 0x42 - PEPPY
     add_team_parameters(0x2B1,                        team_moveset_fox_link,  0)          // 0x43 - SLIPPY
-    add_team_parameters(File.ZERO_1P_POSE,            0x80000000,             0)          // 0x44 - ZERO
+    add_team_parameters(File.ZERO_TEAM_POSE,            0x80000000,           0)          // 0x44 - ZERO
     // ADD NEW CHARACTERS HERE
 
 	// REMIX POLYGONS
@@ -5405,6 +5405,7 @@ scope SinglePlayerModes: {
     add_duo_parameters(File.WARIO_TEAM_POSE,         0x80000000,            0)          // 0x41 - GOEMON
     add_duo_parameters(File.PEPPY_DUO_POSE,          duo_moveset_fox,       0)          // 0x42 - PEPPY
     add_duo_parameters(File.SLIPPY_DUO_POSE,         duo_moveset_fox,       0)          // 0x43 - SLIPPY
+    add_team_parameters(File.ZERO_TEAM_POSE,         0x80000000,            0)          // 0x44 - ZERO
     // ADD NEW CHARACTERS HERE
 
 	// REMIX POLYGONS
@@ -6195,7 +6196,7 @@ scope SinglePlayerModes: {
         constant MARINA(0x00001BA8 + 0x10)
         constant DEDEDE(0x00001C88 + 0x10)
         constant GOEMON(0x00001D68 + 0x10)
-        constant SNAKE(0x00001D68 + 0x10)
+        constant ZERO(0x00001D68 + 0x10)
 
     }
 
@@ -6270,7 +6271,7 @@ scope SinglePlayerModes: {
     dw icon_offsets.GOEMON                   // Goemon
     dw icon_offsets.PEPPY                    // Peppy Hare
     dw icon_offsets.SLIPPY                   // Slippy Toad
-    dw icon_offsets.SNAKE                    // Snake
+    dw icon_offsets.ZERO                     // Zero
     // ADD NEW CHARACTERS HERE
 
     // REMIX POLYGONS
