@@ -5,7 +5,11 @@
 scope Zero {
     // Insert Moveset files
     insert IDLE,"moveset/IDLE.bin"
+    insert WALK,"moveset/WALK.bin"
+    insert DASH,"moveset/DASH.bin"
+    insert RUN,"moveset/RUN.bin"
     insert JUMP,"moveset/JUMP.bin"
+    insert JUMPAIR,"moveset/JUMPAIR.bin"
     insert JAB1,"moveset/JAB1.bin"
     insert JAB2,"moveset/JAB2.bin"
     insert JAB3,"moveset/JAB3.bin"
@@ -21,10 +25,10 @@ scope Zero {
     Character.edit_action_parameters(ZERO, Action.Idle,                   File.ZERO_IDLE,                  -1,                       -1)
     Character.edit_action_parameters(ZERO, Action.Walk1,                  File.ZERO_WALK1,                 -1,                       -1)
     Character.edit_action_parameters(ZERO, Action.Walk2,                  File.ZERO_WALK2,                 -1,                       -1)
-    Character.edit_action_parameters(ZERO, Action.Walk3,                  File.ZERO_WALK3,                 -1,                       -1)
+    Character.edit_action_parameters(ZERO, Action.Walk3,                  File.ZERO_WALK3,                 WALK,                     -1)
     Character.edit_action_parameters(ZERO, 0x00E,                         File.ZERO_WALKEND,               -1,                       -1)
-    Character.edit_action_parameters(ZERO, Action.Dash,                   File.ZERO_DASH,                  -1,                       -1)
-    Character.edit_action_parameters(ZERO, Action.Run,                    File.ZERO_RUN,                   -1,                       -1)
+    Character.edit_action_parameters(ZERO, Action.Dash,                   File.ZERO_DASH,                  DASH,                     -1)
+    Character.edit_action_parameters(ZERO, Action.Run,                    File.ZERO_RUN,                   RUN,                      -1)
     Character.edit_action_parameters(ZERO, Action.RunBrake,               File.ZERO_RUNBRAKE,              -1,                       -1)
     Character.edit_action_parameters(ZERO, Action.Turn,                   File.ZERO_TURN,                  -1,                       -1)
     Character.edit_action_parameters(ZERO, Action.TurnRun,                File.ZERO_TURNRUN,               -1,                       -1)
@@ -32,8 +36,8 @@ scope Zero {
     Character.edit_action_parameters(ZERO, Action.ShieldJumpSquat,        File.ZERO_LANDING,               -1,                       -1)
     Character.edit_action_parameters(ZERO, Action.JumpF,                  File.ZERO_JUMPF,                 JUMP,                     -1)
     Character.edit_action_parameters(ZERO, Action.JumpB,                  File.ZERO_JUMPB,                 JUMP,                     -1)
-    Character.edit_action_parameters(ZERO, Action.JumpAerialF,            File.ZERO_JUMPAERIALF,           -1,                       -1)
-    Character.edit_action_parameters(ZERO, Action.JumpAerialB,            File.ZERO_JUMPAERIALB,           -1,                       -1)
+    Character.edit_action_parameters(ZERO, Action.JumpAerialF,            File.ZERO_JUMPAERIALF,           JUMPAIR,                  -1)
+    Character.edit_action_parameters(ZERO, Action.JumpAerialB,            File.ZERO_JUMPAERIALB,           JUMPAIR,                  -1)
     Character.edit_action_parameters(ZERO, Action.Fall,                   File.ZERO_FALL,                  -1,                       -1)
     Character.edit_action_parameters(ZERO, Action.FallAerial,             File.ZERO_FALLAERIAL,            -1,                       -1)
     Character.edit_action_parameters(ZERO, Action.Crouch,                 File.ZERO_CROUCH,                -1,                       -1)
@@ -174,7 +178,7 @@ scope Zero {
     Character.edit_menu_action_parameters(ZERO,   0xA,               File.ZERO_CONTINUEUP,        -1,                         -1)
 
     // Modify Actions            // Action              // Staling ID   // Main ASM                 // Interrupt/Other ASM          // Movement/Physics ASM         // Collision ASM
-    // Character.edit_action(ZERO, Action.Jab2,            -1,             -1,                         ZeroJAB2.interrupt_,            -1,                             -1)
+    // Character.edit_action(ZERO, Action.Dash,            -1,             -1,                         ZeroDASH.interrupt_,            -1,                             -1)
 
     // Set default costumes
     Character.set_default_costumes(Character.id.ZERO, 0, 1, 5, 7, 0, 2, 3)
@@ -182,15 +186,15 @@ scope Zero {
     // Shield colors for costume matching
     Character.set_costume_shield_colors(ZERO, RED, BLACK, BLUE, GREEN, PURPLE, ORANGE, YELLOW, PINK)
 
-        // Remove entry script (no Blue Falcon).
+    // Remove entry script (no Blue Falcon).
     Character.table_patch_start(entry_script, Character.id.ZERO, 0x4)
     dw 0x8013DD68                           // skips entry script
     OS.patch_end()
 
     // Set crowd chant FGM.
-     Character.table_patch_start(crowd_chant_fgm, Character.id.ZERO, 0x2)
-     dh  0x031E
-     OS.patch_end()
+    Character.table_patch_start(crowd_chant_fgm, Character.id.ZERO, 0x2)
+    dh  0x031E
+    OS.patch_end()
 
     // Set action strings
     Character.table_patch_start(action_string, Character.id.ZERO, 0x4)
@@ -201,4 +205,46 @@ scope Zero {
     dw      Character.rapid_jab.DISABLED        // disable rapid jab
     OS.patch_end()
 
+    // Code to make Zero's Dash grant a further jump
+    scope dash_jump_: {
+    constant X_SPEED(0x4120)                // current setting - float32 10
+        addiu   sp, sp,-0x0018              // allocate stack space
+        sw      t0, 0x0008(sp)              // ~
+        sw      t1, 0x000C(sp)              // ~
+        sw      at, 0x0010(sp)              // store t0, t1, at
+
+        lw      t0, 0x0008(a0)              // t0 = character id
+        ori     at, r0, Character.id.ZERO  // at = id.ZERO
+        beq     t0, at, _check_action_zero // if id = ZERO, check action
+        lli     v0, OS.FALSE                // v0 = FALSE
+
+        _check_action_zero:
+        lw      t0, 0x0024(a0)              // t0 = current action
+        ori     at, r0, 0x000F              // at = action id: DASH
+        beq     t0, at, _max_speed          // branch if current action = dash
+        bne     t0, at, _end                // skip if current action != aerial neutral special
+        lli     v0, OS.FALSE                // v0 = FALSE
+
+        _max_speed:
+        lui     t0, X_SPEED                 // ~
+        mtc1    t0, f0                      // f0 = X_SPEED
+        add.s   f2, f2, f0                  // f2 = final velocity
+        lwc1    f0, 0x0044(s0)              // ~
+        cvt.s.w f0, f0                      // f0 = direction
+        mul.s   f2, f0, f2                  // f2 = x velocity * direction
+        swc1    f2, 0x0048(s0)              // store x velocity
+
+        // remove mid-air jump
+
+        lw      t0, 0x09C8(s0)              // t0 = attribute pointer
+        lw      t0, 0x0064(t0)              // t0 = max jumps
+        sb      t0, 0x0148(s0)              // jumps used = max jumps
+
+        _end:
+        lw      t0, 0x0008(sp)              // ~
+        lw      t1, 0x000C(sp)              // ~
+        lw      at, 0x0010(sp)              // load t0, t1, at
+        jr      ra                          // return
+        addiu   sp, sp, 0x0018              // deallocate stack space
+    }
 }

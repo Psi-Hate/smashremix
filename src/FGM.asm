@@ -1341,6 +1341,28 @@ scope FGM {
     add_sound(Goemon/sounds/CLOUD_SPAWN, SAMPLE_RATE_16000, FGM_TYPE_VOICE, 0, -1)
     add_sound(Goemon/sounds/CLOUD_DESPAWN, SAMPLE_RATE_16000, FGM_TYPE_VOICE, 0, -1)
     add_sound(sounds/MASTERHAND, SAMPLE_RATE_16000, FGM_TYPE_VOICE, 40, -1)
+    add_sound(Zero/sounds/ZERO_DEAD, SAMPLE_RATE_16000, FGM_TYPE_VOICE, 0, -1) // 0x503
+    add_sound(Zero/sounds/ZERO_READY, SAMPLE_RATE_16000, FGM_TYPE_VOICE, 0, -1) // 0x504
+    add_sound(Zero/sounds/ZERO_HA, SAMPLE_RATE_16000, FGM_TYPE_VOICE, 0, -1) // 0x505
+    add_sound(Zero/sounds/ZERO_HAA, SAMPLE_RATE_16000, FGM_TYPE_VOICE, 0, -1) // 0x506
+    add_sound(Zero/sounds/ZERO_HAAA, SAMPLE_RATE_16000, FGM_TYPE_VOICE, 0, -1) // 0x507
+    add_sound(Zero/sounds/ZERO_THOO, SAMPLE_RATE_16000, FGM_TYPE_VOICE, 0, -1) // 0x508
+    add_sound(Zero/sounds/ZERO_HU, SAMPLE_RATE_16000, FGM_TYPE_VOICE, 0, -1) // 0x509
+    add_sound(Zero/sounds/ZERO_HURT1, SAMPLE_RATE_16000, FGM_TYPE_VOICE, 0, -1) // 0x50A
+    add_sound(Zero/sounds/ZERO_HURT2, SAMPLE_RATE_16000, FGM_TYPE_VOICE, 0, -1) // 0x50B
+    add_sound(Zero/sounds/ZERO_TAUNT, SAMPLE_RATE_16000, FGM_TYPE_VOICE, 0, -1) // 0x50C
+    add_sound(Zero/sounds/ZERO_YEAH, SAMPLE_RATE_16000, FGM_TYPE_VOICE, 0, -1) // 0x50D
+    add_sound(Zero/sounds/ZERO_DEADSKY, SAMPLE_RATE_16000, FGM_TYPE_VOICE, 0, -1) // 0x50E
+    add_sound(Zero/sounds/ZERO_OUUH, SAMPLE_RATE_16000, FGM_TYPE_VOICE, 0, -1) // 0x50F
+    add_sound(Zero/sounds/ZERO_THEI, SAMPLE_RATE_16000, FGM_TYPE_VOICE, 0, -1) // 0x510
+    add_sound(Zero/sounds/ZERO_DASH, SAMPLE_RATE_16000, FGM_TYPE_VOICE, 0, -1) // 0x511
+    add_sound(Zero/sounds/ZERO_ENTRY, SAMPLE_RATE_16000, FGM_TYPE_VOICE, 0, -1) // 0x512
+    add_sound(Zero/sounds/ZERO_EXIT, SAMPLE_RATE_16000, FGM_TYPE_VOICE, 0, -1) // 0x513
+    add_sound(Zero/sounds/ZERO_LAND, SAMPLE_RATE_16000, FGM_TYPE_VOICE, 0, -1) // 0x514
+    add_sound(Zero/sounds/ZERO_SABER, SAMPLE_RATE_16000, FGM_TYPE_VOICE, 0, -1) // 0x515
+    add_sound(Zero/sounds/ZERO_WALK, SAMPLE_RATE_16000, FGM_TYPE_VOICE, 0, -1) // 0x516
+    add_sound(Zero/sounds/ZERO_JUMP, SAMPLE_RATE_16000, FGM_TYPE_VOICE, 0, -1) // 0x517
+    add_sound(Zero/sounds/ZERO_SHINE, SAMPLE_RATE_16000, FGM_TYPE_VOICE, 0, -1) // 0x518
     
     // This is always last
     write_sounds()
