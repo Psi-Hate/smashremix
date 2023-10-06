@@ -13,6 +13,7 @@ scope Zero {
     insert JAB1,"moveset/JAB1.bin"
     insert JAB2,"moveset/JAB2.bin"
     insert JAB3,"moveset/JAB3.bin"
+    insert USP,"moveset/USP.bin"
     insert WIN1,"moveset/WIN1.bin"
     insert CSSP1,"moveset/CSSP1.bin"
     insert CSSP2,"moveset/CSSP2.bin"
@@ -164,6 +165,11 @@ scope Zero {
     Character.edit_action_parameters(ZERO, Action.LandingAirF,            File.ZERO_LANDINGAIRF,           -1,                       -1)
     Character.edit_action_parameters(ZERO, Action.LandingAirB,            File.ZERO_LANDINGAIRB,           -1,                       -1)
     Character.edit_action_parameters(ZERO, Action.LandingAirX,            File.ZERO_LANDING,               -1,                       -1)
+    Character.edit_action_parameters(ZERO, 0xE4,                          File.ZERO_ACTION_0DC,            JAB3,                     -1)
+    Character.edit_action_parameters(ZERO, 0xE5,                          File.ZERO_ACTION_0DC,            JAB3,                     -1)
+    Character.edit_action_parameters(ZERO, 0xEB,                          File.ZERO_ACTION_0EB,            USP,                      -1)
+    Character.edit_action_parameters(ZERO, 0xEC,                          File.ZERO_ACTION_0EC,            IDLE,                     -1)
+    Character.edit_action_parameters(ZERO, 0xEE,                          File.ZERO_ACTION_0EE,            USP,                      -1)
 
     // Modify Menu Action Parameters             // Action          // Animation                // Moveset Data             // Flags
     Character.edit_menu_action_parameters(ZERO,   0x0,               File.ZERO_IDLE,              -1,                         -1)          // CSS Idle
@@ -178,7 +184,8 @@ scope Zero {
     Character.edit_menu_action_parameters(ZERO,   0xA,               File.ZERO_CONTINUEUP,        -1,                         -1)
 
     // Modify Actions            // Action              // Staling ID   // Main ASM                 // Interrupt/Other ASM          // Movement/Physics ASM         // Collision ASM
-    // Character.edit_action(ZERO, Action.Dash,            -1,             -1,                         ZeroDASH.interrupt_,            -1,                             -1)
+    Character.edit_action(ZERO,  0xEB,                  0x11,           ZeroUSP.main_,             ZeroUSP.interrupt_,     -1,              ZeroUSP.collision_)
+    Character.edit_action(ZERO,  0xEE,                  0x11,           ZeroUSP.main_,             ZeroUSP.interrupt_,     -1,              ZeroUSP.collision_)
 
     // Set default costumes
     Character.set_default_costumes(Character.id.ZERO, 0, 1, 5, 7, 0, 2, 3)
@@ -193,7 +200,7 @@ scope Zero {
 
     // Set crowd chant FGM.
     Character.table_patch_start(crowd_chant_fgm, Character.id.ZERO, 0x2)
-    dh  0x031E
+    dh  0x519
     OS.patch_end()
 
     // Set action strings
@@ -204,47 +211,12 @@ scope Zero {
     Character.table_patch_start(rapid_jab, Character.id.ZERO, 0x4)
     dw      Character.rapid_jab.DISABLED        // disable rapid jab
     OS.patch_end()
+    Character.table_patch_start(air_usp, Character.id.ZERO, 0x4)
+    dw      ZeroUSP.air_initial_
+    OS.patch_end()
+    Character.table_patch_start(ground_usp, Character.id.ZERO, 0x4)
+    dw      ZeroUSP.ground_initial_
+    OS.patch_end()
 
-    // Code to make Zero's Dash grant a further jump
-    scope dash_jump_: {
-    constant X_SPEED(0x4120)                // current setting - float32 10
-        addiu   sp, sp,-0x0018              // allocate stack space
-        sw      t0, 0x0008(sp)              // ~
-        sw      t1, 0x000C(sp)              // ~
-        sw      at, 0x0010(sp)              // store t0, t1, at
 
-        lw      t0, 0x0008(a0)              // t0 = character id
-        ori     at, r0, Character.id.ZERO  // at = id.ZERO
-        beq     t0, at, _check_action_zero // if id = ZERO, check action
-        lli     v0, OS.FALSE                // v0 = FALSE
-
-        _check_action_zero:
-        lw      t0, 0x0024(a0)              // t0 = current action
-        ori     at, r0, 0x000F              // at = action id: DASH
-        beq     t0, at, _max_speed          // branch if current action = dash
-        bne     t0, at, _end                // skip if current action != aerial neutral special
-        lli     v0, OS.FALSE                // v0 = FALSE
-
-        _max_speed:
-        lui     t0, X_SPEED                 // ~
-        mtc1    t0, f0                      // f0 = X_SPEED
-        add.s   f2, f2, f0                  // f2 = final velocity
-        lwc1    f0, 0x0044(s0)              // ~
-        cvt.s.w f0, f0                      // f0 = direction
-        mul.s   f2, f0, f2                  // f2 = x velocity * direction
-        swc1    f2, 0x0048(s0)              // store x velocity
-
-        // remove mid-air jump
-
-        lw      t0, 0x09C8(s0)              // t0 = attribute pointer
-        lw      t0, 0x0064(t0)              // t0 = max jumps
-        sb      t0, 0x0148(s0)              // jumps used = max jumps
-
-        _end:
-        lw      t0, 0x0008(sp)              // ~
-        lw      t1, 0x000C(sp)              // ~
-        lw      at, 0x0010(sp)              // load t0, t1, at
-        jr      ra                          // return
-        addiu   sp, sp, 0x0018              // deallocate stack space
-    }
 }

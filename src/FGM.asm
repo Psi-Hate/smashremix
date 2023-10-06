@@ -1363,6 +1363,7 @@ scope FGM {
     add_sound(Zero/sounds/ZERO_WALK, SAMPLE_RATE_16000, FGM_TYPE_VOICE, 0, -1) // 0x516
     add_sound(Zero/sounds/ZERO_JUMP, SAMPLE_RATE_16000, FGM_TYPE_VOICE, 0, -1) // 0x517
     add_sound(Zero/sounds/ZERO_SHINE, SAMPLE_RATE_16000, FGM_TYPE_VOICE, 0, -1) // 0x518
+    add_sound(Zero/sounds/ZERO_CHANT, SAMPLE_RATE_16000, FGM_TYPE_CHANT, 0, 0x130) // 0x519
     
     // This is always last
     write_sounds()
