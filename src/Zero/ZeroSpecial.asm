@@ -80,21 +80,24 @@ scope ZeroUSP {
     // Based on subroutine 0x8015C750, which is the main subroutine of Fox's up special ending.
     // Modified to load Marth's landing FSM value and disable the interrupt flag.
     scope main_: {
-        // Copy the first 8 lines of subroutine 0x8015C750
-        OS.copy_segment(0xD7190, 0x20)
-        bc1fl   _end                        // skip if animation end has not been reached
-        lw      ra, 0x0024(sp)              // restore ra
-        sw      r0, 0x0010(sp)              // unknown argument = 0
-        sw      r0, 0x0018(sp)              // interrupt flag = FALSE
-        lui     t6, LANDING_FSM             // t6 = LANDING_FSM
-        jal     0x801438F0                  // begin special fall
-        sw      t6, 0x0014(sp)              // store LANDING_FSM
-        lw      ra, 0x0024(sp)              // restore ra
-        
-        _end:
-        addiu   sp, sp, 0x0028              // deallocate stack space
-        jr      ra                          // return
+        addiu   sp, sp, -0x0020             // allocate stackspace
+        sw      ra, 0x001C(sp)              // store ra
+        sw      a0, 0x0018(sp)              // store player obj
+        lw      t0, 0x0084(a0)              // t0 = player struct
+        lw      at, 0x0180(t0)              // at = temp variable 2
+        lw      t0, 0x0084(a0)              // t0 = player struct
+        lw      at, 0x01BC(t0)              // at = buttons_pressed
+        andi    at, at, Joypad.B
+        bnez    at, _end                    // skip if stick_y + deadzone >= 0
         nop
+
+        jal     usp_cancel_
+        nop
+
+        _end:
+        lw      ra, 0x001C(sp)              // load ra
+        jr      ra                          // return
+        addiu   sp, sp, 0x0020              // deallocation stackspace in delay slot
     }
     
     // @ Description
@@ -109,17 +112,38 @@ scope ZeroUSP {
         sw      a0, 0x0018(sp)              // store player obj
         lw      t0, 0x0084(a0)              // t0 = player struct
         lw      at, 0x0180(t0)              // at = temp variable 2
-        
-        lw      t0, 0x0084(a0) // t0 = player struct
-        lw      at, 0x01BE(t0) // at = buttons_pressed
+        lw      t0, 0x0084(a0)              // t0 = player struct
+        lw      at, 0x01BE(t0)              // at = buttons_pressed
         andi    at, at, Joypad.B
-        bnez    at, _cancel    // branch if A, B, or Z is pressed
-        lb      at, 0x01C3(t0) // at = stick_y
-        addiu   at, at, 10     // at = stick_y + deadzone
-        bgez    at, _end       // skip if stick_y + deadzone >= 0
+        bgez    at, _cancel                    // skip if stick_y + deadzone >= 0
         nop
 
+        // if here, set to special fall.
+        // jal     usp_cancel_
+        // nop
+
         _cancel:
+        jal     usp_cancel_
+        nop
+
+        _end:
+        lw      ra, 0x001C(sp)              // load ra
+        jr      ra                          // return
+        addiu   sp, sp, 0x0020              // deallocation stackspace in delay slot
+    }
+
+    // @ Description
+    // cancel Snakes USP into special fall
+    scope usp_cancel_: {
+        addiu   sp, sp,-0x0028              // allocate stack space
+        sw      ra, 0x0020(sp)              // store ra
+        lui     at, 0x3F80                  // landing fsm
+        lui     a1, 0x3F80                  // a1 (drift multiplier?) = 1.0
+        or      a2, r0, r0                  // a2 (unknown) = 0
+        lli     a3, 0x0001                  // a3 (unknown) = 1
+        sw      r0, 0x0010(sp)              // unknown argument = 0
+        sw      r0, 0x0018(sp)              // interrupt flag = FALSE
+
         jal     0x801438F0                  // transition to Special Fall
         sw      at, 0x0014(sp)              // store landing fsm
 

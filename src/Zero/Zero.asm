@@ -184,8 +184,8 @@ scope Zero {
     Character.edit_menu_action_parameters(ZERO,   0xA,               File.ZERO_CONTINUEUP,        -1,                         -1)
 
     // Modify Actions            // Action              // Staling ID   // Main ASM                 // Interrupt/Other ASM          // Movement/Physics ASM         // Collision ASM
-    Character.edit_action(ZERO,  0xEB,                  0x11,           ZeroUSP.main_,             ZeroUSP.interrupt_,     -1,              ZeroUSP.collision_)
-    Character.edit_action(ZERO,  0xEE,                  0x11,           ZeroUSP.main_,             ZeroUSP.interrupt_,     -1,              ZeroUSP.collision_)
+    Character.edit_action(ZERO,  0xEB,                  0x11,           ZeroUSP.main_,             -1,     -1,              ZeroUSP.collision_)
+    Character.edit_action(ZERO,  0xEE,                  0x11,           ZeroUSP.main_,             -1,     -1,              ZeroUSP.collision_)
 
     // Set default costumes
     Character.set_default_costumes(Character.id.ZERO, 0, 1, 5, 7, 0, 2, 3)
