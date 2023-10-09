@@ -3,6 +3,12 @@
 // This file contains file inclusions, action edits, and assembly for J Captain Falcon.
 
 scope Zero {
+
+    scope FACE: {
+		constant NORMAL(0xAC000000)
+		constant SHOCK(0xAC000006)
+	}
+
     // Insert Moveset files
     insert IDLE,"moveset/IDLE.bin"
     insert WALK,"moveset/WALK.bin"
@@ -14,9 +20,13 @@ scope Zero {
     insert JAB2,"moveset/JAB2.bin"
     insert JAB3,"moveset/JAB3.bin"
     insert USP,"moveset/USP.bin"
+    insert USPCancel,"moveset/USPCancel.bin"
     insert WIN1,"moveset/WIN1.bin"
     insert CSSP1,"moveset/CSSP1.bin"
     insert CSSP2,"moveset/CSSP2.bin"
+
+    ELECTRIC:
+    dw FACE.SHOCK; dw 0;
 
     // Modify Action Parameters             // Action               // Animation                // Moveset Data             // Flags
     Character.edit_action_parameters(ZERO, Action.Entry,                  File.ZERO_IDLE,                  -1,                       -1)
@@ -168,7 +178,7 @@ scope Zero {
     Character.edit_action_parameters(ZERO, 0xE4,                          File.ZERO_ACTION_0DC,            JAB3,                     -1)
     Character.edit_action_parameters(ZERO, 0xE5,                          File.ZERO_ACTION_0DC,            JAB3,                     -1)
     Character.edit_action_parameters(ZERO, 0xEB,                          File.ZERO_ACTION_0EB,            USP,                      -1)
-    Character.edit_action_parameters(ZERO, 0xEC,                          File.ZERO_ACTION_0EC,            IDLE,                     -1)
+    Character.edit_action_parameters(ZERO, 0xEC,                          File.ZERO_ACTION_0EC,            USPCancel,        0x40000000)
     Character.edit_action_parameters(ZERO, 0xEE,                          File.ZERO_ACTION_0EE,            USP,                      -1)
 
     // Modify Menu Action Parameters             // Action          // Animation                // Moveset Data             // Flags
@@ -184,8 +194,9 @@ scope Zero {
     Character.edit_menu_action_parameters(ZERO,   0xA,               File.ZERO_CONTINUEUP,        -1,                         -1)
 
     // Modify Actions            // Action              // Staling ID   // Main ASM                 // Interrupt/Other ASM          // Movement/Physics ASM         // Collision ASM
-    Character.edit_action(ZERO,  0xEB,                  0x11,           ZeroUSP.main_,             -1,     -1,              ZeroUSP.collision_)
-    Character.edit_action(ZERO,  0xEE,                  0x11,           ZeroUSP.main_,             -1,     -1,              ZeroUSP.collision_)
+    Character.edit_action(ZERO,  0xEB,                  0x11,           ZeroUSP.main_,             ZeroUSP.interrupt_,     -1,              ZeroUSP.collision_)
+    Character.edit_action(ZERO,  0xEC,                  0x11,           ZeroUSP.usp_end_,          0,                       0,              0)
+    Character.edit_action(ZERO,  0xEE,                  0x11,           ZeroUSP.main_,             ZeroUSP.interrupt_,     -1,              ZeroUSP.collision_)
 
     // Set default costumes
     Character.set_default_costumes(Character.id.ZERO, 0, 1, 5, 7, 0, 2, 3)

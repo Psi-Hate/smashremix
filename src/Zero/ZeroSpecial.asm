@@ -65,39 +65,70 @@ scope ZeroUSP {
         ori     t6, r0, 0x0007              // t6 = bitmask (01111111)
         and     v1, v1, t6                  // ~
         sb      v1, 0x018D(a0)              // disable fast fall flag
-        // freeze y position
+        // freeze x and y position
         lw      v1, 0x09C8(a0)              // v1 = attribute pointer
         lw      v1, 0x0058(v1)              // v1 = gravity
         sw      v1, 0x004C(a0)              // y velocity = gravity
+        sw      v1, 0x0048(a0)              // x velocity = gravity
         lw      ra, 0x001C(sp)              // ~
         addiu   sp, sp, 0x0020              // ~
         jr      ra                          // original return logic
         nop
     }
+
+    // @ Description
+    // Shared initial subroutine for USP actions.
+    // @ Arguments
+    // a0 - player object
+    // a1 - action id
+    scope shared_initial_: {
+        addiu   sp, sp,-0x0028              // allocate stack space
+        sw      ra, 0x0014(sp)              // ~
+        sw      a0, 0x0018(sp)              // store ra, a0
+        or      a2, r0, r0                  // a2(starting frame) = 0
+        lui     a3, 0x3F80                  // a3(frame speed multiplier) = 1.0
+        jal     0x800E6F24                  // change action
+        sw      r0, 0x0010(sp)              // argument 4 = 0
+        lw      a0, 0x0018(sp)              // a0 = player object
+        jal     0x800E0830                  // unknown common subroutine
+        lw      a0, 0x0018(sp)              // a0 = player object
+        lw      a0, 0x0018(sp)              // ~
+        lw      a0, 0x0084(a0)              // a0 = player struct
+        lli     at, 0x0001                  // ~
+        sw      at, 0x0180(a0)              // temp variable 2 = 1
+        // reset fall speed
+        lbu     v1, 0x018D(a0)              // v1 = fast fall flag
+        ori     t6, r0, 0x0007              // t6 = bitmask (01111111)
+        and     v1, v1, t6                  // ~
+        sb      v1, 0x018D(a0)              // disable fast fall flag
+        // freeze x and y position
+        sw      r0, 0x004C(a0)              // y velocity = gravity
+        sw      r0, 0x0048(a0)              // x velocity = gravity
+        lw      ra, 0x0014(sp)              // load ra
+        jr      ra                          // return
+        addiu   sp, sp, 0x0028              // deallocate stack space
+    }
     
     // @ Description
-    // Main subroutine for Marth's up special.
-    // Based on subroutine 0x8015C750, which is the main subroutine of Fox's up special ending.
-    // Modified to load Marth's landing FSM value and disable the interrupt flag.
+    // Main subroutine for Zero's up special.
     scope main_: {
-        addiu   sp, sp, -0x0020             // allocate stackspace
-        sw      ra, 0x001C(sp)              // store ra
-        sw      a0, 0x0018(sp)              // store player obj
-        lw      t0, 0x0084(a0)              // t0 = player struct
-        lw      at, 0x0180(t0)              // at = temp variable 2
-        lw      t0, 0x0084(a0)              // t0 = player struct
-        lw      at, 0x01BC(t0)              // at = buttons_pressed
-        andi    at, at, Joypad.B
-        bnez    at, _end                    // skip if stick_y + deadzone >= 0
+        // Copy the first 8 lines of subroutine 0x8015C750
+        OS.copy_segment(0xD7190, 0x20)
+        bc1fl   _end                        // skip if animation end has not been reached
+        lw      ra, 0x0024(sp)              // restore ra
+        sw      r0, 0x0010(sp)              // unknown argument = 0
+        sw      r0, 0x0018(sp)              // interrupt flag = FALSE
+        lui     t6, LANDING_FSM             // t6 = LANDING_FSM
+        jal     shared_initial_             // transition to USP action
+        lli     a1, 0xEC                    // a1(action id) = USPJump
         nop
-
-        jal     usp_cancel_
-        nop
-
+        sw      t6, 0x0014(sp)              // store LANDING_FSM
+        lw      ra, 0x0024(sp)              // restore ra
+        
         _end:
-        lw      ra, 0x001C(sp)              // load ra
+        addiu   sp, sp, 0x0028              // deallocate stack space
         jr      ra                          // return
-        addiu   sp, sp, 0x0020              // deallocation stackspace in delay slot
+        nop
     }
     
     // @ Description
@@ -107,29 +138,25 @@ scope ZeroUSP {
     // Variable values used by this subroutine:
     // 0x2 = change direction
     scope interrupt_: {
-        addiu   sp, sp, -0x0020             // allocate stackspace
-        sw      ra, 0x001C(sp)              // store ra
-        sw      a0, 0x0018(sp)              // store player obj
-        lw      t0, 0x0084(a0)              // t0 = player struct
-        lw      at, 0x0180(t0)              // at = temp variable 2
+        addiu   sp, sp,-0x0040              // allocate stack space
+        sw      ra, 0x0014(sp)              // ~
+        sw      a0, 0x0018(sp)              // ~
+        sw      s0, 0x001C(sp)              // store ra, a0, s0
         lw      t0, 0x0084(a0)              // t0 = player struct
         lw      at, 0x01BE(t0)              // at = buttons_pressed
         andi    at, at, Joypad.B
-        bgez    at, _cancel                    // skip if stick_y + deadzone >= 0
+        bnez    at, _end                    // branch if B is pressed
         nop
-
-        // if here, set to special fall.
-        // jal     usp_cancel_
-        // nop
-
-        _cancel:
-        jal     usp_cancel_
+        jal     shared_initial_             // transition to USP action
+        lli     a1, 0xEC                    // a1(action id) = USPJump
         nop
 
         _end:
-        lw      ra, 0x001C(sp)              // load ra
+        lw      ra, 0x0014(sp)              // ~
+        lw      s0, 0x001C(sp)              // load ra, s0
+        addiu   sp, sp, 0x0040              // deallocate stack space
         jr      ra                          // return
-        addiu   sp, sp, 0x0020              // deallocation stackspace in delay slot
+        nop
     }
 
     // @ Description
@@ -143,14 +170,50 @@ scope ZeroUSP {
         lli     a3, 0x0001                  // a3 (unknown) = 1
         sw      r0, 0x0010(sp)              // unknown argument = 0
         sw      r0, 0x0018(sp)              // interrupt flag = FALSE
-
-        jal     0x801438F0                  // transition to Special Fall
-        sw      at, 0x0014(sp)              // store landing fsm
+        lli     a1, 0xEC                    // a1 = Action.0xEC
+        nop
 
         _end:
         lw      ra, 0x0020(sp)              // load ra
         jr      ra                          // return
         addiu   sp, sp, 0x0028              // deallocate stack space
+    }
+
+    // @ Description
+    // cancel Snakes USP into special fall
+    scope usp_end_: {
+        addiu   sp, sp,-0x0030              // allocate stack space
+        sw      ra, 0x0024(sp)              // store ra
+
+        lw      v1, 0x0084(a0)              // v1 = player struct
+        lw      t6, 0x017C(v1)              // t6 = temp variable 1
+        lli     at, 0x0001                  // ~
+        bne     t6, at, _check_end_transition // branch if temp variable 1 != 1
+        lli     at, 0x0002                  // ~
+
+        _check_end_transition:
+        // checks the current animation frame to see if we've reached end of the animation
+        mtc1    r0, f6                      // ~
+        lwc1    f8, 0x0078(a0)              // ~
+        c.le.s  f8, f6                      // ~
+        nop
+        bc1fl   _end                        // skip if animation end has not been reached
+        nop
+
+        // begin a special fall if the end of the animation has been reached
+        lui     a1, 0x3F70                  // a1 (air speed multiplier) = 0.9375
+        or      a2, r0, r0                  // a2 (unknown) = 0
+        lli     a3, 0x0001                  // a3 (unknown) = 1
+        sw      r0, 0x0010(sp)              // unknown argument = 0
+        sw      r0, 0x0018(sp)              // interrupt flag = FALSE
+        lui     t6, LANDING_FSM             // t6 = LANDING_FSM
+        jal     0x801438F0                  // begin special fall
+        sw      t6, 0x0014(sp)              // store LANDING_FSM
+
+        _end:
+        lw      ra, 0x0024(sp)              // load ra
+        jr      ra                          // return
+        addiu   sp, sp, 0x0030              // deallocate stack space
     }
     
     // @ Description

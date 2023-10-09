@@ -3270,7 +3270,7 @@ scope Character {
     // 0x43 - SLIPPY
     define_character(SLIPPY, FOX, File.SLIPPY_MAIN, 0x0D0, 0, File.SLIPPY_CHARACTER, 0x13A, File.SLIPPY_LASER_HITBOX, File.SLIPPY_REFLECT_GFX, 0x0A1, File.SLIPPY_LASER_GRAPHIC, 0x4AC, 0x0, OS.TRUE, OS.TRUE, Stages.id.BTT_FALCO, Stages.id.BTP_FALCO, Stages.id.BTT_FALCO, Stages.id.BTP_FALCO, sound_type.U, variant_type.SPECIAL)
     // 0x44 - ZERO
-    define_character(ZERO, CAPTAIN, File.ZERO_MAIN, 0x0EB, 0, File.ZERO_CHARACTER, 0x14E, 0, 0x15E, 0x14D, 0, 0x4E0, 0x0, OS.TRUE, OS.FALSE, Stages.id.BTT_FALCON, Stages.id.BTP_FALCON, Stages.id.BTT_GND, Stages.id.BTP_GND, sound_type.U, variant_type.NA)
+    define_character(ZERO, CAPTAIN, File.ZERO_MAIN, 0x0EB, 0, File.ZERO_CHARACTER, 0x14E, 0, 0x15E, 0x14D, 0, 0x698, 0x0, OS.TRUE, OS.FALSE, Stages.id.BTT_FALCON, Stages.id.BTP_FALCON, Stages.id.BTT_GND, Stages.id.BTP_GND, sound_type.U, variant_type.NA)
     
     // ADD NEW CHARACTERS HERE
 
