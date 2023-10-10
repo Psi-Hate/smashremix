@@ -6,7 +6,7 @@ scope Zero {
 
     scope FACE: {
 		constant NORMAL(0xAC000000)
-		constant SHOCK(0xAC000006)
+		constant SHOCK(0xAC000001)
 	}
 
     // Insert Moveset files
@@ -24,8 +24,9 @@ scope Zero {
     insert WIN1,"moveset/WIN1.bin"
     insert CSSP1,"moveset/CSSP1.bin"
     insert CSSP2,"moveset/CSSP2.bin"
+    insert DMG,"moveset/DMG.bin"
 
-    ELECTRIC:
+    SHOCKFACE:
     dw FACE.SHOCK; dw 0;
 
     // Modify Action Parameters             // Action               // Animation                // Moveset Data             // Flags
@@ -180,6 +181,26 @@ scope Zero {
     Character.edit_action_parameters(ZERO, 0xEB,                          File.ZERO_ACTION_0EB,            USP,                      -1)
     Character.edit_action_parameters(ZERO, 0xEC,                          File.ZERO_ACTION_0EC,            USPCancel,        0x40000000)
     Character.edit_action_parameters(ZERO, 0xEE,                          File.ZERO_ACTION_0EE,            USP,                      -1)
+
+    Character.edit_action_parameters(ZERO, Action.DamageHigh1,     File.ZERO_DAMAGEHIGH1,                        SHOCKFACE,                      -1)
+    Character.edit_action_parameters(ZERO, Action.DamageHigh2,     File.ZERO_DAMAGEHIGH2,                        SHOCKFACE,                      -1)
+    Character.edit_action_parameters(ZERO, Action.DamageHigh3,     File.ZERO_DAMAGEHIGH3,                        SHOCKFACE,                      -1)
+    Character.edit_action_parameters(ZERO, Action.DamageMid1,      File.ZERO_DAMAGEMID1,                         SHOCKFACE,                      -1)
+    Character.edit_action_parameters(ZERO, Action.DamageMid2,      File.ZERO_DAMAGEMID2,                         SHOCKFACE,                      -1)
+    Character.edit_action_parameters(ZERO, Action.DamageMid3,      File.ZERO_DAMAGEMID3,                         SHOCKFACE,                      -1)
+    Character.edit_action_parameters(ZERO, Action.DamageLow1,      File.ZERO_DAMAGELOW1,                         SHOCKFACE,                      -1)
+    Character.edit_action_parameters(ZERO, Action.DamageLow2,      File.ZERO_DAMAGELOW2,                         SHOCKFACE,                      -1)
+    Character.edit_action_parameters(ZERO, Action.DamageLow3,      File.ZERO_DAMAGELOW3,                         SHOCKFACE,                      -1)
+    Character.edit_action_parameters(ZERO, Action.DamageAir1,      File.ZERO_DAMAGEAIR1,                         SHOCKFACE,                      -1)
+    Character.edit_action_parameters(ZERO, Action.DamageAir2,      File.ZERO_DAMAGEAIR2,                         SHOCKFACE,                      -1)
+    Character.edit_action_parameters(ZERO, Action.DamageAir3,      File.ZERO_DAMAGEAIR3,                         SHOCKFACE,                      -1)
+    Character.edit_action_parameters(ZERO, Action.DamageElec1,     File.ZERO_DAMAGEELEC,                         SHOCKFACE,                      -1)
+    Character.edit_action_parameters(ZERO, Action.DamageElec2,     File.ZERO_DAMAGEELEC,                         SHOCKFACE,                      -1)
+    Character.edit_action_parameters(ZERO, Action.DamageFlyHigh,   File.ZERO_DAMAGEFLYHIGH,                      SHOCKFACE,                      -1)
+    Character.edit_action_parameters(ZERO, Action.DamageFlyMid,    File.ZERO_DAMAGEFLYMID,                       SHOCKFACE,                      -1)
+    Character.edit_action_parameters(ZERO, Action.DamageFlyLow,    File.ZERO_DAMAGEFLYLOW,                       SHOCKFACE,                      -1)
+    Character.edit_action_parameters(ZERO, Action.DamageFlyTop,    File.ZERO_DAMAGEFLYTOP,                       SHOCKFACE,                      -1)
+    Character.edit_action_parameters(ZERO, Action.DamageFlyRoll,   File.ZERO_DAMAGEFLYROLL,                      SHOCKFACE,                      -1)
 
     // Modify Menu Action Parameters             // Action          // Animation                // Moveset Data             // Flags
     Character.edit_menu_action_parameters(ZERO,   0x0,               File.ZERO_IDLE,              -1,                         -1)          // CSS Idle
