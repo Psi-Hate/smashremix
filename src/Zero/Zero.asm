@@ -6,7 +6,7 @@ scope Zero {
 
     scope FACE: {
 		constant NORMAL(0xAC000000)
-		constant SHOCK(0xAC000001)
+		constant SHOCK(0xAC000002)
 	}
 
     // Insert Moveset files
@@ -19,7 +19,17 @@ scope Zero {
     insert JAB1,"moveset/JAB1.bin"
     insert JAB2,"moveset/JAB2.bin"
     insert JAB3,"moveset/JAB3.bin"
+    insert FTILT,"moveset/FTILT.bin"
+    insert UTILT,"moveset/UTILT.bin"
+    insert DTILT,"moveset/DTILT.bin"
+    insert FSMASH,"moveset/FSMASH.bin"
+    insert USMASH,"moveset/USMASH.bin"
+    insert NAIR,"moveset/NAIR.bin"
+    // insert FAIR,"moveset/FAIR.bin"
+    insert DAIR,"moveset/DAIR.bin"
     insert USP,"moveset/USP.bin"
+    insert DSPAIR,"moveset/DSPAIR.bin"
+    insert DSPAIRLAND,"moveset/DSPAIRLAND.bin"
     insert USPCancel,"moveset/USPCancel.bin"
     insert WIN1,"moveset/WIN1.bin"
     insert CSSP1,"moveset/CSSP1.bin"
@@ -156,31 +166,33 @@ scope Zero {
     Character.edit_action_parameters(ZERO, Action.Jab2,                   File.ZERO_JAB2,                  JAB2,                     -1)
     Character.edit_action_parameters(ZERO, 0xDC,                          File.ZERO_ACTION_0DC,            JAB3,                     -1)
     Character.edit_action_parameters(ZERO, Action.DashAttack,             File.ZERO_DASHATTACK,            -1,                       -1)
-    Character.edit_action_parameters(ZERO, Action.FTiltHigh,              File.ZERO_FTILT,                 -1,                       -1)
-    Character.edit_action_parameters(ZERO, Action.FTiltMidHigh,           0,                              0x80000000,               0)
-    Character.edit_action_parameters(ZERO, Action.FTilt,                  File.ZERO_FTILT,                 -1,                       -1)
-    Character.edit_action_parameters(ZERO, Action.FTiltMidLow,            0,                              0x80000000,               0)
-    Character.edit_action_parameters(ZERO, Action.FTiltLow,               File.ZERO_FTILT,                 -1,                       -1)
-    Character.edit_action_parameters(ZERO, Action.UTilt,                  File.ZERO_UTILT,                 -1,                       -1)
-    Character.edit_action_parameters(ZERO, Action.DTilt,                  File.ZERO_DTILT,                 -1,                       -1)
-    Character.edit_action_parameters(ZERO, Action.FSmashHigh,             File.ZERO_FSMASH,                -1,                       -1)
-    Character.edit_action_parameters(ZERO, Action.FSmash,                 File.ZERO_FSMASH,                -1,                       -1)
-    Character.edit_action_parameters(ZERO, Action.FSmashLow,              File.ZERO_FSMASH,                -1,                       -1)
-    Character.edit_action_parameters(ZERO, Action.USmash,                 File.ZERO_USMASH,                -1,                       -1)
+    Character.edit_action_parameters(ZERO, Action.FTiltHigh,              File.ZERO_FTILT,                 FTILT,                    -1)
+    Character.edit_action_parameters(ZERO, Action.FTiltMidHigh,           0,                               0x80000000,                0)
+    Character.edit_action_parameters(ZERO, Action.FTilt,                  File.ZERO_FTILT,                 FTILT,                    -1)
+    Character.edit_action_parameters(ZERO, Action.FTiltMidLow,            0,                               0x80000000,                0)
+    Character.edit_action_parameters(ZERO, Action.FTiltLow,               File.ZERO_FTILT,                 FTILT,                    -1)
+    Character.edit_action_parameters(ZERO, Action.UTilt,                  File.ZERO_UTILT,                 UTILT,                    -1)
+    Character.edit_action_parameters(ZERO, Action.DTilt,                  File.ZERO_DTILT,                 DTILT,                    -1)
+    Character.edit_action_parameters(ZERO, Action.FSmashHigh,             File.ZERO_FSMASH,                FSMASH,                   -1)
+    Character.edit_action_parameters(ZERO, Action.FSmash,                 File.ZERO_FSMASH,                FSMASH,                   -1)
+    Character.edit_action_parameters(ZERO, Action.FSmashLow,              File.ZERO_FSMASH,                FSMASH,                   -1)
+    Character.edit_action_parameters(ZERO, Action.USmash,                 File.ZERO_USMASH,                USMASH,                   -1)
     Character.edit_action_parameters(ZERO, Action.DSmash,                 File.ZERO_DSMASH,                -1,                       -1)
-    Character.edit_action_parameters(ZERO, Action.AttackAirN,             File.ZERO_ATTACKAIRN,            -1,                       -1)
+    Character.edit_action_parameters(ZERO, Action.AttackAirN,             File.ZERO_ATTACKAIRN,            NAIR,                     -1)
     Character.edit_action_parameters(ZERO, Action.AttackAirF,             File.ZERO_ATTACKAIRF,            -1,                       -1)
     Character.edit_action_parameters(ZERO, Action.AttackAirB,             File.ZERO_ATTACKAIRB,            -1,                       -1)
     Character.edit_action_parameters(ZERO, Action.AttackAirU,             File.ZERO_ATTACKAIRU,            -1,                       -1)
-    Character.edit_action_parameters(ZERO, Action.AttackAirD,             File.ZERO_ATTACKAIRD,            -1,                       -1)
-    Character.edit_action_parameters(ZERO, Action.LandingAirF,            File.ZERO_LANDINGAIRF,           -1,                       -1)
-    Character.edit_action_parameters(ZERO, Action.LandingAirB,            File.ZERO_LANDINGAIRB,           -1,                       -1)
+    Character.edit_action_parameters(ZERO, Action.AttackAirD,             File.ZERO_ATTACKAIRD,            DAIR,                     -1)
+    Character.edit_action_parameters(ZERO, Action.LandingAirF,            File.ZERO_LANDING,               -1,                       -1)
+    Character.edit_action_parameters(ZERO, Action.LandingAirB,            File.ZERO_LANDING,               -1,                       -1)
     Character.edit_action_parameters(ZERO, Action.LandingAirX,            File.ZERO_LANDING,               -1,                       -1)
-    Character.edit_action_parameters(ZERO, 0xE4,                          File.ZERO_ACTION_0DC,            JAB3,                     -1)
-    Character.edit_action_parameters(ZERO, 0xE5,                          File.ZERO_ACTION_0DC,            JAB3,                     -1)
-    Character.edit_action_parameters(ZERO, 0xEB,                          File.ZERO_ACTION_0EB,            USP,                      -1)
+    Character.edit_action_parameters(ZERO, 0xE4,                          File.ZERO_ACTION_0E4,            IDLE,                     -1)
+    Character.edit_action_parameters(ZERO, 0xE5,                          File.ZERO_ACTION_0E4,            IDLE,                     -1)
+    Character.edit_action_parameters(ZERO, 0xEB,                          File.ZERO_ACTION_0EE,            USP,                      -1)
     Character.edit_action_parameters(ZERO, 0xEC,                          File.ZERO_ACTION_0EC,            USPCancel,        0x40000000)
     Character.edit_action_parameters(ZERO, 0xEE,                          File.ZERO_ACTION_0EE,            USP,                      -1)
+    Character.edit_action_parameters(ZERO, 0xE8,                          File.ZERO_ACTION_0E8,            DSPAIRLAND,               -1)
+    Character.edit_action_parameters(ZERO, 0xE9,                          File.ZERO_ACTION_0E9,            DSPAIR,                   -1)
 
     Character.edit_action_parameters(ZERO, Action.DamageHigh1,     File.ZERO_DAMAGEHIGH1,                        SHOCKFACE,                      -1)
     Character.edit_action_parameters(ZERO, Action.DamageHigh2,     File.ZERO_DAMAGEHIGH2,                        SHOCKFACE,                      -1)
@@ -215,9 +227,11 @@ scope Zero {
     Character.edit_menu_action_parameters(ZERO,   0xA,               File.ZERO_CONTINUEUP,        -1,                         -1)
 
     // Modify Actions            // Action              // Staling ID   // Main ASM                 // Interrupt/Other ASM          // Movement/Physics ASM         // Collision ASM
-    Character.edit_action(ZERO,  0xEB,                  0x11,           ZeroUSP.main_,             ZeroUSP.interrupt_,     -1,              ZeroUSP.collision_)
-    Character.edit_action(ZERO,  0xEC,                  0x11,           ZeroUSP.usp_end_,          0,                       0,              0)
-    Character.edit_action(ZERO,  0xEE,                  0x11,           ZeroUSP.main_,             ZeroUSP.interrupt_,     -1,              ZeroUSP.collision_)
+    // Character.edit_action(ZERO,  0xE4,                  0x12,           -1,                        -1,                             ZeroNSP.physics_,               -1)
+    // Character.edit_action(ZERO,  0xE5,                  0x12,           -1,                        -1,                             ZeroNSP.physics_,               -1)
+    Character.edit_action(ZERO,  0xEB,                  0x11,           ZeroUSP.main_,             ZeroUSP.interrupt_,             ZeroUSP.physics_,               ZeroUSP.collision_)
+    Character.edit_action(ZERO,  0xEC,                  0x11,           ZeroUSP.usp_end_,          0,                              0x8015DC94,                     ZeroUSP.end_collision_)
+    Character.edit_action(ZERO,  0xEE,                  0x11,           ZeroUSP.main_,             ZeroUSP.interrupt_,             ZeroUSP.physics_,               ZeroUSP.collision_)
 
     // Set default costumes
     Character.set_default_costumes(Character.id.ZERO, 0, 1, 5, 7, 0, 2, 3)
@@ -249,6 +263,12 @@ scope Zero {
     Character.table_patch_start(ground_usp, Character.id.ZERO, 0x4)
     dw      ZeroUSP.ground_initial_
     OS.patch_end()
+    // Character.table_patch_start(air_nsp, Character.id.ZERO, 0x4)
+    // dw      ZeroNSP.initial_
+    // OS.patch_end()
+    // Character.table_patch_start(ground_nsp, Character.id.ZERO, 0x4)
+    // dw      ZeroNSP.initial_
+    // OS.patch_end()
 
 
 }
