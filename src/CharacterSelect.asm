@@ -222,6 +222,7 @@ scope CharacterSelect {
     dw  0x58D0 + 0x200                      // 0x47 - DRAGONKING
     dw  0x149C8 + 0x200                     // 0x48 - SPM
     //dw  0xE7D0 + 0x200                     // 0x50 - JSPM
+    dw  0x3D120 + 0x200                     // 0x4A - Zero
     // ADD NEW CHARACTERS HERE
 
     // REMIX POLYGONS
@@ -359,6 +360,7 @@ scope CharacterSelect {
     add_alt_req_list(Character.id.SPM, req/SPM_MODEL)
     add_alt_req_list(Character.id.SP3, req/SPM_MODEL)
     //add_alt_req_list(Character.id.JSPM, req/JSPM_MODEL)
+    add_alt_req_list(Character.id.ZERO, req/ZERO_MODEL)
 
     // POLYGONS
     add_alt_req_list(Character.id.NWARIO, req/NWARIO_MODEL)
@@ -2361,6 +2363,7 @@ scope CharacterSelect {
         constant SPM(0x0002AE50 + 0x10)
         constant SP3(0x0002BF00 + 0x10)
         //constant JSPM(0x0002CFB0 + 0x10)
+        constant ZERO(0x00001078)
         // j
         constant JMARIO(0x00001078)
         constant JFOX(0x00002138)
@@ -5595,6 +5598,7 @@ scope CharacterSelect {
     add_to_css(Character.id.SPM,    FGM.announcer.names.SPM,            1.50,         0x00010001, SPM,          name_texture.SPM,            portrait_offsets.SPM,            -1)
     add_to_css(Character.id.SP3,    FGM.announcer.names.SP3,            1.50,         0x00010001, MVC,          name_texture.SPM,            portrait_offsets.SP3,            0)
     //add_to_css(Character.id.JSPM,   FGM.announcer.names.SPM,            1.50,         0x00010001, SPM,          name_texture.JSPM,           portrait_offsets.JSPM,           0)
+    add_to_css(Character.id.ZERO,   FGM.announcer.names.CAPTAIN_FALCON, 1.50,         0x00010001, FZERO,        name_texture.CAPTAIN_FALCON, portrait_offsets.JFALCON,        8)
     // ADD NEW CHARACTERS HERE
 
     // REMIX POLYGONS
