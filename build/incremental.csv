@@ -1,172 +1,161 @@
 Mode,FileNumberHex,NewFilePath,Compressed,InternalFileTableOffsetBytes,InternalFileResourceOffsetBytes,ReqFilesFile,CompressionLevel
-ADD,,C:\Users\theul\Desktop\BrianBonanza\Emulators\Mario Party Netplay 64\_RemixModShit\Golden Editor\tes\1186.vpk,1,01DC,0000,C:\Users\theul\Desktop\BrianBonanza\Emulators\Mario Party Netplay 64\_RemixModShit\Golden Editor\tes\1186.txt,2
-ADD,,C:\Users\theul\Desktop\BrianBonanza\Emulators\Mario Party Netplay 64\_RemixModShit\Golden Editor\tes\1187.vpk,1,0004,3FFFC,,2
-ADD,,C:\Users\theul\Desktop\BrianBonanza\Emulators\Mario Party Netplay 64\_RemixModShit\Golden Editor\tes\1188.bin,0,0000,3FFFC,,2
-ADD,,C:\Users\theul\Desktop\BrianBonanza\Emulators\Mario Party Netplay 64\_RemixModShit\Golden Editor\tes\1189.bin,0,0000,3FFFC,,2
-ADD,,C:\Users\theul\Desktop\BrianBonanza\Emulators\Mario Party Netplay 64\_RemixModShit\Golden Editor\tes\118A.bin,0,0000,3FFFC,,2
-ADD,,C:\Users\theul\Desktop\BrianBonanza\Emulators\Mario Party Netplay 64\_RemixModShit\Golden Editor\tes\118B.bin,0,0000,3FFFC,,2
-ADD,,C:\Users\theul\Desktop\BrianBonanza\Emulators\Mario Party Netplay 64\_RemixModShit\Golden Editor\tes\118C.bin,0,0000,3FFFC,,2
-ADD,,C:\Users\theul\Desktop\BrianBonanza\Emulators\Mario Party Netplay 64\_RemixModShit\Golden Editor\tes\118D.bin,0,0000,3FFFC,,2
-ADD,,C:\Users\theul\Desktop\BrianBonanza\Emulators\Mario Party Netplay 64\_RemixModShit\Golden Editor\tes\118E.bin,0,0000,3FFFC,,2
-ADD,,C:\Users\theul\Desktop\BrianBonanza\Emulators\Mario Party Netplay 64\_RemixModShit\Golden Editor\tes\118F.bin,0,0000,3FFFC,,2
-ADD,,C:\Users\theul\Desktop\BrianBonanza\Emulators\Mario Party Netplay 64\_RemixModShit\Golden Editor\tes\1190.bin,0,0000,3FFFC,,2
-ADD,,C:\Users\theul\Desktop\BrianBonanza\Emulators\Mario Party Netplay 64\_RemixModShit\Golden Editor\tes\1191.bin,0,0000,3FFFC,,2
-ADD,,C:\Users\theul\Desktop\BrianBonanza\Emulators\Mario Party Netplay 64\_RemixModShit\Golden Editor\tes\1192.bin,0,0000,3FFFC,,2
-ADD,,C:\Users\theul\Desktop\BrianBonanza\Emulators\Mario Party Netplay 64\_RemixModShit\Golden Editor\tes\1193.bin,0,0000,3FFFC,,2
-ADD,,C:\Users\theul\Desktop\BrianBonanza\Emulators\Mario Party Netplay 64\_RemixModShit\Golden Editor\tes\1194.bin,0,0000,3FFFC,,2
-ADD,,C:\Users\theul\Desktop\BrianBonanza\Emulators\Mario Party Netplay 64\_RemixModShit\Golden Editor\tes\1195.bin,0,0000,3FFFC,,2
-ADD,,C:\Users\theul\Desktop\BrianBonanza\Emulators\Mario Party Netplay 64\_RemixModShit\Golden Editor\tes\1196.bin,0,0000,3FFFC,,2
-ADD,,C:\Users\theul\Desktop\BrianBonanza\Emulators\Mario Party Netplay 64\_RemixModShit\Golden Editor\tes\1197.bin,0,0000,3FFFC,,2
-ADD,,C:\Users\theul\Desktop\BrianBonanza\Emulators\Mario Party Netplay 64\_RemixModShit\Golden Editor\tes\1198.bin,0,0000,3FFFC,,2
-ADD,,C:\Users\theul\Desktop\BrianBonanza\Emulators\Mario Party Netplay 64\_RemixModShit\Golden Editor\tes\1199.bin,0,0000,3FFFC,,2
-ADD,,C:\Users\theul\Desktop\BrianBonanza\Emulators\Mario Party Netplay 64\_RemixModShit\Golden Editor\tes\119A.bin,0,0000,3FFFC,,2
-ADD,,C:\Users\theul\Desktop\BrianBonanza\Emulators\Mario Party Netplay 64\_RemixModShit\Golden Editor\tes\119B.bin,0,0000,3FFFC,,2
-ADD,,C:\Users\theul\Desktop\BrianBonanza\Emulators\Mario Party Netplay 64\_RemixModShit\Golden Editor\tes\119C.bin,0,0000,3FFFC,,2
-ADD,,C:\Users\theul\Desktop\BrianBonanza\Emulators\Mario Party Netplay 64\_RemixModShit\Golden Editor\tes\119D.bin,0,0000,3FFFC,,2
-ADD,,C:\Users\theul\Desktop\BrianBonanza\Emulators\Mario Party Netplay 64\_RemixModShit\Golden Editor\tes\119E.bin,0,0000,3FFFC,,2
-ADD,,C:\Users\theul\Desktop\BrianBonanza\Emulators\Mario Party Netplay 64\_RemixModShit\Golden Editor\tes\119F.bin,0,0000,3FFFC,,2
-ADD,,C:\Users\theul\Desktop\BrianBonanza\Emulators\Mario Party Netplay 64\_RemixModShit\Golden Editor\tes\11A0.bin,0,0000,3FFFC,,2
-ADD,,C:\Users\theul\Desktop\BrianBonanza\Emulators\Mario Party Netplay 64\_RemixModShit\Golden Editor\tes\11A1.bin,0,0000,3FFFC,,2
-ADD,,C:\Users\theul\Desktop\BrianBonanza\Emulators\Mario Party Netplay 64\_RemixModShit\Golden Editor\tes\11A2.bin,0,0000,3FFFC,,2
-ADD,,C:\Users\theul\Desktop\BrianBonanza\Emulators\Mario Party Netplay 64\_RemixModShit\Golden Editor\tes\11A3.bin,0,0000,3FFFC,,2
-ADD,,C:\Users\theul\Desktop\BrianBonanza\Emulators\Mario Party Netplay 64\_RemixModShit\Golden Editor\tes\11A4.bin,0,0000,3FFFC,,2
-ADD,,C:\Users\theul\Desktop\BrianBonanza\Emulators\Mario Party Netplay 64\_RemixModShit\Golden Editor\tes\11A5.bin,0,0000,3FFFC,,2
-ADD,,C:\Users\theul\Desktop\BrianBonanza\Emulators\Mario Party Netplay 64\_RemixModShit\Golden Editor\tes\11A6.bin,0,0000,3FFFC,,2
-ADD,,C:\Users\theul\Desktop\BrianBonanza\Emulators\Mario Party Netplay 64\_RemixModShit\Golden Editor\tes\11A7.bin,0,0000,3FFFC,,2
-ADD,,C:\Users\theul\Desktop\BrianBonanza\Emulators\Mario Party Netplay 64\_RemixModShit\Golden Editor\tes\11A8.bin,0,0000,3FFFC,,2
-ADD,,C:\Users\theul\Desktop\BrianBonanza\Emulators\Mario Party Netplay 64\_RemixModShit\Golden Editor\tes\11A9.bin,0,0000,3FFFC,,2
-ADD,,C:\Users\theul\Desktop\BrianBonanza\Emulators\Mario Party Netplay 64\_RemixModShit\Golden Editor\tes\11AA.bin,0,0000,3FFFC,,2
-ADD,,C:\Users\theul\Desktop\BrianBonanza\Emulators\Mario Party Netplay 64\_RemixModShit\Golden Editor\tes\11AB.bin,0,0000,3FFFC,,2
-ADD,,C:\Users\theul\Desktop\BrianBonanza\Emulators\Mario Party Netplay 64\_RemixModShit\Golden Editor\tes\11AC.bin,0,0000,3FFFC,,2
-ADD,,C:\Users\theul\Desktop\BrianBonanza\Emulators\Mario Party Netplay 64\_RemixModShit\Golden Editor\tes\11AD.bin,0,0000,3FFFC,,2
-ADD,,C:\Users\theul\Desktop\BrianBonanza\Emulators\Mario Party Netplay 64\_RemixModShit\Golden Editor\tes\11AE.bin,0,0000,3FFFC,,2
-ADD,,C:\Users\theul\Desktop\BrianBonanza\Emulators\Mario Party Netplay 64\_RemixModShit\Golden Editor\tes\11AF.bin,0,0000,3FFFC,,2
-ADD,,C:\Users\theul\Desktop\BrianBonanza\Emulators\Mario Party Netplay 64\_RemixModShit\Golden Editor\tes\11B0.bin,0,0000,3FFFC,,2
-ADD,,C:\Users\theul\Desktop\BrianBonanza\Emulators\Mario Party Netplay 64\_RemixModShit\Golden Editor\tes\11B1.bin,0,0000,3FFFC,,2
-ADD,,C:\Users\theul\Desktop\BrianBonanza\Emulators\Mario Party Netplay 64\_RemixModShit\Golden Editor\tes\11B2.bin,0,0000,3FFFC,,2
-ADD,,C:\Users\theul\Desktop\BrianBonanza\Emulators\Mario Party Netplay 64\_RemixModShit\Golden Editor\tes\11B3.bin,0,0000,3FFFC,,2
-ADD,,C:\Users\theul\Desktop\BrianBonanza\Emulators\Mario Party Netplay 64\_RemixModShit\Golden Editor\tes\11B4.bin,0,0000,3FFFC,,2
-ADD,,C:\Users\theul\Desktop\BrianBonanza\Emulators\Mario Party Netplay 64\_RemixModShit\Golden Editor\tes\11B5.bin,0,0000,3FFFC,,2
-ADD,,C:\Users\theul\Desktop\BrianBonanza\Emulators\Mario Party Netplay 64\_RemixModShit\Golden Editor\tes\11B6.bin,0,0000,3FFFC,,2
-ADD,,C:\Users\theul\Desktop\BrianBonanza\Emulators\Mario Party Netplay 64\_RemixModShit\Golden Editor\tes\11B7.bin,0,0000,3FFFC,,2
-ADD,,C:\Users\theul\Desktop\BrianBonanza\Emulators\Mario Party Netplay 64\_RemixModShit\Golden Editor\tes\11B8.bin,0,0000,3FFFC,,2
-ADD,,C:\Users\theul\Desktop\BrianBonanza\Emulators\Mario Party Netplay 64\_RemixModShit\Golden Editor\tes\11B9.bin,0,0000,3FFFC,,2
-ADD,,C:\Users\theul\Desktop\BrianBonanza\Emulators\Mario Party Netplay 64\_RemixModShit\Golden Editor\tes\11BA.bin,0,0000,3FFFC,,2
-ADD,,C:\Users\theul\Desktop\BrianBonanza\Emulators\Mario Party Netplay 64\_RemixModShit\Golden Editor\tes\11BB.bin,0,0000,3FFFC,,2
-ADD,,C:\Users\theul\Desktop\BrianBonanza\Emulators\Mario Party Netplay 64\_RemixModShit\Golden Editor\tes\11BC.bin,0,0000,3FFFC,,2
-ADD,,C:\Users\theul\Desktop\BrianBonanza\Emulators\Mario Party Netplay 64\_RemixModShit\Golden Editor\tes\11BD.bin,0,0000,3FFFC,,2
-ADD,,C:\Users\theul\Desktop\BrianBonanza\Emulators\Mario Party Netplay 64\_RemixModShit\Golden Editor\tes\11BE.bin,0,0000,3FFFC,,2
-ADD,,C:\Users\theul\Desktop\BrianBonanza\Emulators\Mario Party Netplay 64\_RemixModShit\Golden Editor\tes\11BF.bin,0,0000,3FFFC,,2
-ADD,,C:\Users\theul\Desktop\BrianBonanza\Emulators\Mario Party Netplay 64\_RemixModShit\Golden Editor\tes\11C0.bin,0,0000,3FFFC,,2
-ADD,,C:\Users\theul\Desktop\BrianBonanza\Emulators\Mario Party Netplay 64\_RemixModShit\Golden Editor\tes\11C1.bin,0,0000,3FFFC,,2
-ADD,,C:\Users\theul\Desktop\BrianBonanza\Emulators\Mario Party Netplay 64\_RemixModShit\Golden Editor\tes\11C2.bin,0,0000,3FFFC,,2
-ADD,,C:\Users\theul\Desktop\BrianBonanza\Emulators\Mario Party Netplay 64\_RemixModShit\Golden Editor\tes\11C3.bin,0,0000,3FFFC,,2
-ADD,,C:\Users\theul\Desktop\BrianBonanza\Emulators\Mario Party Netplay 64\_RemixModShit\Golden Editor\tes\11C4.bin,0,0000,3FFFC,,2
-ADD,,C:\Users\theul\Desktop\BrianBonanza\Emulators\Mario Party Netplay 64\_RemixModShit\Golden Editor\tes\11C5.bin,0,0000,3FFFC,,2
-ADD,,C:\Users\theul\Desktop\BrianBonanza\Emulators\Mario Party Netplay 64\_RemixModShit\Golden Editor\tes\11C6.bin,0,0000,3FFFC,,2
-ADD,,C:\Users\theul\Desktop\BrianBonanza\Emulators\Mario Party Netplay 64\_RemixModShit\Golden Editor\tes\11C7.bin,0,0000,3FFFC,,2
-ADD,,C:\Users\theul\Desktop\BrianBonanza\Emulators\Mario Party Netplay 64\_RemixModShit\Golden Editor\tes\11C8.bin,0,0000,3FFFC,,2
-ADD,,C:\Users\theul\Desktop\BrianBonanza\Emulators\Mario Party Netplay 64\_RemixModShit\Golden Editor\tes\11C9.bin,0,0000,3FFFC,,2
-ADD,,C:\Users\theul\Desktop\BrianBonanza\Emulators\Mario Party Netplay 64\_RemixModShit\Golden Editor\tes\11CA.bin,0,0000,3FFFC,,2
-ADD,,C:\Users\theul\Desktop\BrianBonanza\Emulators\Mario Party Netplay 64\_RemixModShit\Golden Editor\tes\11CB.bin,0,0000,3FFFC,,2
-ADD,,C:\Users\theul\Desktop\BrianBonanza\Emulators\Mario Party Netplay 64\_RemixModShit\Golden Editor\tes\11CC.bin,0,0000,3FFFC,,2
-ADD,,C:\Users\theul\Desktop\BrianBonanza\Emulators\Mario Party Netplay 64\_RemixModShit\Golden Editor\tes\11CD.bin,0,0000,3FFFC,,2
-ADD,,C:\Users\theul\Desktop\BrianBonanza\Emulators\Mario Party Netplay 64\_RemixModShit\Golden Editor\tes\11CE.bin,0,0000,3FFFC,,2
-ADD,,C:\Users\theul\Desktop\BrianBonanza\Emulators\Mario Party Netplay 64\_RemixModShit\Golden Editor\tes\11CF.bin,0,0000,3FFFC,,2
-ADD,,C:\Users\theul\Desktop\BrianBonanza\Emulators\Mario Party Netplay 64\_RemixModShit\Golden Editor\tes\11D0.bin,0,0000,3FFFC,,2
-ADD,,C:\Users\theul\Desktop\BrianBonanza\Emulators\Mario Party Netplay 64\_RemixModShit\Golden Editor\tes\11D1.bin,0,0000,3FFFC,,2
-ADD,,C:\Users\theul\Desktop\BrianBonanza\Emulators\Mario Party Netplay 64\_RemixModShit\Golden Editor\tes\11D2.bin,0,0000,3FFFC,,2
-ADD,,C:\Users\theul\Desktop\BrianBonanza\Emulators\Mario Party Netplay 64\_RemixModShit\Golden Editor\tes\11D3.bin,0,0000,3FFFC,,2
-ADD,,C:\Users\theul\Desktop\BrianBonanza\Emulators\Mario Party Netplay 64\_RemixModShit\Golden Editor\tes\11D4.bin,0,0000,3FFFC,,2
-ADD,,C:\Users\theul\Desktop\BrianBonanza\Emulators\Mario Party Netplay 64\_RemixModShit\Golden Editor\tes\11D5.bin,0,0000,3FFFC,,2
-ADD,,C:\Users\theul\Desktop\BrianBonanza\Emulators\Mario Party Netplay 64\_RemixModShit\Golden Editor\tes\11D6.bin,0,0000,3FFFC,,2
-ADD,,C:\Users\theul\Desktop\BrianBonanza\Emulators\Mario Party Netplay 64\_RemixModShit\Golden Editor\tes\11D7.bin,0,0000,3FFFC,,2
-ADD,,C:\Users\theul\Desktop\BrianBonanza\Emulators\Mario Party Netplay 64\_RemixModShit\Golden Editor\tes\11D8.bin,0,0000,3FFFC,,2
-ADD,,C:\Users\theul\Desktop\BrianBonanza\Emulators\Mario Party Netplay 64\_RemixModShit\Golden Editor\tes\11D9.bin,0,0000,3FFFC,,2
-ADD,,C:\Users\theul\Desktop\BrianBonanza\Emulators\Mario Party Netplay 64\_RemixModShit\Golden Editor\tes\11DA.bin,0,0000,3FFFC,,2
-ADD,,C:\Users\theul\Desktop\BrianBonanza\Emulators\Mario Party Netplay 64\_RemixModShit\Golden Editor\tes\11DB.bin,0,0000,3FFFC,,2
-ADD,,C:\Users\theul\Desktop\BrianBonanza\Emulators\Mario Party Netplay 64\_RemixModShit\Golden Editor\tes\11DC.bin,0,0000,3FFFC,,2
-ADD,,C:\Users\theul\Desktop\BrianBonanza\Emulators\Mario Party Netplay 64\_RemixModShit\Golden Editor\tes\11DD.bin,0,0000,3FFFC,,2
-ADD,,C:\Users\theul\Desktop\BrianBonanza\Emulators\Mario Party Netplay 64\_RemixModShit\Golden Editor\tes\11DE.bin,0,0000,3FFFC,,2
-ADD,,C:\Users\theul\Desktop\BrianBonanza\Emulators\Mario Party Netplay 64\_RemixModShit\Golden Editor\tes\11DF.bin,0,0000,3FFFC,,2
-ADD,,C:\Users\theul\Desktop\BrianBonanza\Emulators\Mario Party Netplay 64\_RemixModShit\Golden Editor\tes\11E0.bin,0,0000,3FFFC,,2
-ADD,,C:\Users\theul\Desktop\BrianBonanza\Emulators\Mario Party Netplay 64\_RemixModShit\Golden Editor\tes\11E1.bin,0,0000,3FFFC,,2
-ADD,,C:\Users\theul\Desktop\BrianBonanza\Emulators\Mario Party Netplay 64\_RemixModShit\Golden Editor\tes\11E2.bin,0,0000,3FFFC,,2
-ADD,,C:\Users\theul\Desktop\BrianBonanza\Emulators\Mario Party Netplay 64\_RemixModShit\Golden Editor\tes\11E3.bin,0,0000,3FFFC,,2
-ADD,,C:\Users\theul\Desktop\BrianBonanza\Emulators\Mario Party Netplay 64\_RemixModShit\Golden Editor\tes\11E4.bin,0,0000,3FFFC,,2
-ADD,,C:\Users\theul\Desktop\BrianBonanza\Emulators\Mario Party Netplay 64\_RemixModShit\Golden Editor\tes\11E5.bin,0,0000,3FFFC,,2
-ADD,,C:\Users\theul\Desktop\BrianBonanza\Emulators\Mario Party Netplay 64\_RemixModShit\Golden Editor\tes\11E6.bin,0,0000,3FFFC,,2
-ADD,,C:\Users\theul\Desktop\BrianBonanza\Emulators\Mario Party Netplay 64\_RemixModShit\Golden Editor\tes\11E7.bin,0,0000,3FFFC,,2
-ADD,,C:\Users\theul\Desktop\BrianBonanza\Emulators\Mario Party Netplay 64\_RemixModShit\Golden Editor\tes\11E8.bin,0,0004,3FFFC,,2
-ADD,,C:\Users\theul\Desktop\BrianBonanza\Emulators\Mario Party Netplay 64\_RemixModShit\Golden Editor\tes\11E9.bin,0,0004,3FFFC,,2
-ADD,,C:\Users\theul\Desktop\BrianBonanza\Emulators\Mario Party Netplay 64\_RemixModShit\Golden Editor\tes\11EA.bin,0,0000,3FFFC,,2
-ADD,,C:\Users\theul\Desktop\BrianBonanza\Emulators\Mario Party Netplay 64\_RemixModShit\Golden Editor\tes\11EB.bin,0,0000,3FFFC,,2
-ADD,,C:\Users\theul\Desktop\BrianBonanza\Emulators\Mario Party Netplay 64\_RemixModShit\Golden Editor\tes\11EC.bin,0,0000,3FFFC,,2
-ADD,,C:\Users\theul\Desktop\BrianBonanza\Emulators\Mario Party Netplay 64\_RemixModShit\Golden Editor\tes\11ED.bin,0,0000,3FFFC,,2
-ADD,,C:\Users\theul\Desktop\BrianBonanza\Emulators\Mario Party Netplay 64\_RemixModShit\Golden Editor\tes\11EE.bin,0,0000,3FFFC,,2
-ADD,,C:\Users\theul\Desktop\BrianBonanza\Emulators\Mario Party Netplay 64\_RemixModShit\Golden Editor\tes\11EF.bin,0,0000,3FFFC,,2
-ADD,,C:\Users\theul\Desktop\BrianBonanza\Emulators\Mario Party Netplay 64\_RemixModShit\Golden Editor\tes\11F0.bin,0,0000,3FFFC,,2
-ADD,,C:\Users\theul\Desktop\BrianBonanza\Emulators\Mario Party Netplay 64\_RemixModShit\Golden Editor\tes\11F1.bin,0,0000,3FFFC,,2
-ADD,,C:\Users\theul\Desktop\BrianBonanza\Emulators\Mario Party Netplay 64\_RemixModShit\Golden Editor\tes\11F2.bin,0,0004,3FFFC,,2
-ADD,,C:\Users\theul\Desktop\BrianBonanza\Emulators\Mario Party Netplay 64\_RemixModShit\Golden Editor\tes\11F3.bin,0,0004,3FFFC,,2
-ADD,,C:\Users\theul\Desktop\BrianBonanza\Emulators\Mario Party Netplay 64\_RemixModShit\Golden Editor\tes\11F4.bin,0,0000,3FFFC,,2
-ADD,,C:\Users\theul\Desktop\BrianBonanza\Emulators\Mario Party Netplay 64\_RemixModShit\Golden Editor\tes\11F5.bin,0,0004,3FFFC,,2
-ADD,,C:\Users\theul\Desktop\BrianBonanza\Emulators\Mario Party Netplay 64\_RemixModShit\Golden Editor\tes\11F6.bin,0,0004,3FFFC,,2
-ADD,,C:\Users\theul\Desktop\BrianBonanza\Emulators\Mario Party Netplay 64\_RemixModShit\Golden Editor\tes\11F7.bin,0,0000,3FFFC,,2
-ADD,,C:\Users\theul\Desktop\BrianBonanza\Emulators\Mario Party Netplay 64\_RemixModShit\Golden Editor\tes\11F8.bin,0,0000,3FFFC,,2
-ADD,,C:\Users\theul\Desktop\BrianBonanza\Emulators\Mario Party Netplay 64\_RemixModShit\Golden Editor\tes\11F9.bin,0,0000,3FFFC,,2
-ADD,,C:\Users\theul\Desktop\BrianBonanza\Emulators\Mario Party Netplay 64\_RemixModShit\Golden Editor\tes\11FA.bin,0,0000,3FFFC,,2
-ADD,,C:\Users\theul\Desktop\BrianBonanza\Emulators\Mario Party Netplay 64\_RemixModShit\Golden Editor\tes\11FB.bin,0,0000,3FFFC,,2
-ADD,,C:\Users\theul\Desktop\BrianBonanza\Emulators\Mario Party Netplay 64\_RemixModShit\Golden Editor\tes\11FC.bin,0,0000,3FFFC,,2
-ADD,,C:\Users\theul\Desktop\BrianBonanza\Emulators\Mario Party Netplay 64\_RemixModShit\Golden Editor\tes\11FD.bin,0,0000,3FFFC,,2
-ADD,,C:\Users\theul\Desktop\BrianBonanza\Emulators\Mario Party Netplay 64\_RemixModShit\Golden Editor\tes\11FE.bin,0,0000,3FFFC,,2
-ADD,,C:\Users\theul\Desktop\BrianBonanza\Emulators\Mario Party Netplay 64\_RemixModShit\Golden Editor\tes\11FF.bin,0,0000,3FFFC,,2
-ADD,,C:\Users\theul\Desktop\BrianBonanza\Emulators\Mario Party Netplay 64\_RemixModShit\Golden Editor\tes\1200.bin,0,0000,3FFFC,,2
-ADD,,C:\Users\theul\Desktop\BrianBonanza\Emulators\Mario Party Netplay 64\_RemixModShit\Golden Editor\tes\1201.bin,0,0000,3FFFC,,2
-ADD,,C:\Users\theul\Desktop\BrianBonanza\Emulators\Mario Party Netplay 64\_RemixModShit\Golden Editor\tes\1202.bin,0,0000,3FFFC,,2
-ADD,,C:\Users\theul\Desktop\BrianBonanza\Emulators\Mario Party Netplay 64\_RemixModShit\Golden Editor\tes\1203.bin,0,0000,3FFFC,,2
-ADD,,C:\Users\theul\Desktop\BrianBonanza\Emulators\Mario Party Netplay 64\_RemixModShit\Golden Editor\tes\1204.bin,0,0000,3FFFC,,2
-ADD,,C:\Users\theul\Desktop\BrianBonanza\Emulators\Mario Party Netplay 64\_RemixModShit\Golden Editor\tes\1205.bin,0,0000,3FFFC,,2
-ADD,,C:\Users\theul\Desktop\BrianBonanza\Emulators\Mario Party Netplay 64\_RemixModShit\Golden Editor\tes\1206.bin,0,0000,3FFFC,,2
-ADD,,C:\Users\theul\Desktop\BrianBonanza\Emulators\Mario Party Netplay 64\_RemixModShit\Golden Editor\tes\1207.bin,0,0000,3FFFC,,2
-ADD,,C:\Users\theul\Desktop\BrianBonanza\Emulators\Mario Party Netplay 64\_RemixModShit\Golden Editor\tes\1208.bin,0,0000,3FFFC,,2
-ADD,,C:\Users\theul\Desktop\BrianBonanza\Emulators\Mario Party Netplay 64\_RemixModShit\Golden Editor\tes\1209.bin,0,0000,3FFFC,,2
-ADD,,C:\Users\theul\Desktop\BrianBonanza\Emulators\Mario Party Netplay 64\_RemixModShit\Golden Editor\tes\120A.bin,0,0000,3FFFC,,2
-ADD,,C:\Users\theul\Desktop\BrianBonanza\Emulators\Mario Party Netplay 64\_RemixModShit\Golden Editor\tes\120B.bin,0,0000,3FFFC,,2
-ADD,,C:\Users\theul\Desktop\BrianBonanza\Emulators\Mario Party Netplay 64\_RemixModShit\Golden Editor\tes\120C.bin,0,0000,3FFFC,,2
-ADD,,C:\Users\theul\Desktop\BrianBonanza\Emulators\Mario Party Netplay 64\_RemixModShit\Golden Editor\tes\120D.bin,0,0000,3FFFC,,2
-ADD,,C:\Users\theul\Desktop\BrianBonanza\Emulators\Mario Party Netplay 64\_RemixModShit\Golden Editor\tes\120E.bin,0,0000,3FFFC,,2
-ADD,,C:\Users\theul\Desktop\BrianBonanza\Emulators\Mario Party Netplay 64\_RemixModShit\Golden Editor\tes\120F.bin,0,0000,3FFFC,,2
-ADD,,C:\Users\theul\Desktop\BrianBonanza\Emulators\Mario Party Netplay 64\_RemixModShit\Golden Editor\tes\1210.bin,0,0000,3FFFC,,2
-ADD,,C:\Users\theul\Desktop\BrianBonanza\Emulators\Mario Party Netplay 64\_RemixModShit\Golden Editor\tes\1211.bin,0,0000,3FFFC,,2
-ADD,,C:\Users\theul\Desktop\BrianBonanza\Emulators\Mario Party Netplay 64\_RemixModShit\Golden Editor\tes\1212.bin,0,0000,3FFFC,,2
-ADD,,C:\Users\theul\Desktop\BrianBonanza\Emulators\Mario Party Netplay 64\_RemixModShit\Golden Editor\tes\1213.bin,0,0000,3FFFC,,2
-ADD,,C:\Users\theul\Desktop\BrianBonanza\Emulators\Mario Party Netplay 64\_RemixModShit\Golden Editor\tes\1214.bin,0,0000,3FFFC,,2
-ADD,,C:\Users\theul\Desktop\BrianBonanza\Emulators\Mario Party Netplay 64\_RemixModShit\Golden Editor\tes\1215.bin,0,0000,3FFFC,,2
-ADD,,C:\Users\theul\Desktop\BrianBonanza\Emulators\Mario Party Netplay 64\_RemixModShit\Golden Editor\tes\1216.bin,0,0000,3FFFC,,2
-ADD,,C:\Users\theul\Desktop\BrianBonanza\Emulators\Mario Party Netplay 64\_RemixModShit\Golden Editor\tes\1217.bin,0,0000,3FFFC,,2
-ADD,,C:\Users\theul\Desktop\BrianBonanza\Emulators\Mario Party Netplay 64\_RemixModShit\Golden Editor\tes\1218.bin,0,0000,3FFFC,,2
-ADD,,C:\Users\theul\Desktop\BrianBonanza\Emulators\Mario Party Netplay 64\_RemixModShit\Golden Editor\tes\1219.bin,0,0000,3FFFC,,2
-ADD,,C:\Users\theul\Desktop\BrianBonanza\Emulators\Mario Party Netplay 64\_RemixModShit\Golden Editor\tes\121A.bin,0,0000,3FFFC,,2
-ADD,,C:\Users\theul\Desktop\BrianBonanza\Emulators\Mario Party Netplay 64\_RemixModShit\Golden Editor\tes\121B.bin,0,0000,3FFFC,,2
-ADD,,C:\Users\theul\Desktop\BrianBonanza\Emulators\Mario Party Netplay 64\_RemixModShit\Golden Editor\tes\121C.bin,0,0000,3FFFC,,2
-ADD,,C:\Users\theul\Desktop\BrianBonanza\Emulators\Mario Party Netplay 64\_RemixModShit\Golden Editor\tes\121D.bin,0,0000,3FFFC,,2
-ADD,,C:\Users\theul\Desktop\BrianBonanza\Emulators\Mario Party Netplay 64\_RemixModShit\Golden Editor\tes\121E.bin,0,0000,3FFFC,,2
-ADD,,C:\Users\theul\Desktop\BrianBonanza\Emulators\Mario Party Netplay 64\_RemixModShit\Golden Editor\tes\121F.bin,0,0000,3FFFC,,2
-ADD,,C:\Users\theul\Desktop\BrianBonanza\Emulators\Mario Party Netplay 64\_RemixModShit\Golden Editor\tes\1220.vpk,1,0000,3FFFC,,2
-ADD,,C:\Users\theul\Desktop\BrianBonanza\Emulators\Mario Party Netplay 64\_RemixModShit\Golden Editor\tes\1221.vpk,1,0000,3FFFC,,2
-ADD,,C:\Users\theul\Desktop\BrianBonanza\Emulators\Mario Party Netplay 64\_RemixModShit\Golden Editor\tes\1222.vpk,1,0000,3FFFC,,2
-ADD,,C:\Users\theul\Desktop\BrianBonanza\Emulators\Mario Party Netplay 64\_RemixModShit\Golden Editor\tes\1223.vpk,1,0000,3FFFC,,2
-ADD,,C:\Users\theul\Desktop\BrianBonanza\Emulators\Mario Party Netplay 64\_RemixModShit\Golden Editor\tes\1224.vpk,1,0000,3FFFC,,2
-ADD,,C:\Users\theul\Desktop\BrianBonanza\Emulators\Mario Party Netplay 64\_RemixModShit\Golden Editor\tes\1225.vpk,1,0000,3FFFC,,2
-ADD,,C:\Users\theul\Desktop\BrianBonanza\Emulators\Mario Party Netplay 64\_RemixModShit\Golden Editor\tes\1226.vpk,1,0000,3FFFC,,1
-ADD,,C:\Users\theul\Desktop\BrianBonanza\Emulators\Mario Party Netplay 64\_RemixModShit\Golden Editor\tes\1227.vpk,1,204D0,3FFFC,,2
-ADD,,C:\Users\theul\Desktop\BrianBonanza\Emulators\Mario Party Netplay 64\_RemixModShit\Golden Editor\tes\1228.vpk,1,204D0,3FFFC,,2
-ADD,,C:\Users\theul\Desktop\BrianBonanza\Emulators\Mario Party Netplay 64\_RemixModShit\Golden Editor\tes\1229.vpk,1,3FFFC,0000,C:\Users\theul\Desktop\BrianBonanza\Emulators\Mario Party Netplay 64\_RemixModShit\Golden Editor\tes\1229.txt,1
-ADD,,C:\Users\theul\Desktop\BrianBonanza\Emulators\Mario Party Netplay 64\_RemixModShit\Golden Editor\tes\122A.vpk,1,0058,3FFFC,,2
-ADD,,C:\Users\theul\Desktop\BrianBonanza\Emulators\Mario Party Netplay 64\_RemixModShit\Golden Editor\tes\122B.bin,0,0000,3FFFC,,2
-ADD,,C:\Users\theul\Desktop\BrianBonanza\Emulators\Mario Party Netplay 64\_RemixModShit\Golden Editor\tes\122C.bin,0,0000,3FFFC,,2
-ADD,,C:\Users\theul\Desktop\BrianBonanza\Emulators\Mario Party Netplay 64\_RemixModShit\Golden Editor\tes\122D.bin,0,0000,3FFFC,,2
-ADD,,C:\Users\theul\Desktop\BrianBonanza\Emulators\Mario Party Netplay 64\_RemixModShit\Golden Editor\tes\122E.bin,0,0000,3FFFC,,2
-ADD,,C:\Users\theul\Desktop\BrianBonanza\Emulators\Mario Party Netplay 64\_RemixModShit\Golden Editor\tes\122F.vpk,1,0064,3FFFC,,2
+ADD,,.\original\ZERO_Idle.bin,0,00000,3FFFC,,2
+ADD,,.\original\ZERO_Walk1.bin,0,00000,3FFFC,,2
+ADD,,.\original\ZERO_Walk2.bin,0,00000,3FFFC,,2
+ADD,,.\original\ZERO_Walk3.bin,0,00000,3FFFC,,2
+ADD,,.\original\ZERO_WalkEnd.bin,0,00000,3FFFC,,2
+ADD,,.\original\ZERO_Dash.bin,0,00000,3FFFC,,2
+ADD,,.\original\ZERO_Run.bin,0,00000,3FFFC,,2
+ADD,,.\original\ZERO_RunBrake.bin,0,00000,3FFFC,,2
+ADD,,.\original\ZERO_Turn.bin,0,00000,3FFFC,,2
+ADD,,.\original\ZERO_TurnRun.bin,0,00000,3FFFC,,2
+ADD,,.\original\ZERO_JumpF.bin,0,00000,3FFFC,,2
+ADD,,.\original\ZERO_JumpB.bin,0,00000,3FFFC,,2
+ADD,,.\original\ZERO_JumpAerialF.bin,0,00000,3FFFC,,2
+ADD,,.\original\ZERO_JumpAerialB.bin,0,00000,3FFFC,,2
+ADD,,.\original\ZERO_Fall.bin,0,00000,3FFFC,,2
+ADD,,.\original\ZERO_FallAerial.bin,0,00000,3FFFC,,2
+ADD,,.\original\ZERO_Crouch.bin,0,00000,3FFFC,,2
+ADD,,.\original\ZERO_CrouchIdle.bin,0,00000,3FFFC,,2
+ADD,,.\original\ZERO_CrouchEnd.bin,0,00000,3FFFC,,2
+ADD,,.\original\ZERO_Landing.bin,0,00000,3FFFC,,2
+ADD,,.\original\ZERO_PlatDrop.bin,0,00000,3FFFC,,2
+ADD,,.\original\ZERO_Teeter.bin,0,00000,3FFFC,,2
+ADD,,.\original\ZERO_Teeterstart.bin,0,00000,3FFFC,,2
+ADD,,.\original\ZERO_DamageHigh1.bin,0,00000,3FFFC,,2
+ADD,,.\original\ZERO_DamageHigh2.bin,0,00000,3FFFC,,2
+ADD,,.\original\ZERO_DamageHigh3.bin,0,00000,3FFFC,,2
+ADD,,.\original\ZERO_DamageMid1.bin,0,00000,3FFFC,,2
+ADD,,.\original\ZERO_DamageMid2.bin,0,00000,3FFFC,,2
+ADD,,.\original\ZERO_DamageMid3.bin,0,00000,3FFFC,,2
+ADD,,.\original\ZERO_DamageLow1.bin,0,00000,3FFFC,,2
+ADD,,.\original\ZERO_DamageLow2.bin,0,00000,3FFFC,,2
+ADD,,.\original\ZERO_DamageLow3.bin,0,00000,3FFFC,,2
+ADD,,.\original\ZERO_DamageAir1.bin,0,00000,3FFFC,,2
+ADD,,.\original\ZERO_DamageAir2.bin,0,00000,3FFFC,,2
+ADD,,.\original\ZERO_DamageAir3.bin,0,00000,3FFFC,,2
+ADD,,.\original\ZERO_DamageElec.bin,0,00000,3FFFC,,2
+ADD,,.\original\ZERO_DamageFlyHigh.bin,0,00000,3FFFC,,2
+ADD,,.\original\ZERO_DamageFlyMid.bin,0,00000,3FFFC,,2
+ADD,,.\original\ZERO_DamageFlyLow.bin,0,00000,3FFFC,,2
+ADD,,.\original\ZERO_DamageFlyTop.bin,0,00000,3FFFC,,2
+ADD,,.\original\ZERO_DamageFlyRoll.bin,0,00000,3FFFC,,2
+ADD,,.\original\ZERO_Tumble.bin,0,00000,3FFFC,,2
+ADD,,.\original\ZERO_FallSpecial.bin,0,00000,3FFFC,,2
+ADD,,.\original\ZERO_EnterPipe.bin,0,00000,3FFFC,,2
+ADD,,.\original\ZERO_ExitPipe.bin,0,00000,3FFFC,,2
+ADD,,.\original\ZERO_ExitPipeWalk.bin,0,00000,3FFFC,,2
+ADD,,.\original\ZERO_CeilingBonk.bin,0,00000,3FFFC,,2
+ADD,,.\original\ZERO_DownBounceD.bin,0,00000,3FFFC,,2
+ADD,,.\original\ZERO_DownBounceU.bin,0,00000,3FFFC,,2
+ADD,,.\original\ZERO_DownStandD.bin,0,00000,3FFFC,,2
+ADD,,.\original\ZERO_DownStandU.bin,0,00000,3FFFC,,2
+ADD,,.\original\ZERO_TechF.bin,0,00000,3FFFC,,2
+ADD,,.\original\ZERO_TechB.bin,0,00000,3FFFC,,2
+ADD,,.\original\ZERO_DownForwardD.bin,0,00000,3FFFC,,2
+ADD,,.\original\ZERO_DownForwardU.bin,0,00000,3FFFC,,2
+ADD,,.\original\ZERO_DownBackD.bin,0,00000,3FFFC,,2
+ADD,,.\original\ZERO_DownBackU.bin,0,00000,3FFFC,,2
+ADD,,.\original\ZERO_DownAttackD.bin,0,00000,3FFFC,,2
+ADD,,.\original\ZERO_DownAttackU.bin,0,00000,3FFFC,,2
+ADD,,.\original\ZERO_Tech.bin,0,00000,3FFFC,,2
+ADD,,.\original\ZERO_ClangRecoil.bin,0,00000,3FFFC,,2
+ADD,,.\original\ZERO_CliffCatch.bin,0,00000,3FFFC,,2
+ADD,,.\original\ZERO_CliffWait.bin,0,00000,3FFFC,,2
+ADD,,.\original\ZERO_CliffQuick.bin,0,00000,3FFFC,,2
+ADD,,.\original\ZERO_CliffClimbQuick1.bin,0,00000,3FFFC,,2
+ADD,,.\original\ZERO_CliffClimbQuick2.bin,0,00000,3FFFC,,2
+ADD,,.\original\ZERO_CliffSlow.bin,0,00000,3FFFC,,2
+ADD,,.\original\ZERO_CliffClimbSlow1.bin,0,00000,3FFFC,,2
+ADD,,.\original\ZERO_CliffClimbSlow2.bin,0,00000,3FFFC,,2
+ADD,,.\original\ZERO_CliffAttackQuick1.bin,0,00000,3FFFC,,2
+ADD,,.\original\ZERO_CliffAttackQuick2.bin,0,00000,3FFFC,,2
+ADD,,.\original\ZERO_CliffAttackSlow1.bin,0,00000,3FFFC,,2
+ADD,,.\original\ZERO_CliffAttackSlow2.bin,0,00000,3FFFC,,2
+ADD,,.\original\ZERO_CliffEscapeQuick1.bin,0,00000,3FFFC,,2
+ADD,,.\original\ZERO_CliffEscapeQuick2.bin,0,00000,3FFFC,,2
+ADD,,.\original\ZERO_CliffEscapeSlow1.bin,0,00000,3FFFC,,2
+ADD,,.\original\ZERO_CliffEscapeSlow2.bin,0,00000,3FFFC,,2
+ADD,,.\original\ZERO_LightItemPickup.bin,0,00000,3FFFC,,2
+ADD,,.\original\ZERO_HeavyItemPickup.bin,0,00000,3FFFC,,2
+ADD,,.\original\ZERO_ItemDrop.bin,0,00000,3FFFC,,2
+ADD,,.\original\ZERO_ItemThrowDash.bin,0,00000,3FFFC,,2
+ADD,,.\original\ZERO_ItemThrowF.bin,0,00000,3FFFC,,2
+ADD,,.\original\ZERO_ItemThrowU.bin,0,00000,3FFFC,,2
+ADD,,.\original\ZERO_ItemThrowD.bin,0,00000,3FFFC,,2
+ADD,,.\original\ZERO_ItemThrowAirF.bin,0,00000,3FFFC,,2
+ADD,,.\original\ZERO_ItemThrowAirU.bin,0,00000,3FFFC,,2
+ADD,,.\original\ZERO_ItemThrowAirD.bin,0,00000,3FFFC,,2
+ADD,,.\original\ZERO_HeavyItemThrow.bin,0,00000,3FFFC,,2
+ADD,,.\original\ZERO_ItemNeutral.bin,0,00000,3FFFC,,2
+ADD,,.\original\ZERO_ItemTilt.bin,0,00000,3FFFC,,2
+ADD,,.\original\ZERO_ItemSmash.bin,0,00000,3FFFC,,2
+ADD,,.\original\ZERO_ItemDash.bin,0,00000,3FFFC,,2
+ADD,,.\original\ZERO_ItemShoot.bin,0,00000,3FFFC,,2
+ADD,,.\original\ZERO_ItemShootAir.bin,0,00000,3FFFC,,2
+ADD,,.\original\ZERO_HammerIdle.bin,0,00000,3FFFC,,2
+ADD,,.\original\ZERO_HammerMove.bin,0,00000,3FFFC,,2
+ADD,,.\original\ZERO_ShieldOn.bin,0,00004,3FFFC,,2
+ADD,,.\original\ZERO_ShieldOff.bin,0,00004,3FFFC,,2
+ADD,,.\original\ZERO_RollF.bin,0,00000,3FFFC,,2
+ADD,,.\original\ZERO_RollB.bin,0,00000,3FFFC,,2
+ADD,,.\original\ZERO_Stun.bin,0,00000,3FFFC,,2
+ADD,,.\original\ZERO_Grab.bin,0,00000,3FFFC,,2
+ADD,,.\original\ZERO_GrabPull.bin,0,00000,3FFFC,,2
+ADD,,.\original\ZERO_ThrowF.bin,0,00000,3FFFC,,2
+ADD,,.\original\ZERO_ThrowB.bin,0,00000,3FFFC,,2
+ADD,,.\original\ZERO_CapturePulled.bin,0,00000,3FFFC,,2
+ADD,,.\original\ZERO_ThrownDKPulled.bin,0,00004,3FFFC,,2
+ADD,,.\original\ZERO_ThrownMarioBros.bin,0,00004,3FFFC,,2
+ADD,,.\original\ZERO_ThrownDK.bin,0,00000,3FFFC,,2
+ADD,,.\original\ZERO_Thrown1.bin,0,00004,3FFFC,,2
+ADD,,.\original\ZERO_Thrown2.bin,0,00004,3FFFC,,2
+ADD,,.\original\ZERO_Taunt.bin,0,00000,3FFFC,,2
+ADD,,.\original\ZERO_Jab1.bin,0,00000,3FFFC,,2
+ADD,,.\original\ZERO_Jab2.bin,0,00000,3FFFC,,2
+ADD,,.\original\ZERO_DashAttack.bin,0,00000,3FFFC,,2
+ADD,,.\original\ZERO_FTiltHigh.bin,0,00000,3FFFC,,2
+ADD,,.\original\ZERO_FTiltMidHigh.bin,0,00000,3FFFC,,2
+ADD,,.\original\ZERO_FTilt.bin,0,00000,3FFFC,,2
+ADD,,.\original\ZERO_FTiltMidLow.bin,0,00000,3FFFC,,2
+ADD,,.\original\ZERO_FTiltLow.bin,0,00000,3FFFC,,2
+ADD,,.\original\ZERO_UTilt.bin,0,00000,3FFFC,,2
+ADD,,.\original\ZERO_DTilt.bin,0,00000,3FFFC,,2
+ADD,,.\original\ZERO_FSmashHigh.bin,0,00000,3FFFC,,2
+ADD,,.\original\ZERO_FSmash.bin,0,00000,3FFFC,,2
+ADD,,.\original\ZERO_FSmashLow.bin,0,00000,3FFFC,,2
+ADD,,.\original\ZERO_USmash.bin,0,00000,3FFFC,,2
+ADD,,.\original\ZERO_DSmash.bin,0,00000,3FFFC,,2
+ADD,,.\original\ZERO_AttackAirN.bin,0,00000,3FFFC,,2
+ADD,,.\original\ZERO_AttackAirF.bin,0,00000,3FFFC,,2
+ADD,,.\original\ZERO_AttackAirB.bin,0,00000,3FFFC,,2
+ADD,,.\original\ZERO_AttackAirU.bin,0,00000,3FFFC,,2
+ADD,,.\original\ZERO_AttackAirD.bin,0,00000,3FFFC,,2
+ADD,,.\original\ZERO_LandingAirF.bin,0,00000,3FFFC,,2
+ADD,,.\original\ZERO_LandingAirB.bin,0,00000,3FFFC,,2
+ADD,,.\original\ZERO_Action_0DC.bin,0,00000,3FFFC,,2
+ADD,,.\original\ZERO_Action_0DD.bin,0,00000,3FFFC,,2
+ADD,,.\original\ZERO_Action_0DE.bin,0,00000,3FFFC,,2
+ADD,,.\original\ZERO_Action_0DF.bin,0,00000,3FFFC,,2
+ADD,,.\original\ZERO_Action_0E0.bin,0,00000,3FFFC,,2
+ADD,,.\original\ZERO_Action_0E1.bin,0,00000,3FFFC,,2
+ADD,,.\original\ZERO_Action_0E2.bin,0,00000,3FFFC,,2
+ADD,,.\original\ZERO_Action_0E3.bin,0,00000,3FFFC,,2
+ADD,,.\original\ZERO_Action_0E4.bin,0,00000,3FFFC,,2
+ADD,,.\original\ZERO_Action_0E5.bin,0,00000,3FFFC,,2
+ADD,,.\original\ZERO_Action_0E6.bin,0,00000,3FFFC,,2
+ADD,,.\original\ZERO_Action_0E7.bin,0,00000,3FFFC,,2
+ADD,,.\original\ZERO_Action_0E8.bin,0,00000,3FFFC,,2
+ADD,,.\original\ZERO_Action_0E9.bin,0,00000,3FFFC,,2
+ADD,,.\original\ZERO_Action_0EAED.bin,0,00000,3FFFC,,2
+ADD,,.\original\ZERO_Action_0EB.bin,0,00000,3FFFC,,2
+ADD,,.\original\ZERO_Action_0EC.bin,0,00000,3FFFC,,2
+ADD,,.\original\ZERO_Action_0EE.bin,0,00000,3FFFC,,2
+ADD,,.\original\ZERO_Victory_1.bin,1,00000,3FFFC,,2
+ADD,,.\original\ZERO_Victory_2.bin,1,00000,3FFFC,,2
+ADD,,.\original\ZERO_Victory_3.bin,1,00000,3FFFC,,2
+ADD,,.\original\ZERO_Clap.bin,1,00000,3FFFC,,2
+ADD,,.\original\ZERO_ContinueFall.bin,1,00000,3FFFC,,2
+ADD,,.\original\ZERO_ContinueUp.bin,1,00000,3FFFC,,2
+ADD,,.\original\ZERO_1P_Pose.bin,1,00000,3FFFC,,2
 END,,,,,,,

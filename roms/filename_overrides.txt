@@ -2871,6 +2871,170 @@
 1378 Polygon Spider-Man Character
 1379 JSpider Main
 137A JSpider Chara
+137B ZERO Idle
+137C ZERO Walk1
+137D ZERO Walk2
+137E ZERO Walk3
+137F ZERO WalkEnd
+1380 ZERO Dash
+1381 ZERO Run
+1382 ZERO RunBrake
+1383 ZERO Turn
+1384 ZERO TurnRun
+1385 ZERO JumpF
+1386 ZERO JumpB
+1387 ZERO JumpAerialF
+1388 ZERO JumpAerialB
+1389 ZERO Fall
+138A ZERO FallAerial
+138B ZERO Crouch
+138C ZERO CrouchIdle
+138D ZERO CrouchEnd
+138E ZERO Landing
+138F ZERO PlatDrop
+1390 ZERO Teeter
+1391 ZERO Teeterstart
+1392 ZERO DamageHigh1
+1393 ZERO DamageHigh2
+1394 ZERO DamageHigh3
+1395 ZERO DamageMid1
+1396 ZERO DamageMid2
+1397 ZERO DamageMid3
+1398 ZERO DamageLow1
+1399 ZERO DamageLow2
+139A ZERO DamageLow3
+139B ZERO DamageAir1
+139C ZERO DamageAir2
+139D ZERO DamageAir3
+139E ZERO DamageElec
+139F ZERO DamageFlyHigh
+13A0 ZERO DamageFlyMid
+13A1 ZERO DamageFlyLow
+13A2 ZERO DamageFlyTop
+13A3 ZERO DamageFlyRoll
+13A4 ZERO Tumble
+13A5 ZERO FallSpecial
+13A6 ZERO EnterPipe
+13A7 ZERO ExitPipe
+13A8 ZERO ExitPipeWalk
+13A9 ZERO CeilingBonk
+13AA ZERO DownBounceD
+13AB ZERO DownBounceU
+13AC ZERO DownStandD
+13AD ZERO DownStandU
+13AE ZERO TechF
+13AF ZERO TechB
+13B0 ZERO DownForwardD
+13B1 ZERO DownForwardU
+13B2 ZERO DownBackD
+13B3 ZERO DownBackU
+13B4 ZERO DownAttackD
+13B5 ZERO DownAttackU
+13B6 ZERO Tech
+13B7 ZERO ClangRecoil
+13B8 ZERO CliffCatch
+13B9 ZERO CliffWait
+13BA ZERO CliffQuick
+13BB ZERO CliffClimbQuick1
+13BC ZERO CliffClimbQuick2
+13BD ZERO CliffSlow
+13BE ZERO CliffClimbSlow1
+13BF ZERO CliffClimbSlow2
+13C0 ZERO CliffAttackQuick1
+13C1 ZERO CliffAttackQuick2
+13C2 ZERO CliffAttackSlow1
+13C3 ZERO CliffAttackSlow2
+13C4 ZERO CliffEscapeQuick1
+13C5 ZERO CliffEscapeQuick2
+13C6 ZERO CliffEscapeSlow1
+13C7 ZERO CliffEscapeSlow2
+13C8 ZERO LightItemPickup
+13C9 ZERO HeavyItemPickup
+13CA ZERO ItemDrop
+13CB ZERO ItemThrowDash
+13CC ZERO ItemThrowF
+13CD ZERO ItemThrowU
+13CE ZERO ItemThrowD
+13CF ZERO ItemThrowAirF
+13D0 ZERO ItemThrowAirU
+13D1 ZERO ItemThrowAirD
+13D2 ZERO HeavyItemThrow
+13D3 ZERO ItemNeutral
+13D4 ZERO ItemTilt
+13D5 ZERO ItemSmash
+13D6 ZERO ItemDash
+13D7 ZERO ItemShoot
+13D8 ZERO ItemShootAir
+13D9 ZERO HammerIdle
+13DA ZERO HammerMove
+13DB ZERO ShieldOn
+13DC ZERO ShieldOff
+13DD ZERO RollF
+13DE ZERO RollB
+13DF ZERO Stun
+13E0 ZERO Grab
+13E1 ZERO GrabPull
+13E2 ZERO ThrowF
+13E3 ZERO ThrowB
+13E4 ZERO CapturePulled
+13E5 ZERO ThrownDKPulled
+13E6 ZERO ThrownMarioBros
+13E7 ZERO ThrownDK
+13E8 ZERO Thrown1
+13E9 ZERO Thrown2
+13EA ZERO Taunt
+13EB ZERO Jab1
+13EC ZERO Jab2
+13ED ZERO DashAttack
+13EE ZERO FTiltHigh
+13EF ZERO FTiltMidHigh
+13F0 ZERO FTilt
+13F1 ZERO FTiltMidLow
+13F2 ZERO FTiltLow
+13F3 ZERO UTilt
+13F4 ZERO DTilt
+13F5 ZERO FSmashHigh
+13F6 ZERO FSmash
+13F7 ZERO FSmashLow
+13F8 ZERO USmash
+13F9 ZERO DSmash
+13FA ZERO AttackAirN
+13FB ZERO AttackAirF
+13FC ZERO AttackAirB
+13FD ZERO AttackAirU
+13FE ZERO AttackAirD
+13FF ZERO LandingAirF
+1400 ZERO LandingAirB
+1401 ZERO Action 0DC
+1402 ZERO Action 0DD
+1403 ZERO Action 0DE
+1404 ZERO Action 0DF
+1405 ZERO Action 0E0
+1406 ZERO Action 0E1
+1407 ZERO Action 0E2
+1408 ZERO Action 0E3
+1409 ZERO Action 0E4
+140A ZERO Action 0E5
+140B ZERO Action 0E6
+140C ZERO Action 0E7
+140D ZERO Action 0E8
+140E ZERO Action 0E9
+140F ZERO Action 0EAED
+1410 ZERO Action 0EB
+1411 ZERO Action 0EC
+1412 ZERO Action 0EE
+1413 ZERO Victory 1
+1414 ZERO Victory 2
+1415 ZERO Victory 3
+1416 ZERO Clap
+1417 ZERO ContinueFall
+1418 ZERO ContinueUp
+1419 ZERO 1P Pose
+141A ZERO Main
+141B ZERO Character
+141C ZERO CPU Pose
+141D ZERO Team Pose
+
 
 0611 CAPTAIN DeadU
 0611 CAPTAIN ScreenKO
