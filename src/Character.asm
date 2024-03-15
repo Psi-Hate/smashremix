@@ -12,7 +12,7 @@ include "OS.asm"
 
 scope Character {
     // number of character slots to add
-    constant ADD_CHARACTERS(65)
+    constant ADD_CHARACTERS(64)
     // start and end offset for the main character struct table (RAM 0x80116E10)
     constant STRUCT_TABLE(0x92610)
     variable STRUCT_TABLE_END(STRUCT_TABLE + 0x6C)
@@ -3303,7 +3303,7 @@ scope Character {
     // 0x4A - JSPM
     //define_character(JSPM, CAPTAIN, File.JSPM_MAIN, 0x0EB, 0, File.JSPM_CHARACTER, 0x14E, File.SPM_PROJECTILE_HITBOX, 0x15E, 0x14D, File.SPM_PROJECTILE_GRAPHIC, 0x438, 9, OS.TRUE, OS.FALSE, Stages.id.BTT_FALCON, Stages.id.BTP_FALCON, Stages.id.BTT_GND, Stages.id.BTP_GND, sound_type.J, variant_type.J)
     // 0x4A - ZERO
-    define_character(ZERO, CAPTAIN, File.ZERO_MAIN, 0x0EB, 0, File.ZERO_CHARACTER, 0x14E, 0, 0x15E, 0x14D, 0, 0x698, 0x0, OS.TRUE, OS.FALSE, Stages.id.BTT_FALCON, Stages.id.BTP_FALCON, Stages.id.BTT_GND, Stages.id.BTP_GND, sound_type.U, variant_type.NA)
+    //define_character(ZERO, CAPTAIN, File.ZERO_MAIN, 0x0EB, 0, File.ZERO_CHARACTER, 0x14E, 0, 0x15E, 0x14D, 0, 0x698, 0x0, OS.TRUE, OS.FALSE, Stages.id.BTT_FALCON, Stages.id.BTP_FALCON, Stages.id.BTT_GND, Stages.id.BTP_GND, sound_type.U, variant_type.NA)
     // ADD NEW CHARACTERS HERE
 
     // REMIX POLYGONS

@@ -275,8 +275,8 @@ include "src/NSpiderman/NSpiderman.asm"
 //include "src/JSpiderman/JSpiderman.asm"
 //include "src/JSpiderman/JSpidermanSpecial.asm"
 // ZERO
-include "src/Zero/ZeroSpecial.asm"
-include "src/Zero/Zero.asm"
+//include "src/Zero/ZeroSpecial.asm"
+//include "src/Zero/Zero.asm"
 
 
 // KIRBY
