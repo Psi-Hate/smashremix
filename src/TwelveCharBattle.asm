@@ -3104,6 +3104,7 @@ scope TwelveCharBattle {
     add_defeat_parameters(0x617,                        defeated_moveset_captain,   0)          // 0x48 - SPM
     add_defeat_parameters(0x617,                        defeated_moveset_captain,   0)          // 0x49 - SP3
     //add_defeat_parameters(0x617,                        defeated_moveset_captain,   0)          // 0x4A - JSPM
+    add_defeat_parameters(0x617,                        defeated_moveset_captain,   0)          // 0x4A - ZERO
     // ADD NEW CHARACTERS HERE
 
     // REMIX POLYGONS

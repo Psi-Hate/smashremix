@@ -222,7 +222,7 @@ scope CharacterSelect {
     dw  0x58D0 + 0x200                      // 0x47 - DRAGONKING
     dw  0x149C8 + 0x200                     // 0x48 - SPM
     //dw  0xE7D0 + 0x200                     // 0x50 - JSPM
-    dw  0x3D120 + 0x200                     // 0x4A - Zero
+    dw  0x3D120 + 0x200                     // 0x4A - ZERO
     // ADD NEW CHARACTERS HERE
 
     // REMIX POLYGONS
@@ -2697,6 +2697,7 @@ scope CharacterSelect {
         constant SPM(0x000251B8 + 0x10)
         constant EPUFF(0x00024CE0 + 0x10)
         //constant JSPM(0x00025B68 + 0x10)
+        constant ZERO(0x00001838)
         // POLYGONS
         constant NWARIO(0x0001CB28)
         constant NLUCAS(0x0001D008)
@@ -2783,7 +2784,7 @@ scope CharacterSelect {
         define slot_9(CAPTAIN)
         define slot_10(GND)
         define slot_11(SONIC)
-        define slot_12(NONE)
+        define slot_12(ZERO)
   
         //row 2
         define slot_13(NONE)
@@ -5597,8 +5598,8 @@ scope CharacterSelect {
     add_to_css(Character.id.DRAGONKING, FGM.announcer.names.DRAGONKING, 1.50,         0x00010002, SMASH,        name_texture.DRAGONKING,     portrait_offsets.DRAGONKING,      8)
     add_to_css(Character.id.SPM,    FGM.announcer.names.SPM,            1.50,         0x00010001, SPM,          name_texture.SPM,            portrait_offsets.SPM,            -1)
     add_to_css(Character.id.SP3,    FGM.announcer.names.SP3,            1.50,         0x00010001, MVC,          name_texture.SPM,            portrait_offsets.SP3,            0)
-    //add_to_css(Character.id.JSPM,   FGM.announcer.names.SPM,            1.50,         0x00010001, SPM,          name_texture.JSPM,           portrait_offsets.JSPM,           0)
-    add_to_css(Character.id.ZERO,   FGM.announcer.names.CAPTAIN_FALCON, 1.50,         0x00010001, FZERO,        name_texture.CAPTAIN_FALCON, portrait_offsets.JFALCON,        8)
+    // add_to_css(Character.id.JSPM,   FGM.announcer.names.SPM,            1.50,         0x00010001, SPM,          name_texture.JSPM,           portrait_offsets.JSPM,           0)
+    add_to_css(Character.id.ZERO,   FGM.announcer.names.YOSHI,          1.50,         0x00010004, SMASH,        name_texture.SPM,            portrait_offsets.SPM,            -1)
     // ADD NEW CHARACTERS HERE
 
     // REMIX POLYGONS

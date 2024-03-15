@@ -388,6 +388,12 @@
         //db 2        // down
         //db 0        // unused
 
+        entry_zero:
+        db 10        // forward
+        db 4        // up
+        db 2        // down
+        db 0        // unused
+
         frame_table:
         // vanilla fighters
         dw entry_mario  // mario
@@ -468,6 +474,7 @@
         dw entry_spiderman  // SPM
         dw entry_spiderman  // SP3
         //dw entry_jspiderman  // JSPM
+        dw entry_zero       // ZERO
 
         // remix polygons
         dw entry_wario

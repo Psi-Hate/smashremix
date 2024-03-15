@@ -721,6 +721,7 @@ scope ResultsScreen {
     add_to_results_screen(Character.id.SPM,      FGM.announcer.names.SPM,                    SMASH,           Character.id.CAPTAIN, 180,     SPIDERMAN,       20,     0.65,      {MIDI.id.SONIC_VICTORY})
     add_to_results_screen(Character.id.SP3,      FGM.announcer.names.SP3,                    SMASH,           Character.id.CAPTAIN, 180,     SPIDERMAN,       20,     0.65,      {MIDI.id.SONIC_VICTORY})
     //add_to_results_screen(Character.id.JSPM,      FGM.announcer.names.SPM,                   SMASH,           Character.id.CAPTAIN, 185,     J SPIDERMAN,     20,     0.55,      {MIDI.id.SONIC_VICTORY})
+    add_to_results_screen(Character.id.ZERO,     FGM.announcer.names.GDK,                    SMASH,           Character.id.CAPTAIN, 180,     ZERO,            40,     1,         {MIDI.id.WOLF_VICTORY})
     // ADD NEW CHARACTERS HERE
 
     // REMIX POLYGONS
