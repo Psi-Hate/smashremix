@@ -1665,7 +1665,7 @@ scope SinglePlayer {
         constant EBI(0x0000AF80)
         constant DRAGONKING(0x0000B4B0)
         constant SPM(0x0000C1A8)
-        //constant ZERO(0x00000848)
+        constant ZERO(0x00000848)
 
         // Duo Teams
         constant STARFOX(0x00006238)
@@ -1911,7 +1911,7 @@ scope SinglePlayer {
         constant EBI(0x00000046)
         constant DRAGONKING(0x00000046)
         constant SPM(0x00000046)
-        //constant ZERO(0x00000032)
+        constant ZERO(0x00000032)
         // TODO: make sure these are good
         constant JSAMUS(0x00000032)
         constant JNESS(0x00000032)
@@ -2376,7 +2376,7 @@ scope SinglePlayer {
     dh File.SPM_VICTORY_IMAGE_BOTTOM                        // SPM
     dh File.SPM_VICTORY_IMAGE_BOTTOM                        // SP3
     //dh File.SINGLEPLAYER_VICTORY_IMAGE_BOTTOM               // JSPM
-    //dh File.SINGLEPLAYER_VICTORY_IMAGE_BOTTOM               // ZERO
+    dh File.SINGLEPLAYER_VICTORY_IMAGE_BOTTOM               // ZERO
 
     // ADD NEW CHARACTERS HERE
 
@@ -2752,7 +2752,7 @@ scope SinglePlayer {
     add_to_single_player(Character.id.DRAGONKING, name_texture.DRAGONKING, name_delay.DRAGONKING)
     add_to_single_player(Character.id.SPM,        name_texture.SPM,        name_delay.SPM)
     add_to_single_player(Character.id.SP3,        name_texture.SPM,        name_delay.SPM)
-    //add_to_single_player(Character.id.ZERO,       name_texture.ZERO,       name_delay.ZERO)
+    add_to_single_player(Character.id.ZERO,       name_texture.ZERO,       name_delay.ZERO)
 
     // REMIX POLYGONS    character id          name texture          name delay
     add_to_single_player(Character.id.NWARIO,  name_texture.NWARIO,  name_delay.NWARIO)

@@ -15,7 +15,7 @@ db  "SMASH REMIX"
 fill 0x34 - origin(), 0x20
 
 // add asm to rom
-origin  0x02400000
+origin  0x02800000
 base    0x80400000
 include "src/OS.asm"
 include "src/String.asm"
@@ -275,8 +275,8 @@ include "src/NSpiderman/NSpiderman.asm"
 //include "src/JSpiderman/JSpiderman.asm"
 //include "src/JSpiderman/JSpidermanSpecial.asm"
 // ZERO
-//include "src/Zero/ZeroSpecial.asm"
-//include "src/Zero/Zero.asm"
+include "src/Zero/ZeroSpecial.asm"
+include "src/Zero/Zero.asm"
 
 
 // KIRBY

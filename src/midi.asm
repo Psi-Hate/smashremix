@@ -12,7 +12,7 @@ include "OS.asm"
 scope MIDI {
     read32 MUSIC_TABLE, "../roms/original.z64", 0x3D768
     variable MUSIC_TABLE_END(MUSIC_TABLE + 0x17C)   // variable containing the current end of the music table
-    constant MIDI_BANK(0x2800000)                   // defines the start of the additional MIDI bank
+    constant MIDI_BANK(0x3200000)                   // defines the start of the additional MIDI bank
     global variable MIDI_BANK_END(MIDI_BANK)        // variable containing the current end of the MIDI bank
     // These 2 variables will be used in FGM.asm to calculate the correct RAM offset for numerous pointers
     variable midi_count(0x2F)                       // variable containing total number of MIDIs

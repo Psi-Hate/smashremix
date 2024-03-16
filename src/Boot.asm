@@ -174,7 +174,7 @@ scope Boot {
         OS.patch_start(0x00001038, 0x80000438)
         jal     Global.dma_copy_        // original line 1
         addiu   a2, r0, 0x0100          // original line 2
-        lui     a0, 0x0240              // load rom address (0x02400000)
+        lui     a0, 0x0280              // load rom address (0x02800000)
         lui     a1, 0x8040              // load ram address (0x80400000)
         jal     Global.dma_copy_        // add custom functions
         lui     a2, ((custom_heap - 0x80400000) >> 16) + 0x0001 // a2 = rough size of custom ram

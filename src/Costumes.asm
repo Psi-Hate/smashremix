@@ -992,7 +992,7 @@ scope Costumes {
         db 0x07                             // Spiderman
         db 0x07                             // Spiderman UMvC3
         //db 0x05                             // J Spiderman
-        //db 0x07                             // Zero
+        db 0x07                             // Zero
         // Polygons
         db 0x05                             // Polygon Wario
         db 0x05                             // Polygon Lucas
