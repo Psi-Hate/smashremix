@@ -2581,6 +2581,7 @@ scope Training {
     string_mluigi:; char_0x45:; db "Metal Luigi", 0x00
     string_ebi:; char_0x46:; db "Ebisumaru", 0x00
     string_dragonking:; char_0x47:; db "Dragon King", 0x00
+    string_waddledoo:; char_0x48:; db "Waddle Doo", 0x00
     OS.align(4)
 
     string_table_char:
@@ -2615,6 +2616,7 @@ scope Training {
     dw char_0x40            // DEDEDE
     dw char_0x41            // GOEMON
     dw char_0x44            // BANJO
+    dw char_0x48            // WADDLE DOO
 
     dw char_0x2A            // J MARIO
     dw char_0x29            // J FOX
@@ -2713,10 +2715,11 @@ scope Training {
         constant DEDEDE(0x1B)
         constant GOEMON(0x1C)
         constant BANJO(0x1D)
+        constant WADDLEDOO(0x1E)
 
         // Increment JMARIO after adding more characters above
         // j characters
-        constant JMARIO(0x1E)
+        constant JMARIO(0x1F)
         constant JFOX(JMARIO + 0x01)
         constant JDK(JMARIO + 0x02)
         constant JSAMUS(JMARIO + 0x03)
@@ -2810,6 +2813,7 @@ scope Training {
     db Character.id.DEDEDE
     db Character.id.GOEMON
     db Character.id.BANJO
+    db Character.id.WADDLEDOO
 
     db Character.id.JMARIO
     db Character.id.JFOX
@@ -2944,6 +2948,7 @@ scope Training {
     db id.MLUIGI
     db id.EBI
     db id.DRAGONKING
+    db id.WADDLEDOO
 	// ADD NEW CHARACTERS Here
 
 	// REMIX POLYGONS

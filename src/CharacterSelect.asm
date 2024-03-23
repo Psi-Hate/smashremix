@@ -220,6 +220,7 @@ scope CharacterSelect {
     dw  0x3500 + 0x200                      // 0x44 - METAL LUIGI
     dw  0xCEE0 + 0x200                      // 0x45 - EBISUMARU
     dw  0x58D0 + 0x200                      // 0x46 - DRAGONKING
+    dw  0xCD78 + 0x200                      // 0x47 - WADDLE DOO
     // ADD NEW CHARACTERS HERE
 
     // REMIX POLYGONS
@@ -353,6 +354,7 @@ scope CharacterSelect {
     add_alt_req_list(Character.id.MLUIGI, req/MLUIGI_MODEL)
     add_alt_req_list(Character.id.EBI, req/EBI_MODEL)
     add_alt_req_list(Character.id.DRAGONKING, req/DRAGONKING_MODEL)
+    add_alt_req_list(Character.id.WADDLEDOO, req/WADDLEDOO_MODEL)
 
     // POLYGONS
     add_alt_req_list(Character.id.NWARIO, req/NWARIO_MODEL)
@@ -2330,6 +2332,7 @@ scope CharacterSelect {
         constant EBI(0x00027C28 + 0x10)
         constant METALLUIGI(0x00028CE0 + 0x10)
         constant DRAGONKING(0x00029D98 + 0x10)
+        constant WADDLEDOO(0x0002AE50 + 0x10)
         // custom
         constant FALCO(0x0000D978)
         constant GND(0x0000EA38)
@@ -2676,6 +2679,7 @@ scope CharacterSelect {
         constant MLUIGI(0x00021358)
         constant DRAGONKING(0x00023A28 + 0x10)
         constant EPUFF(0x00024CE0 + 0x10)
+        constant WADDLEDOO(0x000250F8 + 0x10)
         // POLYGONS
         constant NWARIO(0x0001CB28)
         constant NLUCAS(0x0001D008)
@@ -4110,6 +4114,7 @@ scope CharacterSelect {
         constant MLUIGI(0x2A88 + 0x10)
         constant EBI(0x2B60 + 0x10)
         constant DRAGONKING(0x2C38 + 0x10)
+        constant WADDLEDOO(0x2D10 + 0x10)
     }
 
     // @ Description
@@ -4183,6 +4188,9 @@ scope CharacterSelect {
         lli     t2, Character.id.DRAGONKING
         beql    a1, t2, _draw_icon          // If DRAGONKING, then draw DRAGONKING stock icon
         addiu   a1, at, VARIANT_ICON_OFFSET.DRAGONKING // a1 = DRAGONKING footer struct
+        lli     t2, Character.id.WADDLEDOO
+        beql    a1, t2, _draw_icon          // If WADDLEDOO, then draw WADDLEDOO stock icon
+        addiu   a1, at, VARIANT_ICON_OFFSET.WADDLEDOO // a1 = WADDLEDOO footer struct
         lli     t2, Character.id.BOSS
         bne     a1, t2, _gdk                // If not Master Hand, then skip... otherwise, draw Master Hand stock icon
         addiu   a1, at, VARIANT_ICON_OFFSET.MASTER_HAND // a1 = Master Hand footer struct
@@ -5561,6 +5569,7 @@ scope CharacterSelect {
     add_to_css(Character.id.MLUIGI, FGM.announcer.names.MLUIGI,         1.50,         0x00010001, MARIO_BROS,   name_texture.MLUIGI,         portrait_offsets.METALLUIGI,      2)
     add_to_css(Character.id.EBI,    FGM.announcer.names.EBI,            1.50,         0x00010001, GOEMON,       name_texture.EBI,            portrait_offsets.EBI,            20)
     add_to_css(Character.id.DRAGONKING, FGM.announcer.names.DRAGONKING, 1.50,         0x00010002, SMASH,        name_texture.DRAGONKING,     portrait_offsets.DRAGONKING,      7)
+    add_to_css(Character.id.WADDLEDOO, FGM.announcer.names.KIRBY,       1.50,         0x00010003, KIRBY,        name_texture.WADDLEDOO,      portrait_offsets.WADDLEDOO,      10)
     // ADD NEW CHARACTERS HERE
 
     // REMIX POLYGONS

@@ -259,6 +259,8 @@ include "src/NYoungLink/NYoungLink.asm"
 // DRAGONKING
 include "src/DragonKing/DragonKingSpecial.asm"
 include "src/DragonKing/DragonKing.asm"
+// WADDLEDOO
+include "src/WaddleDoo/WaddleDoo.asm"
 // NGOEMON
 include "src/NGoemon/NGoemon.asm"
 // NCONKER

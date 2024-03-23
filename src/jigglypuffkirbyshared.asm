@@ -21,6 +21,8 @@ scope JigglypuffKirbyShared {
         beq     v0, at, _kirby_jump_1
         addiu   at, r0, Character.id.JPUFF    // JPuff ID
         beq     v0, at, _puff_jump_1
+        addiu   at, r0, Character.id.WADDLEDOO    // WADDLE DOO ID
+        beq     v0, at, _puff_jump_1
         addiu   at, r0, Character.id.EPUFF    // EPuff ID
         beq     v0, at, _puff_jump_1
         addiu   at, r0, Character.id.JKIRBY    // JKirby ID
@@ -53,6 +55,8 @@ scope JigglypuffKirbyShared {
         addiu   at, r0, Character.id.DEDEDE     // Dedede ID
         beq     v0, at, _dedede_jump_2
         addiu   at, r0, Character.id.JPUFF      // JPuff ID
+        beq     v0, at, _puff_jump_2
+        addiu   at, r0, Character.id.WADDLEDOO   // WADDLE DOO ID
         beq     v0, at, _puff_jump_2
         addiu   at, r0, Character.id.EPUFF   // EPuff ID
         beq     v0, at, _puff_jump_2
@@ -100,6 +104,8 @@ scope JigglypuffKirbyShared {
         beq     v1, at, _puff_jump_3
         addiu   at, r0, Character.id.JPUFF      // JPuff ID
         beq     v1, at, _puff_jump_3
+        addiu   at, r0, Character.id.WADDLEDOO   // WADDLE DOO ID
+        beq     v0, at, _puff_jump_3
         addiu   at, r0, Character.id.EPUFF   // EPuff ID
         beq     v1, at, _puff_jump_3
         addiu   at, r0, Character.id.JKIRBY   // J Kirby ID
@@ -127,6 +133,8 @@ scope JigglypuffKirbyShared {
         addiu   at, r0, Character.id.DEDEDE     // Dedede ID
         beq     v0, at, _kirby_jump_4
         addiu   at, r0, Character.id.JPUFF      // JPuff ID
+        beq     v0, at, _puff_jump_4
+        addiu   at, r0, Character.id.WADDLEDOO   // WADDLE DOO ID
         beq     v0, at, _puff_jump_4
         addiu   at, r0, Character.id.EPUFF   // EPuff ID
         beq     v0, at, _puff_jump_4
@@ -160,6 +168,8 @@ scope JigglypuffKirbyShared {
         beq     v1, at, _kirby_jump_5
         addiu   at, r0, Character.id.JPUFF      // JPuff ID
         beq     v1, at, _puff_jump_5
+        addiu   at, r0, Character.id.WADDLEDOO   // WADDLE DOO ID
+        beq     v0, at, _puff_jump_5
         addiu   at, r0, Character.id.EPUFF      // EPuff ID
         beq     v1, at, _puff_jump_5
         addiu   at, r0, Character.id.JKIRBY     // JKIrby ID
@@ -810,6 +820,8 @@ scope JigglypuffKirbyShared {
         beq      v0, at, _dedede           // skip if DEDEDE
         addiu    at, r0, Character.id.EPUFF
         beq      v0, at, _puff_kirby       // skip if E PUFF
+        addiu    at, r0, Character.id.WADDLEDOO
+        beq      v0, at, _puff_kirby       // skip if WADDLE DOO
         addiu    at, r0, Character.id.JKIRBY
         beq      t6, at, _puff_kirby       // skip if J KIRBY
         addiu    v0, r0, Character.id.NMARINA

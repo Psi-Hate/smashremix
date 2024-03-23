@@ -3101,6 +3101,7 @@ scope TwelveCharBattle {
     add_defeat_parameters(0x222,                        defeated_moveset,           0)          // 0x45 - METAL LUIGI
     add_defeat_parameters(File.GOEMON_DOWN_STAND_U,     defeated_moveset_mario,     0)          // 0x46 - EBI
     add_defeat_parameters(0x617,                        defeated_moveset_captain,   0)          // 0x47 - DRAGONKING
+    add_defeat_parameters(0x51D,                        defeated_moveset_jiggly,    0)          // 0x48 - WADDLE DOO
     // ADD NEW CHARACTERS HERE
 
     // REMIX POLYGONS

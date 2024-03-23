@@ -664,6 +664,13 @@ Character.edit_action_parameters(DEDEDE, Action.LandingAirX,            File.DED
     dw      Character.rapid_jab.DISABLED        // disable rapid jab
     OS.patch_end()
 
+    Character.table_patch_start(variants, Character.id.DEDEDE, 0x4)
+    db      Character.id.WADDLEDOO // set as BOSS variant for Dedede
+    db      Character.id.NDEDEDE // set as POLYGON variant for Dedede
+    db      Character.id.NONE
+    db      Character.id.NONE
+    OS.patch_end()
+
 
     // Use Kirby Entry
     Character.table_patch_start(entry_action, Character.id.DEDEDE, 0x8)

@@ -2696,6 +2696,20 @@
 12C9 Ebisumaru Ending Image 1
 12CA Ebisumaru Ending Image 2
 12CB EPuff Main
+12CC ZSS Main
+12CD ZSS Character
+12CE Waddle Doo Main
+12CF Waddle Doo Character
+12D0 Waddle Doo Appear 1
+12D1 Waddle Doo Appear 2
+12D2 Waddle Doo DTilt
+12D3 Waddle Doo JumpAerial
+12D4 Waddle Doo JumpAerialEnd
+12D5 Waddle Doo FallAerial
+12D6 Waddle Doo Idle
+12D7 Waddle Doo Shock
+12D8 Waddle Doo RollB
+12D9 Waddle Doo RollF
 
 0611 CAPTAIN DeadU
 0611 CAPTAIN ScreenKO

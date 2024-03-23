@@ -1664,6 +1664,7 @@ scope SinglePlayer {
         constant MLUIGI(0x0000AAB0)
         constant EBI(0x0000AF80)
         constant DRAGONKING(0x0000B4B0)
+        constant WADDLEDOO(0x00000BA8)
 
         // Duo Teams
         constant STARFOX(0x00006238)
@@ -1905,6 +1906,7 @@ scope SinglePlayer {
         constant MLUIGI(0x00000024 + LUIGI)
         constant EBI(0x00000046)
         constant DRAGONKING(0x00000046)
+        constant WADDLEDOO(0x00000032)
         // TODO: make sure these are good
         constant JSAMUS(0x00000032)
         constant JNESS(0x00000032)
@@ -2739,6 +2741,7 @@ scope SinglePlayer {
     add_to_single_player(Character.id.MLUIGI,     name_texture.MLUIGI,     name_delay.MLUIGI)
     add_to_single_player(Character.id.EBI,        name_texture.EBI,        name_delay.EBI)
     add_to_single_player(Character.id.DRAGONKING, name_texture.DRAGONKING, name_delay.DRAGONKING)
+    add_to_single_player(Character.id.WADDLEDOO,  name_texture.WADDLEDOO,  name_delay.WADDLEDOO)
 
     // REMIX POLYGONS    character id          name texture          name delay
     add_to_single_player(Character.id.NWARIO,  name_texture.NWARIO,  name_delay.NWARIO)

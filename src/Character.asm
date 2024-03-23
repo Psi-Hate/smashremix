@@ -12,7 +12,7 @@ include "OS.asm"
 
 scope Character {
     // number of character slots to add
-    constant ADD_CHARACTERS(61)
+    constant ADD_CHARACTERS(62)
     // start and end offset for the main character struct table (RAM 0x80116E10)
     constant STRUCT_TABLE(0x92610)
     variable STRUCT_TABLE_END(STRUCT_TABLE + 0x6C)
@@ -3296,6 +3296,8 @@ scope Character {
     define_character(EBI, MARIO, File.EBISUMARU_MAIN, 0x0CA, 0, File.EBISUMARU_CHARACTER, File.GOEMON_SHIELD_POSE, File.GOEMON_RYO_HITBOX, File.GOEMON_CLOUD_INFO, File.GOEMON_RYO_GRAPHIC, File.GOEMON_ENTRY_GFX, 0x9C0, 20, OS.TRUE, OS.TRUE, Stages.id.BTT_GOEMON, Stages.id.BTP_GOEMON, Stages.id.BTT_GOEMON, Stages.id.BTP_GOEMON, sound_type.U, variant_type.SPECIAL)
     // 0x47 - DRAGONKING
     define_character(DRAGONKING, CAPTAIN, File.DRAGONKING_MAIN, 0x0EB, 0, File.DRAGONKING_CHARACTER, File.DRAGONKING_SHIELD_POSE, 0, 0x15B, 0x14D, 0, 0x488, 5, OS.TRUE, OS.TRUE, Stages.id.BTT_FALCON, Stages.id.BTP_FALCON, Stages.id.BTT_GND, Stages.id.BTP_GND, sound_type.J, variant_type.SPECIAL)
+    // 0x48 - WADDLEDOO
+    define_character(WADDLEDOO, JIGGLYPUFF, File.WADDLE_DOO_MAIN, 0x0E8, 0, File.WADDLE_DOO_CHARACTER, 0x14B, 0, 0x15F, 0, 0, 0x54C, 0x2, OS.TRUE, OS.TRUE, Stages.id.BTT_JIGGLYPUFF, Stages.id.BTP_JIGGLYPUFF, Stages.id.BTT_FALCO, Stages.id.BTP_MARIO, sound_type.U, variant_type.NA)
     // ADD NEW CHARACTERS HERE
 
     // REMIX POLYGONS

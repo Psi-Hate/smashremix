@@ -718,6 +718,7 @@ scope ResultsScreen {
     add_to_results_screen(Character.id.MLUIGI,   FGM.announcer.names.MLUIGI,                 MARIO_BROS,      Character.id.MARIO,   185,     METAL LUIGI,     20,     0.65,      0x0C)
     add_to_results_screen(Character.id.EBI,      FGM.announcer.names.EBI,                    GOEMON,          Character.id.CAPTAIN, 180,     EBISUMARU,       20,     0.65,      {MIDI.id.GOEMON_VICTORY})
     add_to_results_screen(Character.id.DRAGONKING, FGM.announcer.names.DRAGONKING,           SMASH,           Character.id.CAPTAIN, 170,     D.1KING,         30,     1,         {MIDI.id.DKING_VICTORY})
+    add_to_results_screen(Character.id.WADDLEDOO,    FGM.announcer.names.EPUFF,              KIRBY,           Character.id.JIGGLYPUFF, 185,  WADDLE DOO,      20,     0.55,      {MIDI.id.DEDEDE_VICTORY})
     // ADD NEW CHARACTERS HERE
 
     // REMIX POLYGONS
