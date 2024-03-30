@@ -37,38 +37,50 @@ scope WaddleDoo {
     insert ENTRY, "moveset/ENTRY.bin"
     insert DTILT, "moveset/DTILT.bin"
     insert IDLE, "moveset/IDLE.bin"
+    //insert JUMP_AERIAL,"moveset/JUMP_AERIAL.bin"
+    //insert JUMP_LAST,"moveset/JUMP_LAST.bin"
 
     insert STARRING,"moveset/STARRING.bin"
 
     // Action name constants.
     scope Action {
-        constant JUMP_2(0xDF)
-        constant JUMP_3(0xE0)
-        constant JUMP_4(0xE1)
-        constant JUMP_5(0xE2)
+        //constant JUMP_2(0xDF)
+        //constant JUMP_3(0xE0)
+        //constant JUMP_4(0xE1)
+        //constant JUMP_5(0xE2)
 
         //constant WADDLEDOO_STARRING_LEFT(0x103)
         //constant WADDLEDOO_STARRING_RIGHT(0x104)
 
-        string_0x0DF:; String.insert("Jump2")
-        string_0x0E0:; String.insert("Jump3")
-        string_0x0E1:; String.insert("Jump4")
-        string_0x0E2:; String.insert("Jump5")
+        //string_0x0DF:; String.insert("Jump2")
+        //string_0x0E0:; String.insert("Jump3")
+        //string_0x0E1:; String.insert("Jump4")
+        //string_0x0E2:; String.insert("Jump5")
         string_0x103:; String.insert("AppearLeft")
         string_0x104:; String.insert("AppearRight")
 
         action_string_table:
-        dw string_0x0DF
-        dw string_0x0E0
-        dw string_0x0E1
-        dw string_0x0E2
+        //dw string_0x0DF
+        //dw string_0x0E0
+        //dw string_0x0E1
+        //dw string_0x0E2
         dw string_0x103
         dw string_0x104
     }
 
     // Modify Action Parameters             // Action               // Animation                // Moveset Data             // Flags
 
+    Character.edit_action_parameters(WADDLEDOO, Action.Entry,           File.WADDLE_DOO_IDLE,       IDLE,                         -1)
+    Character.edit_action_parameters(WADDLEDOO, 0x006,                  File.WADDLE_DOO_IDLE,       IDLE,                         -1)
+    Character.edit_action_parameters(WADDLEDOO, Action.ReviveWait,      File.WADDLE_DOO_IDLE,       IDLE,                         -1)
     Character.edit_action_parameters(WADDLEDOO, Action.Idle,            File.WADDLE_DOO_IDLE,       IDLE,                         -1)
+    Character.edit_action_parameters(WADDLEDOO, Action.Walk1,           File.WADDLE_DOO_WALK1,      -1,                           -1)
+    Character.edit_action_parameters(WADDLEDOO, Action.Walk2,           File.WADDLE_DOO_WALK2,      -1,                           -1)
+    Character.edit_action_parameters(WADDLEDOO, Action.Walk3,           File.WADDLE_DOO_WALK3,      -1,                           -1)
+    Character.edit_action_parameters(WADDLEDOO, Action.Dash,            File.WADDLE_DOO_DASH,       -1,                           -1)
+    Character.edit_action_parameters(WADDLEDOO, Action.Run,             File.WADDLE_DOO_RUN,        -1,                           -1)
+    Character.edit_action_parameters(WADDLEDOO, Action.RunBrake,        File.WADDLE_DOO_RUNEND,     -1,                           -1)
+    Character.edit_action_parameters(WADDLEDOO, Action.TurnRun,         File.WADDLE_DOO_RUNTURN,    -1,                           -1)
     Character.edit_action_parameters(WADDLEDOO, Action.AttackAirD,      -1,                         DAIR,                         -1)
     Character.edit_action_parameters(WADDLEDOO, Action.ShieldBreak,     -1,                         SHIELD_BREAK,                 -1)
     Character.edit_action_parameters(WADDLEDOO, Action.Stun,            -1,                         STUN,                         -1)
@@ -78,12 +90,15 @@ scope WaddleDoo {
     Character.edit_action_parameters(WADDLEDOO, Action.TechB,           -1,                         TECH_ROLL,                    -1)
     Character.edit_action_parameters(WADDLEDOO, Action.Taunt,           -1,                         TAUNT,                        -1)
     Character.edit_action_parameters(WADDLEDOO, Action.DashAttack,      -1,                         DASHATTACK,                   -1)
-    Character.edit_action_parameters(WADDLEDOO, Action.JumpAerialF,     File.WADDLE_DOO_JUMP2,      -1,                           -1)
-    Character.edit_action_parameters(WADDLEDOO, Action.JumpAerialB,     File.WADDLE_DOO_JUMP2,      -1,                            0)
-    Character.edit_action_parameters(WADDLEDOO, Action.KIRBY.Jump2,     File.WADDLE_DOO_JUMP2,      -1,                            0)
-    Character.edit_action_parameters(WADDLEDOO, Action.KIRBY.Jump3,     File.WADDLE_DOO_JUMP2,      -1,                            0)
-    Character.edit_action_parameters(WADDLEDOO, Action.KIRBY.Jump4,     File.WADDLE_DOO_JUMP2,      -1,                            0)
-    Character.edit_action_parameters(WADDLEDOO, Action.KIRBY.Jump5,     File.WADDLE_DOO_JUMP3,      -1,                            0)
+    Character.edit_action_parameters(WADDLEDOO, Action.JumpF,           File.WADDLE_DOO_JUMPF,      -1,                           -1)
+    Character.edit_action_parameters(WADDLEDOO, Action.JumpB,           File.WADDLE_DOO_JUMPB,      -1,                           -1)
+    //Character.edit_action_parameters(WADDLEDOO, Action.JumpAerialF,     File.WADDLE_DOO_JUMP2,      -1,                           -1)
+    //Character.edit_action_parameters(WADDLEDOO, Action.JumpAerialB,     File.WADDLE_DOO_JUMP2,      -1,                            0)
+    //Character.edit_action_parameters(WADDLEDOO, Action.KIRBY.Jump2,     File.WADDLE_DOO_JUMP2,      -1,                            0)
+    //Character.edit_action_parameters(WADDLEDOO, Action.KIRBY.Jump3,     File.WADDLE_DOO_JUMP2,      -1,                            0)
+    //Character.edit_action_parameters(WADDLEDOO, Action.KIRBY.Jump4,     File.WADDLE_DOO_JUMP2,      -1,                            0)
+    //Character.edit_action_parameters(WADDLEDOO, Action.KIRBY.Jump5,     File.WADDLE_DOO_JUMP3,      -1,                            0)
+    Character.edit_action_parameters(WADDLEDOO, Action.Fall,            File.WADDLE_DOO_FALL,       -1,                           -1)
     Character.edit_action_parameters(WADDLEDOO, Action.FallAerial,      File.WADDLE_DOO_FALL2,      -1,                           -1)
     //Character.edit_action_parameters(WADDLEDOO, 0xE4,                 File.WADDLE_DOO_APPEAR_LEFT,    -1,                       -1)
     //Character.edit_action_parameters(WADDLEDOO, 0xE5,                 File.WADDLE_DOO_APPEAR_RIGHT,   -1,                       -1)
@@ -98,12 +113,16 @@ scope WaddleDoo {
     Character.edit_action_parameters(WADDLEDOO, Action.DamageElec2,     File.WADDLE_DOO_SHOCK,      -1,                           -1)
     Character.edit_action_parameters(WADDLEDOO, Action.RollF,           File.WADDLE_DOO_ROLLF,      -1,                           -1)
     Character.edit_action_parameters(WADDLEDOO, Action.RollB,           File.WADDLE_DOO_ROLLB,      -1,                           -1)
+    Character.edit_action_parameters(WADDLEDOO, Action.ShieldDrop,      File.WADDLE_DOO_SHIELDDROP, -1,                           -1)
+    Character.edit_action_parameters(WADDLEDOO, Action.Pass,            File.WADDLE_DOO_SHIELDDROP, -1,                           -1)
+    Character.edit_action_parameters(WADDLEDOO, Action.EggLay,          File.WADDLE_DOO_IDLE,       -1,                           -1)
+    Character.edit_action_parameters(WADDLEDOO, Action.ExitPipeWalk,    File.WADDLE_DOO_PIPEWALK,   -1,                           -1)
 
-    // Modify Actions            // Action                   // Staling ID    // Main ASM                     // Interrupt/Other ASM          // Movement/Physics ASM         // Collision ASM
-    Character.edit_action(WADDLEDOO, Action.JUMP_2,              -1,              0x8013FB00,                   0x8013FB2C,                      0x8013FC4C,                     0x800DE978)
-    Character.edit_action(WADDLEDOO, Action.JUMP_3,              -1,              0x8013FB00,                   0x8013FB2C,                      0x8013FC4C,                     0x800DE978)
-    Character.edit_action(WADDLEDOO, Action.JUMP_4,              -1,              0x8013FB00,                   0x8013FB2C,                      0x8013FC4C,                     0x800DE978)
-    Character.edit_action(WADDLEDOO, Action.JUMP_5,              -1,              0x8013FB00,                   0x8013FB2C,                      0x8013FC4C,                     0x800DE978)
+    //// Modify Actions            // Action                   // Staling ID    // Main ASM                     // Interrupt/Other ASM          // Movement/Physics ASM         // Collision ASM
+    //Character.edit_action(WADDLEDOO, Action.JUMP_2,              -1,              0x8013FB00,                   0x8013FB2C,                      0x8013FC4C,                     0x800DE978)
+    //Character.edit_action(WADDLEDOO, Action.JUMP_3,              -1,              0x8013FB00,                   0x8013FB2C,                      0x8013FC4C,                     0x800DE978)
+    //Character.edit_action(WADDLEDOO, Action.JUMP_4,              -1,              0x8013FB00,                   0x8013FB2C,                      0x8013FC4C,                     0x800DE978)
+    //Character.edit_action(WADDLEDOO, Action.JUMP_5,              -1,              0x8013FB00,                   0x8013FB2C,                      0x8013FC4C,                     0x800DE978)
 
 //    // Modify Menu Action Parameters             // Action      // Animation                  // Moveset Data             // Flags
 
@@ -156,13 +175,13 @@ scope WaddleDoo {
     // Shield colors for costume matching
     Character.set_costume_shield_colors(WADDLEDOO, ORANGE, YELLOW, BLUE, PINK, GREEN, MAGENTA, BLACK, NA)
 
-    constant jump_decay(0x42A0)				// same as Kirbys
+   // constant jump_decay(0x42A0)				// same as Kirbys
 
-	jump_multiplier_table:
-	dw		0.0		// na
-	dw		0.0		// na
-	float32 68		// jump 3
-	float32 58		// jump 4
-	float32 52		// jump 5
-	float32 0		// jump 6 (unused)
+//	jump_multiplier_table:
+//	dw		0.0		// na
+//	dw		0.0		// na
+//	float32 68		// jump 3
+//	float32 58		// jump 4
+//	float32 52		// jump 5
+//	float32 0		// jump 6 (unused)
 }

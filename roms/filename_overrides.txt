@@ -2710,6 +2710,18 @@
 12D7 Waddle Doo Shock
 12D8 Waddle Doo RollB
 12D9 Waddle Doo RollF
+12DA Waddle Doo JumpF
+12DB Waddle Doo JumpB
+12DC Waddle Doo Walk1
+12DD Waddle Doo Walk2
+12DE Waddle Doo Walk3
+12DF Waddle Doo Fall
+12E0 Waddle Doo Dash
+12E1 Waddle Doo Run
+12E2 Waddle Doo RunTurn
+12E3 Waddle Doo RunEnd
+12E4 Waddle Doo ShieldDrop
+12E5 Waddle Doo PipeWalk
 
 0611 CAPTAIN DeadU
 0611 CAPTAIN ScreenKO

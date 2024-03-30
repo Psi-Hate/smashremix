@@ -419,6 +419,25 @@ scope CharEnvColor {
         lo_alpha:;   create_custom_display_list(RENDER_MODE_ALPHA, RENDER_MODE_ALPHA)
     }
 
+  //  scope custom_display_lists_struct_waddle_doo: {
+  //      dw OS.FALSE     // 0x0000: initialized flag, high poly
+  //      dw hi_default   // 0x0004: pointer to default custom hi poly display list, or 0
+  //      dw hi_alpha     // 0x0008: pointer to alpha custom hi poly display list, or 0
+  //      dh 0x0918       // 0x000C: offset to part 0x08 in player struct
+  //      dh 0x0338       // 0x000E: offset to 1st set render mode command for high poly
+  //      dh 0x0420       // 0x0010: offset to 2nd set render mode command for high poly, or -1
+  //      dh 0xFFFF       // 0x0012: offset to 3rd set render mode command for high poly, or -1
+  //      dw OS.FALSE     // 0x0014: initialized flag, low poly
+  //      dw hi_default   // 0x0018: pointer to default custom lo poly display list, or 0
+  //      dw hi_alpha     // 0x001C: pointer to alpha custom lo poly display list, or 0
+  //      dh 0x0918       // 0x0020: offset to part 0x08 in player struct
+  //      dh 0x0338       // 0x0022: offset to 1st set render mode command for high poly
+  //      dh 0x0420       // 0x0024: offset to 2nd set render mode command for high poly, or -1
+  //      dh 0xFFFF       // 0x0026: offset to 3rd set render mode command for high poly, or -1
+  //      hi_default:; create_custom_display_list(0xC4113878, RENDER_MODE_DEFAULT)
+  //      hi_alpha:;   create_custom_display_list(RENDER_MODE_ALPHA, RENDER_MODE_ALPHA)
+  //  }
+
     // @ Description
     // This checks the override table before reading the default env color.
     scope override_env_color_: {
