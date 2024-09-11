@@ -1,4 +1,4 @@
-// jigglypuffkirbyshared.asmEPUFF
+// jigglypuffkirbyshared.asm
 
 // This file contains shared functions by Jigglypuff and Kirby Clones.
 

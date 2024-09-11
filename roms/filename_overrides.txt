@@ -2722,6 +2722,7 @@
 12E3 Waddle Doo RunEnd
 12E4 Waddle Doo ShieldDrop
 12E5 Waddle Doo PipeWalk
+12E6 Waddle Doo Win1
 
 0611 CAPTAIN DeadU
 0611 CAPTAIN ScreenKO

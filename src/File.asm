@@ -2712,4 +2712,5 @@ scope File {
     constant WADDLE_DOO_RUNEND(0x12E3)
     constant WADDLE_DOO_SHIELDDROP(0x12E4)
     constant WADDLE_DOO_PIPEWALK(0x12E5)
+    constant WADDLE_DOO_WIN1(0x12E6)
  }

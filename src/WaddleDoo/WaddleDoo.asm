@@ -14,6 +14,7 @@ scope WaddleDoo {
 	}
 
     // Insert Moveset files
+
     insert SPARKLE,"moveset/SPARKLE.bin"; Moveset.GO_TO(SPARKLE)            // loops
     insert SHIELD_BREAK,"moveset/SHIELD_BREAK.bin"; Moveset.GO_TO(SPARKLE)            // loops
     insert DAIR, "moveset/DAIR.bin"
@@ -41,6 +42,19 @@ scope WaddleDoo {
     //insert JUMP_LAST,"moveset/JUMP_LAST.bin"
 
     insert STARRING,"moveset/STARRING.bin"
+
+    WIN1:
+    // Win1 commands are defined here instead of in a bin file in order to use subroutines.
+    dw	0x0400008C	// Wait 140 frames
+    dw EYES.SHOCK   // Crying Face
+    dw	0x0400002F	// Wait 49 frames
+    dw EYES.HALF    // Half Blink Face
+    dw	0x04000004	// Wait 2 frames
+    dw EYES.CLOSED  // Blink Face
+    dw	0x0400001F	// Wait 31 frames
+    dw EYES.HALF    // Half Blink Face
+    dw	0x04000008	// Wait 2 frames
+    dw EYES.SHOCK   // Crying Face
 
     // Action name constants.
     scope Action {
@@ -127,13 +141,13 @@ scope WaddleDoo {
 //    // Modify Menu Action Parameters             // Action      // Animation                  // Moveset Data             // Flags
 
     Character.edit_menu_action_parameters(WADDLEDOO, 0x0,           File.WADDLE_DOO_IDLE,          IDLE,                         -1)
-    //Character.edit_menu_action_parameters(WADDLEDOO, 0x1,           File.DEDEDE_VICTORY_1,         0x80000000,                 -1)
-    //Character.edit_menu_action_parameters(WADDLEDOO, 0x2,           File.DEDEDE_VICTORY_3,         VICTORY_3,                  -1)
-    //Character.edit_menu_action_parameters(WADDLEDOO, 0x3,           File.DEDEDE_VICTORY_2,         VICTORY_2,                  -1)
-    //Character.edit_menu_action_parameters(WADDLEDOO, 0x4,           File.DEDEDE_VICTORY_1,         0x80000000,                 -1)
+    Character.edit_menu_action_parameters(WADDLEDOO, 0x1,           File.WADDLE_DOO_WIN1,        WIN1,                         -1)
+    Character.edit_menu_action_parameters(WADDLEDOO, 0x2,           File.WADDLE_DOO_WIN1,        WIN1,                         -1)
+    Character.edit_menu_action_parameters(WADDLEDOO, 0x3,           File.WADDLE_DOO_WIN1,        WIN1,                         -1)
+    Character.edit_menu_action_parameters(WADDLEDOO, 0x4,           File.WADDLE_DOO_WIN1,        WIN1,                         -1)
     //Character.edit_menu_action_parameters(WADDLEDOO, 0x5,           File.DEDEDE_CLAP,              CLAP,                       -1)
-    Character.edit_menu_action_parameters(WADDLEDOO, 0xD,           File.DEDEDE_1P_POSE,           0x80000000,                 -1)
-    Character.edit_menu_action_parameters(WADDLEDOO, 0xE,           File.DEDEDE_CPU_POSE,          0x80000000,                 -1)
+    //Character.edit_menu_action_parameters(WADDLEDOO, 0xD,           File.DEDEDE_1P_POSE,           0x80000000,                 -1)
+    //Character.edit_menu_action_parameters(WADDLEDOO, 0xE,           File.DEDEDE_CPU_POSE,          0x80000000,                 -1)
     //Character.edit_menu_action_parameters(WADDLEDOO, 0x9,           File.DEDEDE_PUPPET_FALL,       -1,                         -1)
     //Character.edit_menu_action_parameters(WADDLEDOO, 0xA,           File.DEDEDE_PUPPET_UP,         -1,                         -1)
 
